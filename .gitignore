@@ -6,3 +6,4 @@ studyenv
 ./pytest_cache/
 .vscode/
 .idea/
+backend/studyenv
