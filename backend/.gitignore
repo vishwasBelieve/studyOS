@@ -1,0 +1,6 @@
+.studyenv/
+__pycache__/
+*.py[cod]
+.env
+.vscode/
+.idea/
