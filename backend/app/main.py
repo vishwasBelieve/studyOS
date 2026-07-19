@@ -4,4 +4,4 @@ app = FastAPI()
 
 @app.get("/")
 def home():
-    return {"message" : "your at home page"}
+    return {"message" : "StudyOS backend"}
