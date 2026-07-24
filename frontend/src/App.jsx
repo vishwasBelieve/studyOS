@@ -1,10 +1,12 @@
-import Navbar from "./components/Navbar.jsx"
-import Mainlayout from "./components/Mainlayout.jsx"
+import Navbar from "./components/Navbar";
+import MainLayout from "./components/Mainlayout";
+import "./app.css";
 
-export default function App(){
+export default function App() {
   return (
-  <>
-  <Navbar/>
-  <Mainlayout/>
-  </>)
+    <div className="app">
+      <Navbar />
+      <MainLayout />
+    </div>
+  );
 }

@@ -1,0 +1,43 @@
+.dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: #f5f7fa;
+}
+
+.empty-state {
+  text-align: center;
+  color: #4a4a68;
+}
+
+.empty-icon {
+  width: 64px;
+  height: 64px;
+  color: #a0a0b8;
+  margin-bottom: 1rem;
+}
+
+.empty-state h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.empty-state p {
+  color: #8888a0;
+  margin-bottom: 1.5rem;
+}
+
+.upload-btn {
+  padding: 0.6rem 1.5rem;
+  background: #e94560;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.upload-btn:hover {
+  background: #d13a52;
+}

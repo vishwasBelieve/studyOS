@@ -1,18 +1,4 @@
-main {
-  display: flex;
-  height: 100vh;
-}
-
-.sidebar {
-  flex-shrink: 0;
-  background: #1a1a2e;
-  color: #eaeaea;
-  padding: 1rem;
-}
-
-.dashboard {
-  flex: 1;
-  background: #0f3460;
-  color: #eaeaea;
-  padding: 1rem;
+.main-layout {
+    display: flex;
+    flex: 1;
 }
