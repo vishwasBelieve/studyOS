@@ -2,8 +2,12 @@ import "./Dashboard.css";
 import DocumentCard from "./DocumentCard.jsx";
 
 export default function Dashboard(props){
-  const documentElements = props.docArray.map(doc=>{return <DocumentCard key={doc.id} name = {doc.name}/>})
+  const documentElements = props.docArray.map(doc=>{return <DocumentCard key={doc.id} name = {doc.name} page={doc.pages}/>})
   console.log(documentElements)
+  
+  function uploadClick(){
+    console.log("upload button was clicked")
+  }
 
   if(documentElements.length === 0){
     return (<div className="dashboard">
@@ -16,7 +20,7 @@ export default function Dashboard(props){
         </svg>
         <h2>No documents yet</h2>
         <p>Upload a document to get started.</p>
-        <button className="upload-btn">Upload Document</button>
+        <button className="upload-btn" onClick={uploadClick}>Upload Document</button>
       </div>
     </div>)
   }
