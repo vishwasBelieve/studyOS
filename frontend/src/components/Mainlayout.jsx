@@ -1,6 +1,6 @@
 import Sidebar from "./Sidebar";
 import Dashboard from "./Dashboard";
-import "./mainlayout.css";
+import "./Mainlayout.css";
 
 const documents = [
   {
