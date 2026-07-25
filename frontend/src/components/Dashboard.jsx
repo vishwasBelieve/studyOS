@@ -1,9 +1,9 @@
 import "./Dashboard.css";
-import {useState} from "react";
-
+import DocumentCard from "./DocumentCard.jsx";
 
 export default function Dashboard(props){
-  const documentElements = props.docArray.map(doc=>{return <h1 key = {doc.id}>{doc.name}</h1>})
+  const documentElements = props.docArray.map(doc=>{return <DocumentCard key={doc.id} name = {doc.name}/>})
+  console.log(documentElements)
 
   if(documentElements.length === 0){
     return (<div className="dashboard">
@@ -22,6 +22,10 @@ export default function Dashboard(props){
   }
 
   else {
-    return <h1>{documentElements}</h1>
+return (
+  <div className="dashboard">
+    {documentElements}
+  </div>
+);
   }
 }
