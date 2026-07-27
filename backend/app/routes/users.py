@@ -48,7 +48,6 @@ def delete_user(user_id:int,db:Session=Depends(get_db)):
     return Response(status_code=status.HTTP_204_NO_CONTENT)
 
 @router.get("/",response_model=list[UserReponse])
-def get_users(db:Session = Depends(get_db),):
-    stmt = select(User)
-    return db.execute(select(User)).scalars().all()
+def get_users(db:Session = Depends(get_db),limit:int = 10,offset:int = 0):
+    return db.execute(select(User).offset(offset).limit(limit)).scalars().all()
 
