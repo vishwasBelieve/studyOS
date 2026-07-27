@@ -21,8 +21,8 @@ export default function MainLayout() {
 function uploadFunction(){
     console.log("Upload button was clicked");
     setDocuments(prevDocument=>[...prevDocument,{  
-    id: 4,
-    name: "New Document",
+    id: Date.now(),
+    name: `New Document ${prevDocument.length + 1}`,
     pages: 1,
   }])
 }
