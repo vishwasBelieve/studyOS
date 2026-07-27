@@ -46,3 +46,9 @@ def delete_user(user_id:int,db:Session=Depends(get_db)):
     db.delete(user)
     db.commit()
     return Response(status_code=status.HTTP_204_NO_CONTENT)
+
+@router.get("/",response_model=list[UserReponse])
+def get_users(db:Session = Depends(get_db),):
+    stmt = select(User)
+    return db.execute(select(User)).scalars().all()
+
