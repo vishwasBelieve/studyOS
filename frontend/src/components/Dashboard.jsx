@@ -1,11 +1,24 @@
 import "./Dashboard.css";
 import DocumentCard from "./DocumentCard.jsx";
+import {useRef,useState} from "react"
+
 
 export default function Dashboard(props){
-  console.log(typeof(props.docArray))
   const documentElements = props.docArray.map(doc=>{return <DocumentCard key={doc.id} name = {doc.name} page={doc.pages}/>})
-  console.log(documentElements)
-  
+
+  const pickerRef = useRef(null)
+
+  function pickerFunction() {
+    console.log("Picker function is being called")
+    pickerRef.current?.click()
+  }
+  function handleChange(e){
+    const file = e.target.files[0];
+    if (!file) return;
+    console.log(file)
+    console.log(file.name)
+
+  }
 
   if(documentElements.length === 0){
     return (<div className="dashboard">
@@ -18,7 +31,8 @@ export default function Dashboard(props){
         </svg>
         <h2>No documents yet</h2>
         <p>Upload a document to get started.</p>
-        <button className="upload-btn" onClick={props.uploadFunc}>Upload Document</button>
+        <input ref={pickerRef} type="file" style={{"display":"none"}} onChange={handleChange}></input>
+        <button className="upload-btn" onClick={pickerFunction}>Upload Document</button>
       </div>
     </div>)
   }
