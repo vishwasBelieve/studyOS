@@ -7,6 +7,9 @@ export default function Dashboard(props){
   const documentElements = props.docArray.map(doc=>{return <DocumentCard key={doc.id} name = {doc.name} page={doc.pages}/>})
 
   const pickerRef = useRef(null)
+  
+  const [selectedFile,setSelectedFile] = useState(null)
+
 
   function pickerFunction() {
     console.log("Picker function is being called")
@@ -15,8 +18,8 @@ export default function Dashboard(props){
   function handleChange(e){
     const file = e.target.files[0];
     if (!file) return;
-    console.log(file)
     console.log(file.name)
+    setSelectedFile(file)
 
   }
 
@@ -33,6 +36,7 @@ export default function Dashboard(props){
         <p>Upload a document to get started.</p>
         <input ref={pickerRef} type="file" style={{"display":"none"}} onChange={handleChange}></input>
         <button className="upload-btn" onClick={pickerFunction}>Upload Document</button>
+        <p>{selectedFile?.name}</p>
       </div>
     </div>)
   }
@@ -41,6 +45,7 @@ export default function Dashboard(props){
 return (
   <div className="dashboard">
     {documentElements}
+
   </div>
 );
   }
