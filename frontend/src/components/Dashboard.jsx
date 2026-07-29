@@ -8,7 +8,7 @@ export default function Dashboard(props){
 
   const pickerRef = useRef(null)
   
-  const [selectedFile,setSelectedFile] = useState(null)
+  // const [selectedFile,setSelectedFile] = useState(null) will use it later when backend is used
 
 
   function pickerFunction() {
@@ -18,8 +18,7 @@ export default function Dashboard(props){
   function handleChange(e){
     const file = e.target.files[0];
     if (!file) return;
-    console.log(file.name)
-    setSelectedFile(file)
+    props.uploadFunc(file)
 
   }
 
@@ -36,7 +35,6 @@ export default function Dashboard(props){
         <p>Upload a document to get started.</p>
         <input ref={pickerRef} type="file" style={{"display":"none"}} onChange={handleChange}></input>
         <button className="upload-btn" onClick={pickerFunction}>Upload Document</button>
-        <p>{selectedFile?.name}</p>
       </div>
     </div>)
   }

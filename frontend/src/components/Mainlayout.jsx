@@ -18,13 +18,12 @@ export default function MainLayout() {
 //     pages: 145,
 //   },
 ]);
-function uploadFunction(){
+function uploadFunction(file){
     console.log("Upload button was clicked");
-    setDocuments(prevDocument=>[...prevDocument,{  
-    id: Date.now(),
-    name: `New Document ${prevDocument.length + 1}`,
-    pages: 1,
-  }])
+    setDocuments(prevDocument=>[...prevDocument,{id : Date.now(),
+        name : file.name,
+        pages : "__"
+    }])
 }
 
     return (
