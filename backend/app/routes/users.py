@@ -8,7 +8,7 @@ from app.db.database import get_db
 from app.models.user import User
 
 
-router = APIRouter(prefix="/users",tags=["Users"])
+router = APIRouter(prefix="/users",tags=["Users"])  
 
 @router.post("/")
 def create_user(user_data:UserCreate,db:Session = Depends(get_db)):
