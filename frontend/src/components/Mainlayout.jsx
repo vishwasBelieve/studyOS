@@ -25,6 +25,10 @@ function uploadFunction(file){
         pages : "__"
     }])
 }
+function deleteDocFunction(id){
+    console.log(`Deleting file with id ${id}`)
+    setDocuments(prevDocument=>prevDocument.filter(doc.id !== id))
+}
 
     return (
         <main className="main-layout">
