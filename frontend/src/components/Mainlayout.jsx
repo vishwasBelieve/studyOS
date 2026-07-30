@@ -20,8 +20,6 @@ function uploadFunction(file){
 }
 
 function deleteDocument(id){
-    console.log("Delete button is clicked")
-    console.log(id)
     setDocuments(prevDocuments=>prevDocuments.filter(doc => doc.id !== id))
 }
 
