@@ -7,33 +7,28 @@ import {useState} from "react"
 
 export default function MainLayout() {
     const [documents,setDocuments] = useState([
-//   {
-//     id: 1,
-//     name: "Operating Systems.pdf",
-//     pages: 320,
-//   },
-//   {
-//     id: 2,
-//     name: "DBMS Notes.pdf",
-//     pages: 145,
-//   },
+
 ]);
 function uploadFunction(file){
     console.log("Upload button was clicked");
-    setDocuments(prevDocument=>[...prevDocument,{id : Date.now(),
+    setDocuments(prevDocuments=>[...prevDocuments,{
+        id : crypto.randomUUID(),
         name : file.name,
-        pages : "__"
+        pages : "__",
+        file : file
     }])
 }
-function deleteDocFunction(id){
-    console.log(`Deleting file with id ${id}`)
-    setDocuments(prevDocument=>prevDocument.filter(doc.id !== id))
+
+function deleteDocument(id){
+    console.log("Delete button is clicked")
+    console.log(id)
+    setDocuments(prevDocuments=>prevDocuments.filter(doc => doc.id !== id))
 }
 
     return (
         <main className="main-layout">
             <Sidebar />
-            <Dashboard docArray = {documents} uploadFunc = {uploadFunction}/>
+            <Dashboard docArray = {documents} uploadFunc = {uploadFunction} onDelete ={deleteDocument}/>
         </main>
     );
 }

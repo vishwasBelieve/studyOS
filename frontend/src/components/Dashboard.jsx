@@ -4,7 +4,7 @@ import {useRef,useState} from "react"
 
 
 export default function Dashboard(props){
-  const documentElements = props.docArray.map(doc=>{return <DocumentCard key={doc.id} name = {doc.name} page={doc.pages}/>});
+  const documentElements = props.docArray.map(doc=>{return <DocumentCard key={doc.id} document = {doc} onDelete={props.onDelete}/>});
 
   const pickerRef = useRef(null);
   
@@ -21,7 +21,7 @@ export default function Dashboard(props){
     props.uploadFunc(file)
 
   };
-   return (  <div class = "dashboard"><input ref={pickerRef} type="file" style={{"display":"none"}} onChange={handleChange}></input>
+   return (  <div className = "dashboard"><input ref={pickerRef} type="file" style={{"display":"none"}} onChange={handleChange}></input>
    {documentElements.length === 0? (
 
       <div className="empty-state">

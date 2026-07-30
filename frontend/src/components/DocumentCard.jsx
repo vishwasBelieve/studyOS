@@ -6,11 +6,11 @@ export default  function DocumentCard(props){
         
         
     }
-
-    console.log(props)
-    return (<><p>{props.name}</p>
-        <p> {props.page} pages</p>
-        <button onClick={handleDelete}><FaTrash/></button>
+    return (<>
+        <p>{props.document.id}</p>
+        <p>{props.document.name}</p>
+        <p> {props.document.page} pages</p>
+        <button onClick ={()=>  props.onDelete(props.document.id)}><FaTrash/></button>
         </>
     )
 }
