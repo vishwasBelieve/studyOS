@@ -19,4 +19,5 @@ def login(user_credentials:Login,db:Session = Depends(get_db)):
     if not password_test:
         raise HTTPException(status_code = status.HTTP_401_UNAUTHORIZED,detail="Incorrect Credentials")
     access_token = create_access_token({"sub":str(user.id)})
-    return {"result":"working"}
+    return {"access_token" : access_token,
+            "token_type" : "bearer"}
