@@ -3,6 +3,7 @@ from sqlalchemy.orm import Session
 from app.schemas.user import UserCreate,UserReponse,UserUpadte
 from sqlalchemy import select
 from app.core.security import verify_password,hash_password
+from app.core.oauth2 import get_current_user
 
 from app.db.database import get_db
 from app.models.user import User
@@ -17,6 +18,8 @@ def create_user(user_data:UserCreate,db:Session = Depends(get_db)):
     db.commit()
     db.refresh(user)
     return user
+
+
 
 @router.get("/{user_id}",response_model=UserReponse)
 def get_user(user_id:int,db:Session=Depends(get_db)):
@@ -39,6 +42,8 @@ def update_user(user_id:int,user_update:UserUpadte,db:Session=Depends(get_db)):
     db.refresh(user)
     return user
 
+
+
 @router.delete("/{user_id}")
 def delete_user(user_id:int,db:Session=Depends(get_db)):
     stmt = select(User).where(User.id==user_id)
@@ -52,4 +57,3 @@ def delete_user(user_id:int,db:Session=Depends(get_db)):
 @router.get("/",response_model=list[UserReponse])
 def get_users(db:Session = Depends(get_db),limit:int = 10,offset:int = 0):
     return db.execute(select(User).offset(offset).limit(limit)).scalars().all()
-

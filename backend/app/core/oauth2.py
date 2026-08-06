@@ -16,6 +16,11 @@ def verify_access_token(token:str):
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Count not validate credentials")
 
 
-def get_current_user(token:str,db:Session= Depends(get_db)):
-    stmt = select(User).where(User.id == token["sub"])
-
+def get_current_user(token:str = Depends(oauth2_scheme),db:Session= Depends(get_db)):
+    payload = verify_access_token(token)
+    user_id = int(payload.get("sub"))
+    stmt = select(User).where(User.id == user_id)
+    current_user = db.execute(stmt).scalar_one_or_none()
+    if current_user is None:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,detail="Incorrect Credentials")
+    return current_user
