@@ -1,8 +1,12 @@
-import Navbar from "./components/Navbar";
-import MainLayout from "./components/Mainlayout";
+import Navbar from "./components/Navbar.jsx"
+import MainLayout from "./layouts/Mainlayout";
 import "./app.css";
 
+
+
+
 export default function App() {
+
   return (
     <div className="app">
       <Navbar />

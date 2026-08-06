@@ -1,5 +1,5 @@
 import "./Dashboard.css";
-import DocumentCard from "./DocumentCard.jsx";
+import DocumentCard from "../components/DocumentCard.jsx";
 import {useRef,useState} from "react"
 
 
