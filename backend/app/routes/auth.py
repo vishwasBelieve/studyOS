@@ -6,6 +6,7 @@ from app.models.user import User
 from app.core.security import verify_password,hash_password
 from sqlalchemy import select
 from app.core.security import create_access_token
+from app.core.oauth2 import oauth2_scheme,verify_access_token
 
 router = APIRouter(prefix="/login",tags=["Login"])
 
@@ -21,3 +22,9 @@ def login(user_credentials:Login,db:Session = Depends(get_db)):
     access_token = create_access_token({"sub":str(user.id)})
     return {"access_token" : access_token,
             "token_type" : "bearer"}
+
+
+@router.get("/test")
+def test(token:str = Depends(oauth2_scheme)):
+    payload = verify_access_token(token)
+    return payload
