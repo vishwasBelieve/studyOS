@@ -1,5 +1,5 @@
 from app.db.database import Base
-from sqlalchemy.orm import Mapped,mapped_column
+from sqlalchemy.orm import Mapped,mapped_column,relationship
 from sqlalchemy import String
 class User(Base):
     __tablename__ = "users"
@@ -8,3 +8,5 @@ class User(Base):
     hashed_password : Mapped[str] = mapped_column(String(255),nullable=False)
     email : Mapped[str] = mapped_column(String(255),nullable=False,unique=True)
     is_active: Mapped[bool] = mapped_column(default=True,nullable=False)
+
+    documents = relationship("Document",back_populates="owner",cascade="all,delete-orphan")
