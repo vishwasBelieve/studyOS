@@ -1,10 +1,23 @@
-import {useState} from "react-dom"
+import { createContext } from "react";
+import { useState } from "react";
+export const DocumentContext = createContext()
 
-const [documents,setDocuments] = useState([
 
-]);
+export function DocumentProvider(props){
+    const [documents , setDocuments] = useState([])
+    return (<DocumentContext.Provider value={{documents,uploadDocument,deleteDocument}}>
+        {props.children}
+    </DocumentContext.Provider>)
+}
 
-function uploadFunction(file){
+
+
+
+
+
+
+
+function uploadDocument(file){
     console.log("Upload button was clicked");
     setDocuments(prevDocuments=>[...prevDocuments,{
         id : crypto.randomUUID(),

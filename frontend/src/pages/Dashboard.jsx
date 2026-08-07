@@ -1,10 +1,12 @@
 import "./Dashboard.css";
 import DocumentCard from "../components/DocumentCard.jsx";
-import {useRef,useState} from "react"
-
+import {useContext, useRef,useState} from "react"
+import { DocumentContext } from "../context/DocumentContext.jsx";
 
 export default function Dashboard(props){
-  const documentElements = props.docArray.map(doc=>{return <DocumentCard key={doc.id} document = {doc} onDelete={props.onDelete}/>});
+  const {documents,uploadDocument,deleteDocument} = useContext(DocumentContext)
+  console.log(documents)
+  const documentElements = documents.map(doc=>{return <DocumentCard key={doc.id} document = {doc} onDelete={deleteDocument}/>});
 
   const pickerRef = useRef(null);
   
@@ -18,7 +20,7 @@ export default function Dashboard(props){
   function handleChange(e){
     const file = e.target.files[0];
     if (!file) return;
-    props.uploadFunc(file)
+    uploadDocument(file)
 
   };
    return (  <div className = "dashboard"><input ref={pickerRef} type="file" style={{"display":"none"}} onChange={handleChange}></input>
