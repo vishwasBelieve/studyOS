@@ -57,3 +57,11 @@ def delete_user(user_id:int,db:Session=Depends(get_db)):
 @router.get("/",response_model=list[UserReponse])
 def get_users(db:Session = Depends(get_db),limit:int = 10,offset:int = 0):
     return db.execute(select(User).offset(offset).limit(limit)).scalars().all()
+
+@router.get("/{user_id}/documents")
+def get_user_documents(user_id:int,db:Session = Depends(get_db)):
+    user = db.get(User,user_id)
+    if not user:
+        raise HTTPException(status_code = status.HTTP_404_NOT_FOUND,detail="User not found")
+
+    return user.documents
