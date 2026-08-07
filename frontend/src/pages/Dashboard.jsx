@@ -5,7 +5,7 @@ import { DocumentContext } from "../context/DocumentContext.jsx";
 
 export default function Dashboard(props){
   const {documents,uploadDocument,deleteDocument} = useContext(DocumentContext)
-  console.log(documents)
+  console.log(uploadDocument)
   const documentElements = documents.map(doc=>{return <DocumentCard key={doc.id} document = {doc} onDelete={deleteDocument}/>});
 
   const pickerRef = useRef(null);
