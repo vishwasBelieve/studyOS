@@ -24,10 +24,12 @@ def get_document(document_id: UUID, db: Session = Depends(get_db)):
         "owner": document.owner.username
     }
 
-@router.post("/")
+@router.post("/",response_model=DocumentResponse)
 def upload_document(file:UploadFile,db:Session = Depends(get_db)):
     stored_name = f"{uuid4()}.pdf"
     file_path = f"uploads/{stored_name}"
+    with open(file_path,"wb") as buffer:
+        buffer.write(file.file.read())
     document = Document(
         owner_id  = 1,
         name = file.filename,
