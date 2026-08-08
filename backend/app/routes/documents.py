@@ -1,4 +1,5 @@
 from fastapi import APIRouter,HTTPException,status,Depends,File,UploadFile
+from fastapi.responses import FileResponse
 from uuid import UUID,uuid4
 
 from sqlalchemy.orm import Session
@@ -8,8 +9,17 @@ from app.db.database import get_db
 
 router = APIRouter(prefix="/documents",tags=["Documents"])
 
-@router.get("/{document_id}")
-def get_document(document_id: UUID, db: Session = Depends(get_db)):
+@router.get("/{document_id}/file")
+def get_document(document_id:UUID,db:Session =Depends(get_db)):
+    document = db.get(Document,document_id)
+
+    if not document:
+        raise HTTPException(status_code=404,detail="Document not found")
+    return FileResponse(document.file_path,media_type=document.mime_type,filename=document.name)
+
+
+@router.get("/{document_id}",response_model=DocumentResponse)
+def get_document_metadata(document_id: UUID, db: Session = Depends(get_db)):
     document = db.get(Document, document_id)
 
     if not document:
@@ -18,11 +28,7 @@ def get_document(document_id: UUID, db: Session = Depends(get_db)):
             detail="Document not found"
         )
 
-    return {
-        "name": document.name,
-        "owner_id": document.owner_id,
-        "owner": document.owner.username
-    }
+    return document
 
 @router.post("/",response_model=DocumentResponse)
 def upload_document(file:UploadFile,db:Session = Depends(get_db)):
