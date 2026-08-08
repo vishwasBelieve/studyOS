@@ -1,6 +1,7 @@
 from fastapi import APIRouter,HTTPException,status,Depends,File,UploadFile
 from fastapi.responses import FileResponse
 from uuid import UUID,uuid4
+import pymupdf
 
 from sqlalchemy.orm import Session
 from app.models.document import Document
@@ -36,12 +37,15 @@ def upload_document(file:UploadFile,db:Session = Depends(get_db)):
     file_path = f"uploads/{stored_name}"
     with open(file_path,"wb") as buffer:
         buffer.write(file.file.read())
+    with pymupdf.open(file_path) as pdf:
+        page_count = len(pdf)
+
     document = Document(
         owner_id  = 1,
         name = file.filename,
         mime_type = file.content_type,
         size = file.size,
-        page_count = 0,
+        page_count = page_count,
         stored_name = stored_name,
         file_path = file_path
         
