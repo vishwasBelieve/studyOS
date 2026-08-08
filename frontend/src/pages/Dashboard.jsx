@@ -3,9 +3,8 @@ import DocumentCard from "../components/DocumentCard.jsx";
 import {useContext, useRef,useState} from "react"
 import { DocumentContext } from "../context/DocumentContext.jsx";
 
-export default function Dashboard(props){
+export default function Dashboard(){
   const {documents,uploadDocument,deleteDocument} = useContext(DocumentContext)
-  console.log(uploadDocument)
   const documentElements = documents.map(doc=>{return <DocumentCard key={doc.id} document = {doc} onDelete={deleteDocument}/>});
 
   const pickerRef = useRef(null);

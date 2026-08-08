@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar.jsx"
-import MainLayout from "./layouts/Mainlayout";
+import MainLayout from "./layouts/MainLayout.jsx";
 import "./app.css";
 
 

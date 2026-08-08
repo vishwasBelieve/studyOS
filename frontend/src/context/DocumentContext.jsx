@@ -13,8 +13,9 @@ export function DocumentProvider(props){
         id : crypto.randomUUID(),
         name : file.name,
         pages : "__",
-        file : file
+        file : file 
     }])
+    console.log(documents)
 }
     function deleteDocument(id){
     setDocuments(prevDocuments=>prevDocuments.filter(doc => doc.id !== id))
