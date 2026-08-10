@@ -6,7 +6,6 @@ export const DocumentContext = createContext()
 export function DocumentProvider(props){
     const [documents , setDocuments] = useState([])
     
-    
     function uploadDocument(file){
     console.log("Upload button was clicked");
     setDocuments(prevDocuments=>[...prevDocuments,{
