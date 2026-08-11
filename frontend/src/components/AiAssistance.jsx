@@ -1,28 +1,38 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useState } from 'react'
+import "./AiAssistance.css"
 function AiAssistance() {
+    const chatRef = useRef(null);
 
     const [messages,setMessages] = useState([]);
     const [input,setInput] = useState("");
+    const [isLoading,setLoading] = useState(false);
 
     function addMessage(message){
-        setMessages(prevMessages => [...prevMessages,{role:"User",content:message},
-            {role:"AI",content:"This is an temporary AI resopnse"}
-        ]);
+        setMessages(prevMessages => [...prevMessages,{role:"User",content:message},]);
+        setLoading(true)
+        setTimeout(()=>{
+            setMessages(prevMessages =>[...prevMessages,{role:"AI",content:"This is temporary AI response"}]);
+            setLoading(false);
+
+        },2000)
         setInput("");
     }
 
     function sendMessage(){
         if(!input.trim()) return;
         addMessage(input);
-        setInput("");
     }
     function handleAction(action){
         addMessage(action)
-        setInput("");
         
     }
-
+useEffect(() => {
+    if (chatRef.current) {
+        chatRef.current.scrollTop =
+            chatRef.current.scrollHeight;
+    }
+}, [messages,isLoading]);
   return (  
     <>
     <div className="ai-assistance">
@@ -31,11 +41,16 @@ function AiAssistance() {
         <button onClick={()=>handleAction("Summerize")}>Summerize this topic</button>
         <button onClick={()=>handleAction("Quiz me ")}>Quiz me on this section</button>
     </div>
-    <div>{messages.map((message,index)=>(<p key={index}><strong>{message.role}:</strong>{message.content}</p>))}</div>
+    <div className="chatbox" ref={chatRef} >{messages.map((message,index)=>(<p key={index}><strong>{message.role}:</strong>{message.content}</p>))}
+             {isLoading && <p>AI is thinking....</p>}
+             </div>
+        
+
     </div>
     <div className="chat-input">
         <input value={input} onChange={(e)=>setInput(e.target.value)} placeholder='Ask something...'></input>
         <button onClick={sendMessage}>Send</button>
+       
     </div>
     </>
   )
