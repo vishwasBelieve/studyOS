@@ -37,9 +37,9 @@ useEffect(() => {
     <>
     <div className="ai-assistance">
     <div className="suggested-actions">
-        <button onClick={()=>handleAction("Explain this page")}>Explain this page</button>
-        <button onClick={()=>handleAction("Summerize")}>Summerize this topic</button>
-        <button onClick={()=>handleAction("Quiz me ")}>Quiz me on this section</button>
+        <button onClick={()=>handleAction("Explain this page")} disabled={isLoading}>Explain this page</button>
+        <button onClick={()=>handleAction("Summerize")} disabled={isLoading}>Summerize this topic</button>
+        <button onClick={()=>handleAction("Quiz me ")} disabled={isLoading}>Quiz me on this section</button>
     </div>
     <div className="chatbox" ref={chatRef} >{messages.map((message,index)=>(<p key={index}><strong>{message.role}:</strong>{message.content}</p>))}
              {isLoading && <p>AI is thinking....</p>}
@@ -49,7 +49,7 @@ useEffect(() => {
     </div>
     <div className="chat-input">
         <input value={input} onChange={(e)=>setInput(e.target.value)} placeholder='Ask something...'></input>
-        <button onClick={sendMessage}>Send</button>
+        <button onClick={sendMessage } disabled={isLoading}>Send</button>
        
     </div>
     </>
