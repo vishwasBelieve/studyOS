@@ -13,7 +13,6 @@ export default function Dashboard(){
 
 
   function pickerFunction() {
-    console.log("Picker function is being called")
     pickerRef.current?.click()
   };
   function handleChange(e){

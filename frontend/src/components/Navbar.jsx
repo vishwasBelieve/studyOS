@@ -1,9 +1,10 @@
 import "./Navbar.css";
-export default function Navbar() {
+export default function Navbar(props) {
+  
   return (
     <header className="navbar">
       <nav className="navbar-container">
-        <button className="navbar-menu-btn" aria-label="Open menu">
+        <button className="navbar-menu-btn" aria-label="Open menu" onClick={props.toggleSidebar}>
           <span className="hamburger">☰</span>
         </button>
         
