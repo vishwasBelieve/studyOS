@@ -7,12 +7,14 @@ export function DocumentProvider(props){
     const [documents , setDocuments] = useState([])
     
     function uploadDocument(file){
+    console.log("Upload button was clicked");
     setDocuments(prevDocuments=>[...prevDocuments,{
         id : crypto.randomUUID(),
         name : file.name,
         pages : "__",
         file : file 
     }])
+    console.log(documents)
 }
     function deleteDocument(id){
     setDocuments(prevDocuments=>prevDocuments.filter(doc => doc.id !== id))
