@@ -23,7 +23,6 @@ export default function DocumentViewer(){
 
     return (
     <div>
-        <h1>{document?.name}</h1>
         {fileUrl && (<iframe
             src ={fileUrl} width = "100%" height ="700px" title={document.name}></iframe>)}
             </div>
