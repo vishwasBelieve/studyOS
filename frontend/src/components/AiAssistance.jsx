@@ -19,7 +19,8 @@ function AiAssistance() {
         setInput("");
     }
 
-    function sendMessage(){
+    function sendMessage(e){
+        e.preventDefault();
         if(!input.trim()) return;
         addMessage(input);
     }
@@ -48,8 +49,10 @@ useEffect(() => {
 
     </div>
     <div className="chat-input">
-        <input value={input} onChange={(e)=>setInput(e.target.value)} placeholder='Ask something...'></input>
+         <form onSubmit={sendMessage}>
+       <input value={input} onChange={(e)=>setInput(e.target.value)} placeholder='Ask something...'></input>
         <button onClick={sendMessage } disabled={isLoading}>Send</button>
+        </form>
        
     </div>
     </>
