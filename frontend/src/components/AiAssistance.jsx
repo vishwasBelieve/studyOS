@@ -35,7 +35,6 @@ useEffect(() => {
     }
 }, [messages,isLoading]);
   return (  
-    <>
     <div className="ai-assistance">
     <div className="suggested-actions">
         <button onClick={()=>handleAction("Explain this page")} disabled={isLoading}>Explain this page</button>
@@ -47,7 +46,7 @@ useEffect(() => {
              </div>
         
 
-    </div>
+    
     <div className="chat-input">
          <form onSubmit={sendMessage}>
        <input value={input} onChange={(e)=>setInput(e.target.value)} placeholder='Ask something...'></input>
@@ -55,7 +54,7 @@ useEffect(() => {
         </form>
        
     </div>
-    </>
+    </div>
   )
 }
 

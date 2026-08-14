@@ -1,4 +1,9 @@
-.chatbox {
-    height: 200px;
-    overflow-y: auto;
+.ai-assistance {
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height : 400px;
+}
+.chat-box {
+    height :200px;
+    overflow-y:auto
 }

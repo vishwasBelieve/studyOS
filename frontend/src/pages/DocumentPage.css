@@ -1,0 +1,12 @@
+.document-page {
+    display:grid;
+    height : 100vh;
+    grid-template-rows: 60px 1fr;
+}
+.workspace {
+    display : grid;
+    grid-template-columns: 8fr 2fr;
+    gap : 10px;
+    height : 100%;
+    min-height: 0;
+}
