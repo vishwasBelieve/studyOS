@@ -1,9 +1,24 @@
 .ai-assistance {
-    display:grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    height : 400px;
+    display: grid;
+    grid-template-rows: 3fr minmax(0, 5fr) 2fr;
+    height: 500px;
+    min-height: 0;
+    overflow: hidden;
 }
-.chat-box {
-    height :200px;
-    overflow-y:auto
+
+.suggested-actions {
+    display:grid;
+    row-gap: 20px;
+    grid-template-rows: auto;
+    min-height: 0;
+}
+
+.chatbox {
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.chat-input {
+    min-height: 0;
 }
