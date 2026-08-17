@@ -6,6 +6,7 @@ from app.db.database import engine,Base,get_db
 from app.routes.users import router as user_router
 from app.routes.auth import router as auth_router
 from app.routes.documents import router as doc_router
+from .models.document_text import DocumentText
 app = FastAPI()
 app.include_router(user_router)
 app.include_router(auth_router)

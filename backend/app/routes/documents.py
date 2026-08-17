@@ -35,17 +35,14 @@ def get_document_metadata(document_id: UUID, db: Session = Depends(get_db)):
 
 @router.post("/",response_model=DocumentResponse)
 def upload_document(file:UploadFile,db:Session = Depends(get_db),user = Depends(get_current_user)):
+    print("this is even running")
     stored_name = f"{uuid4()}.pdf"
     file_path = f"uploads/{stored_name}"
     with open(file_path,"wb") as buffer:
         buffer.write(file.file.read())
     with pymupdf.open(file_path) as pdf:
         page_count = len(pdf)
-        for page_number,page in enumerate(pdf,start=1):
-            text = page.get_text()
-            print(f"__ Page number {page_number}")
-            print(text)
-
+ 
     document = Document(
         owner_id  = user.id,
         name = file.filename,

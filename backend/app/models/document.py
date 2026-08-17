@@ -11,7 +11,7 @@ class Document(Base):
 
     __tablename__ = "documents"
 
-    id: Mapped[str] = mapped_column(UUID(as_uuid=True),primary_key = True,default=uuid4)
+    id: Mapped[UUID] = mapped_column(UUID(as_uuid=True),primary_key = True,default=uuid4)
     owner_id: Mapped[int] = mapped_column(ForeignKey("users.id"),nullable=False)
     name:Mapped[str] = mapped_column(String(255),nullable=False)
     stored_name: Mapped[str] = mapped_column(String(255),unique=True,nullable=False)
@@ -23,6 +23,7 @@ class Document(Base):
     updatedf_at:Mapped[DateTime] = mapped_column(DateTime(timezone=True),server_default=func.now(),onupdate=func.now())
 
     owner = relationship("User",back_populates="documents")
+    texts = relationship("DocumentText",back_populates="document",cascade="all, delete-orphan")
 
 
     

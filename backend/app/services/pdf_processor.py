@@ -1,9 +1,7 @@
-import pymupdf
+import pymupdf 
 
-with pymupdf.open("../trial/frank.pdf") as pdf:
-    page_count = len(pdf)
-    with open("../trial/frank.text","w+",encoding="utf-8") as file:
-        for page_number,page in enumerate(pdf):
-            file.write(f"\n\n==== PAGE {page_number} ====\n\n")
+with open("../trial/frank.txt",'w+') as file:
+    with pymupdf.open("../../uploads/frank.pdf") as pdf:
+        for page_number,page in enumerate(pdf,start=1):
+            file.write(f"===Page Number{page_number}===\n")
             file.write(page.get_text())
-        

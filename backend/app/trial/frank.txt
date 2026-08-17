@@ -1,15 +1,9 @@
-
-
-==== PAGE 0 ====
-
+===Page Number0===
 Frankenstein
 by Mary Shelley
 Abridged for Young Readers
 Core Classics
-
-
-==== PAGE 1 ====
-
+===Page Number1===
 Creative Commons Licensing
 This work is licensed under a  
 Creative Commons Attribution-NonCommercial-ShareAlike 
@@ -48,18 +42,12 @@ strictly for illustrative and educational purposes and are
 the property of their respective owners. References 
 herein should not be regarded as affecting the validity 
 of said trademarks and trade names.
-
-
-==== PAGE 2 ====
-
+===Page Number2===
 Frankenstein
 or, the Modern Prometheus
 by
 Mary Shelley
-
-
-==== PAGE 3 ====
-
+===Page Number3===
 ii
 CORE CLASSICS
 ®
@@ -72,10 +60,7 @@ CORE KNOWLEDGE FOUNDATION
 801 east high street
 charlottesville, virginia 22902
 www.coreknowledge.org
-
-
-==== PAGE 4 ====
-
+===Page Number4===
 TABLE OF CONTENTS
 Introduction	
 1
@@ -137,14 +122,8 @@ Chapter 24
 265
 About Author 	
 301
-
-
-==== PAGE 5 ====
-
-
-
-==== PAGE 6 ====
-
+===Page Number5===
+===Page Number6===
 INTRODUCTION
 1831 EDITION
 In selecting Frankenstein for publication, my 
@@ -170,10 +149,7 @@ William Godwin: a radical philosopher and novelist, 1756-1836
 Mary Woolstonecraft: an early feminist and political writer, 
 1759-1797, author of A Vindication of the Rights of Men (1790) 
 and A Vindication of the Rights of Women (1792).
-
-
-==== PAGE 7 ====
-
+===Page Number7===
 2
 Frankenstein
 seeking to do things others had done rather than 
@@ -203,10 +179,7 @@ not think that I would ever experience romantic
 worries or wonderful events, but I was not confined 
 to my own identity, and I could fill the hours with 
 creations far more interesting to me, at that age, 
-
-
-==== PAGE 8 ====
-
+===Page Number8===
 3
 Introduction
 than my own sensations.
@@ -237,10 +210,7 @@ England and lived most of his adult life in Europe.
 Child Harold’s Pilgrimage: a mostly autobiographical poem; the 
 first two cantos (parts) made Byron famous; later cantos added 
 to his celebrity. 
-
-
-==== PAGE 9 ====
-
+===Page Number9===
 4
 Frankenstein
 Unfortunately, it turned out to be a wet, 
@@ -269,10 +239,7 @@ of his early life. Our friend John William Polidori
 wrote a story about a vampire.  
 Polidori’s story, The Vampyre, published in 1819, was the first 
 vampire tale published in England. 
-
-
-==== PAGE 10 ====
-
+===Page Number10===
 5
 Introduction
 I tried to think of a story. I wanted to come up 
@@ -301,10 +268,7 @@ conversations. I listened to these attentively but
 rarely added anything. During one of these, various 
 philosophical ideas were discussed, especially the 
 concepts of life and vital energy. The two poets 
-
-
-==== PAGE 11 ====
-
+===Page Number11===
 6
 Frankenstein
 spoke at length about whether the basic principles 
@@ -334,10 +298,7 @@ the cradle of life. He sleeps, but he is awakened; he
 opens his eyes and what does he see? The horrid 
 thing stands at his bedside, opening his curtains, 
 and looking on him with yellow, watery eyes.
-
-
-==== PAGE 12 ====
-
+===Page Number12===
 7
 Introduction
 I opened my own eyes in terror. The idea had 
@@ -367,10 +328,7 @@ At first I thought it would only be a short
 story, but my husband urged me to develop the 
 idea at greater length. He did not provide me with 
 the ideas for the story, but he did encourage me as 
-
-
-==== PAGE 13 ====
-
+===Page Number13===
 8
 Frankenstein
 I worked on it.
@@ -391,10 +349,7 @@ introduced any new ideas or circumstances. I have
 mended the language here and there, but I have 
 left the core and substance of the story untouched.
 M.W.S.
-
-
-==== PAGE 14 ====
-
+===Page Number14===
 LETTER 1
 To Mrs. Saville, England. 
 St. Petersburg, Russia, December 11th, 17—. 
@@ -419,10 +374,7 @@ fervent: passionate, burning
 vivid: realistic, clear, intense
 eternal: never-ending (In the summer the sun never quite sets in 
 the far north.)
-
-
-==== PAGE 15 ====
-
+===Page Number15===
 10
 Frankenstein
 sailing there? I may discover the amazing power 
@@ -451,10 +403,7 @@ Columbus, Cabot, and Hudson were searching for a more
 direct route to the East Indies. 
 enthusiasm: energetic excitement
 famine: life-threatening lack of food
-
-
-==== PAGE 16 ====
-
+===Page Number16===
 11
 Letters
 St. Petersburg to Archangel. This is the best time 
@@ -474,10 +423,7 @@ Your affectionate brother,
 Robert Walton 
 Archangel: Russian port city in the far north
 sledges: sleds for traveling on snow and ice
-
-
-==== PAGE 17 ====
-
+===Page Number17===
 12
 Frankenstein
 LETTER 2
@@ -503,10 +449,7 @@ the respect and obedience paid to him by his crew,
 I felt myself peculiarly fortunate in being able to 
 secure his services. 
 enterprise: project, mission
-
-
-==== PAGE 18 ====
-
+===Page Number18===
 13
 Letters
 There is one want which I have not been able 
@@ -534,10 +477,7 @@ again.
 Your affectionate brother,
 Robert Walton 
 capacious: large
-
-
-==== PAGE 19 ====
-
+===Page Number19===
 14
 Frankenstein
 LETTER 3
@@ -565,18 +505,12 @@ R.W.
 homeward voyage: return trip
 Adieu: goodbye (in French)
 persevere: stick to the task
-
-
-==== PAGE 20 ====
-
+===Page Number20===
 15
 Letters
 “The floating sheets of ice that continually pass us do not 
 appear to worry them.”
-
-
-==== PAGE 21 ====
-
+===Page Number21===
 16
 Frankenstein
 LETTER 4
@@ -603,10 +537,7 @@ out of sight.
 This sighting astonished us. Here we are—
 hundreds of miles from any land – and yet there is 
 some enormous being driving a sledge!
-
-
-==== PAGE 22 ====
-
+===Page Number22===
 17
 Letters
 Later that day the ice broke and freed our 
@@ -634,17 +565,11 @@ fatigue and suffering. I never saw a man in such
 wretched condition. We attempted to carry him 
 into my cabin, but he fainted. We rubbed him 
 emaciated: thinned out, made skinny
-
-
-==== PAGE 23 ====
-
+===Page Number23===
 18
 Frankenstein
 “Looking down, i saw a sledge . . . on a large fragment of ice.”
-
-
-==== PAGE 24 ====
-
+===Page Number24===
 19
 Letters
 trifling: small, tiny
@@ -672,10 +597,7 @@ and replied, “To seek one who fled from me.”
 “And did the man whom you followed travel in 
 the same fashion?” 
 “Yes.” 
-
-
-==== PAGE 25 ====
-
+===Page Number25===
 20
 Frankenstein
 “Then I fancy we have seen him, for the 
@@ -703,10 +625,7 @@ been a brother of my heart.
 I shall continue to keep a journal concerning 
 this stranger, writing in it now and then if I have 
 any fresh incidents to record. 
-
-
-==== PAGE 26 ====
-
+===Page Number26===
 21
 Letters
 cultivated: educated, refined
@@ -735,10 +654,7 @@ had seized the stranger left him weakened and he
 said no more to me that day. 
 The next day he asked me about my early 
 years. I told him about my childhood. I spoke also 
-
-
-==== PAGE 27 ====
-
+===Page Number27===
 22
 Frankenstein
 of my loneliness and my desire of finding a friend. I 
@@ -767,10 +683,7 @@ to you, but I know this: you are pursuing the same
 begin . . . anew: start over
 misfortunes: accidents
 gratification: satisfying
-
-
-==== PAGE 28 ====
-
+===Page Number28===
 23
 Letters
 course and exposing yourself to the same dangers 
@@ -791,10 +704,7 @@ possible in his own words.
 moral: lesson
 destiny: fate, certain end
 narrative: story
-
-
-==== PAGE 29 ====
-
+===Page Number29===
 CHAPTER 1
 I 
 was born and raised in Geneva, where my 
@@ -820,10 +730,7 @@ the world again through his assistance.
 refrain: keep myself
 unbending: stiff, unwilling to change his mind
 oblivion: the condition of being forgotten
-
-
-==== PAGE 30 ====
-
+===Page Number30===
 25
 Chapter 1
 Ten months passed before my father discovered 
@@ -850,10 +757,7 @@ attached to my mother. He tried to shelter her, as
 a fair exotic is sheltered by the gardener from the 
 menial jobs: servant’s jobs 
 fair exotic: a beautiful, foreign plant
-
-
-==== PAGE 31 ====
-
+===Page Number31===
 26
 Frankenstein
 rougher winds. He sought to surround her with all 
@@ -880,10 +784,7 @@ the cottages of the poor. This, to my mother, was
 more than a duty; it was a necessity, a passion. She 
 benevolent: kind, generous
 tranquility: calmness
-
-
-==== PAGE 32 ====
-
+===Page Number32===
 27
 Chapter 1
 remembered what she had suffered—and how she 
@@ -910,10 +811,7 @@ their rude dwelling, fairer than a garden rose among
 dark-leaved brambles. 
 celestial: heavenly
 brambles: prickly shrubs
-
-
-==== PAGE 33 ====
-
+===Page Number33===
 28
 Frankenstein
 When my father returned from his trip, he 
@@ -938,10 +836,7 @@ with childish seriousness, interpreted her words
 literally and looked upon Elizabeth as mine—mine 
 to protect, love, and cherish. We called each other 
 “cousin,” but she was my beloved sister. 
-
-
-==== PAGE 34 ====
-
+===Page Number34===
 CHAPTER 2
 Elizabeth and I were brought up together. 
 There was not quite a year difference in our ages. 
@@ -965,17 +860,11 @@ my school fellows in general, but I did befriend
 harmony: agreement, peacefulness
 contemplated: thought deeply, carefully examined
 seclusion: isolation; solitude, loneliness
-
-
-==== PAGE 35 ====
-
+===Page Number35===
 30
 Frankenstein
 “We lived in perfect harmony and grew closer over time.”
-
-
-==== PAGE 36 ====
-
+===Page Number36===
 31
 Chapter 2
 one of them. His name was Henry Clerval. He 
@@ -1006,10 +895,7 @@ Crusades: series of wars in which Christians from Europe tried to
 take the holy city of Jerusalem back from Muslims
 indulgent: relaxed, accepting
 lot: fate
-
-
-==== PAGE 37 ====
-
+===Page Number37===
 32
 Frankenstein
 My temper was sometimes violent, and my 
@@ -1036,10 +922,7 @@ me with her own gentleness. And Henry! Could
 anything depress the noble spirit of Henry Clerval? 
 vehement: intensely emotional, strong
 benefactors: helpers, improvers
-
-
-==== PAGE 38 ====
-
+===Page Number38===
 33
 Chapter 2
 I take pleasure in dwelling on the recollections 
@@ -1067,10 +950,7 @@ few minutes to explain that the notions of Agrippa
 Cornelius Agrippa: Heinrich Cornelius Agrippa (1486-1535), 
 author of books on the occult.
 bounding: leaping, excited
-
-
-==== PAGE 39 ====
-
+===Page Number39===
 34
 Frankenstein
 had been entirely disproved by modern science, 
@@ -1098,10 +978,7 @@ change one thing into something else, such as metal into gold
 Albertus Magnus: German philosopher and scientist, lived 
 c.1200-1280
 disciple: a devoted follower
-
-
-==== PAGE 40 ====
-
+===Page Number40===
 35
 Chapter 2
 of the occult should find an avid reader in the 
@@ -1130,10 +1007,7 @@ elixir of life: a magic potion that allows one to live forever
 banish: drive away
 invulnerable: totally protected, safe
 floundering: struggling, thrashing around
-
-
-==== PAGE 41 ====
-
+===Page Number41===
 36
 Frankenstein
 disconnected knowledge. I was guided by an 
@@ -1160,10 +1034,7 @@ was excited by this catastrophe and he began
 to tell us about the science of electricity. This 
 was new and astonishing to me. I quickly forgot 
 blasted: destroyed (by lightning)
-
-
-==== PAGE 42 ====
-
+===Page Number42===
 37
 Chapter 2
 about Cornelius Agrippa, Albertus Magnus, and 
@@ -1184,10 +1055,7 @@ terrible destruction.
 envelop: surround
 occult studies: studies of magic and the supernatural
 immutable: not able to be changed
-
-
-==== PAGE 43 ====
-
+===Page Number43===
 Ingolstadt: city in southern Germany
 scarlet fever: highly contagious and often deadly disease
 CHAPTER 3
@@ -1212,10 +1080,7 @@ in danger, she could no longer control her anxiety.
 She attended Elizabeth on her sickbed. Her 
 watchful attentions triumphed over the disease—
 Elizabeth was saved, but the consequences of 
-
-
-==== PAGE 44 ====
-
+===Page Number44===
 39
 Chapter 3
 this risky behavior were fatal to her preserver. On 
@@ -1242,10 +1107,7 @@ presents itself to the soul, and the despair that is
 exhibited on the face. At first the mind refuses to 
 accept the new reality. It is impossible to accept 
 irreparable: lasting; permanent
-
-
-==== PAGE 45 ====
-
+===Page Number45===
 40
 Frankenstein
 that a person whom we saw every day and whose 
@@ -1272,10 +1134,7 @@ me. Eventually, however, my father insisted that I
 depart. 
 extinguished: put out, as in putting out a fire
 sacrilege: sin
-
-
-==== PAGE 46 ====
-
+===Page Number46===
 41
 Chapter 3
 Henry Clerval spent the last evening with me. 
@@ -1301,10 +1160,7 @@ reflections. I, who had ever been surrounded by
 amiable companions, was now utterly alone. In 
 the university I would have to make new friends 
 and be my own protector. I loved my brothers and 
-
-
-==== PAGE 47 ====
-
+===Page Number47===
 42
 Frankenstein
 Elizabeth and Henry. These were “old familiar 
@@ -1332,10 +1188,7 @@ natural philosophy: the physical sciences, such as physics or
 chemistry
 alchemist: someone who believed that he could magically change 
 one thing into something else, such as metal into gold
-
-
-==== PAGE 48 ====
-
+===Page Number48===
 43
 Chapter 3
 I replied in the affirmative. 
@@ -1361,10 +1214,7 @@ fascination with the authors he criticized. At the
 same time, I felt no desire to study natural philosophy 
 of the sort Dr. Krempe was recommending. 
 replied in the affirmative: said yes
-
-
-==== PAGE 49 ====
-
+===Page Number49===
 44
 Frankenstein
 The great alchemists and philosophers of the occult 
@@ -1390,10 +1240,7 @@ This professor was very unlike his colleague. He
 appeared about fifty years of age, but with an 
 appearance of the greatest benevolence. A few grey 
 pulpit: a raised space for speaking in a lecture hall or church
-
-
-==== PAGE 50 ====
-
+===Page Number50===
 45
 Chapter 3
 hairs covered his temples, but those at the back of 
@@ -1420,10 +1267,7 @@ transmuted: changed from one substance into another; alchemists
 dreamed of transmuting lead into gold.
 dabble: do a little work
 crucible: a pot in which substances are heated
-
-
-==== PAGE 51 ====
-
+===Page Number51===
 46
 Frankenstein
 They penetrate the hidden places of nature and 
@@ -1435,10 +1279,7 @@ circulates: moves around in a circle; William Harvey discovered the
 circulation of blood in 1628.
 “He was short but stood remarkably erect, and his voice 
 the sweetest I had ever heard.”
-
-
-==== PAGE 52 ====
-
+===Page Number52===
 47
 Chapter 3
 unlimited powers. They can command the thunders 
@@ -1465,10 +1306,7 @@ Paracelsus, but without the contempt that Dr.
 Krempe had exhibited. He said that “these were 
 pioneer: first settler in new territories 
 contempt: disgust, dismissiveness
-
-
-==== PAGE 53 ====
-
+===Page Number53===
 48
 Frankenstein
 men to whom modern philosophers were indebted 
@@ -1494,10 +1332,7 @@ very sorry chemist if he attended to that department
 of human knowledge alone. If your wish is to 
 become really a man of science and not merely a 
 dabbler, I would advise you to study every branch 
-
-
-==== PAGE 54 ====
-
+===Page Number54===
 49
 Chapter 3
 of natural philosophy, including mathematics.” 
@@ -1510,10 +1345,7 @@ also gave me the list of books which I had requested,
 and I took my leave. 
 Thus ended a day memorable to me. It was a 
 day that decided my future destiny! 
-
-
-==== PAGE 55 ====
-
+===Page Number55===
 CHAPTER 4
 F
 rom that day on, natural philosophy, 
@@ -1538,10 +1370,7 @@ strength as I proceeded. After a while, I became
 so eager that the stars often disappeared in the 
 light of morning while I was still working in my 
 laboratory. 
-
-
-==== PAGE 56 ====
-
+===Page Number56===
 51
 Chapter 4
 I worked hard and made rapid progress. My 
@@ -1568,10 +1397,7 @@ allow me to solve these as well.
 I decided to focus my studies on living things 
 and the human body. I had also to learn about the 
 endowed: filled, gifted
-
-
-==== PAGE 57 ====
-
+===Page Number57===
 52
 Frankenstein
 natural decay and corruption of the human body. 
@@ -1598,10 +1424,7 @@ astonishment gave way to delight. After so much
 work, it was gratifying to achieve success. But this 
 discovery was so great and overwhelming that all 
 charnel-houses: places where bones of the dead are placed
-
-
-==== PAGE 58 ====
-
+===Page Number58===
 53
 Chapter 4
 the steps by which I had been progressively led to it 
@@ -1628,10 +1451,7 @@ creation of a being like myself, or one of simpler
 organization. However, I was too excited by my 
 first success to give up the quest. I knew I would 
 probably fail many times, but I reminded myself 
-
-
-==== PAGE 59 ====
-
+===Page Number59===
 54
 Frankenstein
 that science and mechanics continue to advance, 
@@ -1658,10 +1478,7 @@ cheeks grew pale with study, and I lost weight.
 Sometimes I failed. Yet still I pressed on. Sometimes 
 the work was gruesome. I collected bones and 
 gruesome: horrible
-
-
-==== PAGE 60 ====
-
+===Page Number60===
 55
 Chapter 4
 body parts from charnel-houses, dissecting rooms, 
@@ -1687,10 +1504,7 @@ spared his country, America would have been
 discovered more gradually, and the empires of 
 dissecting rooms: rooms where dead bodies are cut up and 
 studied by doctors and scientists
-
-
-==== PAGE 61 ====
-
+===Page Number61===
 56
 Frankenstein
 Mexico and Peru would not have been destroyed. 
@@ -1703,10 +1517,7 @@ that year had withered before my work drew near
 to a close. However, by then, every day showed 
 me more plainly how well I was succeeding. 
 digress: drift away from what I planned to talk about
-
-
-==== PAGE 62 ====
-
+===Page Number62===
 CHAPTER 5
 O
 n a gloomy night in November 
@@ -1731,10 +1542,7 @@ and arteries beneath. His hair was long and black.
 His teeth were pearly in their whiteness. And yet 
 infuse: put into, insert into
 convulsive: jerky, thrashing, spastic
-
-
-==== PAGE 63 ====
-
+===Page Number63===
 58
 Frankenstein
 these traits only formed a more horrible contrast 
@@ -1761,17 +1569,11 @@ her, but as I imprinted a kiss on her lips, they
 turned pale. Her features changed too, and I 
 thought that I held the corpse of my dead mother in 
 tormented: tortured
-
-
-==== PAGE 64 ====
-
+===Page Number64===
 59
 Chapter 5
 “On a gloomy night in November I completed my work.”
-
-
-==== PAGE 65 ====
-
+===Page Number65===
 60
 Frankenstein
 my arms! A shroud enveloped her form, and I saw 
@@ -1799,10 +1601,7 @@ convulsed: moved in a jerky or spastic way
 inarticulate: clumsy, hard to understand
 took refuge: fled to a safe or private place
 agitation: excitement, disturbance
-
-
-==== PAGE 66 ====
-
+===Page Number66===
 61
 Chapter 5
 on him while unfinished. He was ugly then, but 
@@ -1829,10 +1628,7 @@ with fear, and I hurried on with irregular steps,
 not daring to look about me: 
 Dante: Italian poet who wrote a famous poem describing the 
 many horrors of Hell.
-
-
-==== PAGE 67 ====
-
+===Page Number67===
 62
 Frankenstein
 Like one who, on a lonely road,
@@ -1859,10 +1655,7 @@ and forgot my horror and misfortune. I felt
 fiend: devil, evil spirit
 * A quotation from “The Rime of the Ancient Mariner,” by Samuel 
 Taylor Coleridge. 
-
-
-==== PAGE 68 ====
-
+===Page Number68===
 63
 Chapter 5
 suddenly, and for the first time during many 
@@ -1889,10 +1682,7 @@ continued he, stopping short and gazing full in my
 face, “I did not before remark how unhealthy you 
 look. You are thin and pale. You look as if you 
 have been up all night studying for several nights.” 
-
-
-==== PAGE 69 ====
-
+===Page Number69===
 64
 Frankenstein
 “You have guessed right. I have lately been 
@@ -1919,10 +1709,7 @@ hardly believe my good luck. Once I was I sure
 that the creature had indeed fled, I clapped my 
 hands for joy and ran down to see Henry. 
 We went up to my room, and the servant 
-
-
-==== PAGE 70 ====
-
+===Page Number70===
 65
 Chapter 5
 brought us breakfast. I was very excited. My 
@@ -1948,10 +1735,7 @@ was not the witness of his grief, for I was lifeless
 and did not recover my senses for a long, long 
 time. 
 specter: ghost
-
-
-==== PAGE 71 ====
-
+===Page Number71===
 66
 Frankenstein
 This was the beginning of a nervous fever 
@@ -1978,10 +1762,7 @@ recovered. I remember the first time I was able to
 observe outward objects with any kind of pleasure: 
 disorder: sickness
 relapses: falls back into sickness
-
-
-==== PAGE 72 ====
-
+===Page Number72===
 67
 Chapter 5
 I perceived that the fallen leaves had disappeared 
@@ -2008,10 +1789,7 @@ dared not even think?
 change of color, “I will not mention it if it upsets 
 you; but your father and cousin would be very 
 convalescence: recovery from illness
-
-
-==== PAGE 73 ====
-
+===Page Number73===
 68
 Frankenstein
 happy if they received a letter from you in your 
@@ -2023,10 +1801,7 @@ course I will write to them!”
 you will perhaps be glad to see a letter that has 
 been lying here some days for you. It is from your 
 cousin, I believe.” 
-
-
-==== PAGE 74 ====
-
+===Page Number74===
 CHAPTER 6
 H
 enry then put the following 
@@ -2051,10 +1826,7 @@ see Ernest! He is now sixteen and full of activity
 and spirit. 
 “Little has changed since you left us. The blue 
 republican: of or relating to a republic (a government without a king)
-
-
-==== PAGE 75 ====
-
+===Page Number75===
 70
 Frankenstein
 lake and snow-clad mountains—they never change, 
@@ -2081,10 +1853,7 @@ those which prevail in the great monarchies that
 surround it. Here there is less distinction between 
 the several classes of inhabitants, and the lower 
 refined: civilized, educated
-
-
-==== PAGE 76 ====
-
+===Page Number76===
 71
 Chapter 6
 orders, being neither so poor nor so despised, are 
@@ -2112,10 +1881,7 @@ poor Justine, who had attended her during her
 illness with the most anxious affection. One by 
 decline: a turn for the worse
 demeanor: personality, way of acting
-
-
-==== PAGE 77 ====
-
+===Page Number77===
 72
 Frankenstein
 one, her brothers and her sister died. At last she 
@@ -2142,10 +1908,7 @@ demeanor and her expressions continually remind
 me of my dear aunt. 
 “I must also say a few words to you, my dear 
 cousin, of little darling William. I wish you could 
-
-
-==== PAGE 78 ====
-
+===Page Number78===
 73
 Chapter 6
 see him. He is very tall for his age. He has laughing 
@@ -2172,10 +1935,7 @@ was difficult for me. The sight of chemicals and
 labs reminded me of the creature and renewed 
 all the agony of my nervous symptoms. Henry 
 had noticed this and had packed up all of my 
-
-
-==== PAGE 79 ====
-
+===Page Number79===
 74
 Frankenstein
 own scientific equipment. He had also made 
@@ -2202,10 +1962,7 @@ joined in his program of study, for I had come
 to hate my old studies. We spent several months 
 working on the Asian languages and went on 
 several hiking trips. The hiking trips helped me 
-
-
-==== PAGE 80 ====
-
+===Page Number80===
 75
 Chapter 6
 regain my health, and they also cheered my spirits.
@@ -2215,10 +1972,7 @@ was full of imagination. At other times he repeated
 my favorite poems or drew me into discussions. 
 He drove away sickness and gloom and restored 
 me to health and happiness!
-
-
-==== PAGE 81 ====
-
+===Page Number81===
 CHAPTER 7
 A
 t the end of spring term, I received 
@@ -2243,10 +1997,7 @@ to hide, and he had been looking for him but could
 not find him. 
 “This account alarmed us, and we began to 
 search the area. We searched until nighttime but 
-
-
-==== PAGE 82 ====
-
+===Page Number82===
 77
 Chapter 7
 could not find him. We hoped he had returned 
@@ -2273,10 +2024,7 @@ William had borrowed a necklace from her earlier
 in the day. He had wanted to wear around his 
 neck a small golden locket that contained a picture 
 locket: a small case, often worn on a necklace as a piece of jewelry
-
-
-==== PAGE 83 ====
-
+===Page Number83===
 78
 Frankenstein
 of your mother. Elizabeth is convinced that it was 
@@ -2301,10 +2049,7 @@ enemies.
 Henry watched me as I read this letter, and 
 saw my joy give way to despair. 
 assassin: murderer
-
-
-==== PAGE 84 ====
-
+===Page Number84===
 79
 Chapter 7
 “My dear friend,” he said, “what has 
@@ -2331,10 +2076,7 @@ I foresaw in a vague way that I was destined to
 become the most wretched of human beings. 
 It was completely dark when I arrived in 
 Geneva. The gates of the town were already shut 
-
-
-==== PAGE 85 ====
-
+===Page Number85===
 80
 Frankenstein
 for the night. I was obliged to pass the night 
@@ -2361,17 +2103,11 @@ he who had done it. He was the murderer!
 I remained motionless for a long time. The 
 thunder stopped, but the rain still continued. I 
 began to think about those events which I had until 
-
-
-==== PAGE 86 ====
-
+===Page Number86===
 81
 Chapter 7
 “The gigantic creature passed quickly in front of me.”
-
-
-==== PAGE 87 ====
-
+===Page Number87===
 82
 Frankenstein
 then attempted to forget. Almost two years had 
@@ -2398,10 +2134,7 @@ to Geneva, killed my beloved brother and then met
 me at midnight in a storm. I knew that if any other 
 person told me such a story, I would look upon it 
 depraved: corrupted, evil
-
-
-==== PAGE 88 ====
-
+===Page Number88===
 83
 Chapter 7
 as the crazy talk of a madman. And of course I had 
@@ -2428,10 +2161,7 @@ improve. And yet I hope your presence will help
 delirium: confusion and visions that come with fever and illness
 mantel: shelf above a fireplace.
 miniature: small portrait
-
-
-==== PAGE 89 ====
-
+===Page Number89===
 84
 Frankenstein
 revive our father, who seems to be sinking under 
@@ -2458,10 +2188,7 @@ who would believe that Justine Moritz, who was
 so likeable and seemed to be so fond of all of us, 
 could be capable of such an awful crime!” 
 “Justine Moritz! Poor girl! Is she the accused? 
-
-
-==== PAGE 90 ====
-
+===Page Number90===
 85
 Chapter 7
 But this is wrong! It’s not her! It can’t be. Surely 
@@ -2488,10 +2215,7 @@ confused, and this has made many people suspect
 that she is guilty. 
 This was a strange tale, but it did not shake 
 deposition: official statement made to a court or judge
-
-
-==== PAGE 91 ====
-
+===Page Number91===
 86
 Frankenstein
 my faith. I replied earnestly, “You are all mistaken. 
@@ -2518,10 +2242,7 @@ had no fear, therefore, that any evidence could
 be brought forward strong enough to convict 
 her. My tale was not one to announce publicly. 
 Its astounding horror would be looked upon as 
-
-
-==== PAGE 92 ====
-
+===Page Number92===
 87
 Chapter 7
 madness by most people. Did anyone indeed exist, 
@@ -2548,10 +2269,7 @@ even a worse fate. If she is found guilty, I never
 shall know joy again. But she will not be. I am sure 
 she will not—and then I shall be happy again, even 
 after the sad death of my little William.” 
-
-
-==== PAGE 93 ====
-
+===Page Number93===
 88
 Frankenstein
 “She is innocent, my Elizabeth,” said I, “and 
@@ -2563,10 +2281,7 @@ wretched, for I feel that it cannot be true.” She wept.
 “Dearest niece,” said my father, “dry your 
 tears. If she is, as you believe, innocent, we can 
 rely on the justice of our laws.” 
-
-
-==== PAGE 94 ====
-
+===Page Number94===
 CHAPTER 8
 W
 e passed a few sad hours until 
@@ -2591,10 +2306,7 @@ quickly discovered where we were seated. A tear
 seemed to dim her eye when she saw us, but she 
 dressed in mourning: wearing black or dark clothes to honor a 
 dead person
-
-
-==== PAGE 95 ====
-
+===Page Number95===
 90
 Frankenstein
 quickly recovered herself, and a look of sorrowful 
@@ -2621,10 +2333,7 @@ the one that the servant had found in her pocket.
 Elizabeth testified, in a shaky voice, that it was the 
 same one she had placed around William’s neck an 
 hysterics: uncontrolled crying
-
-
-==== PAGE 96 ====
-
+===Page Number96===
 91
 Chapter 8
 hour before he went missing. When the spectators 
@@ -2651,17 +2360,11 @@ had passed the evening at the house of an aunt in
 Chêne, a village about three miles from Geneva. 
 On her return, at about nine o’clock, she met a 
 audible: capable of being heard
-
-
-==== PAGE 97 ====
-
+===Page Number97===
 92
 Frankenstein
 “Next Justine was called to testify.”
-
-
-==== PAGE 98 ====
-
+===Page Number98===
 93
 Chapter 8
 man who asked her if she had seen anything of 
@@ -2688,10 +2391,7 @@ been so wicked as to wish to destroy me. Did the
 murderer place it there? I do not know how or 
 when he might have done so. Nor do I understand 
 why he who had just stolen it would be willing 
-
-
-==== PAGE 99 ====
-
+===Page Number99===
 94
 Frankenstein
 to part with it again so soon. I commit my cause 
@@ -2718,10 +2418,7 @@ lived in the same house with her for many years.
 During all those years she appeared to me the 
 most amiable and benevolent of human creatures. 
 She nursed my aunt in her last illness, with the 
-
-
-==== PAGE 100 ====
-
+===Page Number100===
 95
 Chapter 8
 greatest affection and care. She also attended to 
@@ -2748,10 +2445,7 @@ Justine wept as Elizabeth spoke, but she did
 not speak. 
 My own suffering was extreme during the 
 whole trial. I was convinced that Justine was 
-
-
-==== PAGE 101 ====
-
+===Page Number101===
 96
 Frankenstein
 innocent. When I saw that the judges believed her 
@@ -2778,10 +2472,7 @@ decisive.”
 This was strange! I wondered what it could 
 possibly mean. Had my eyes deceived me? Was I 
 verdict: decision (guilty or not guilty?)
-
-
-==== PAGE 102 ====
-
+===Page Number102===
 97
 Chapter 8
 really going crazy? I hurried home and spoke to 
@@ -2808,10 +2499,7 @@ We entered the gloomy prison cell and saw
 Justine sitting on some straw at the far end. She 
 was handcuffed and her head rested on her knees. 
 guile: trickery, deception, dishonesty
-
-
-==== PAGE 103 ====
-
+===Page Number103===
 98
 Frankenstein
 She rose on seeing us enter, and when we were 
@@ -2838,10 +2526,7 @@ confessed so that I might obtain forgiveness. But
 now that falsehood lies heavier at my heart than 
 all my other sins. May God forgive me! Ever 
 since I was convicted, the priest they assigned to 
-
-
-==== PAGE 104 ====
-
+===Page Number104===
 99
 Chapter 8
 me has attacked me. He threatened me over and 
@@ -2869,10 +2554,7 @@ innocence. I will soften the stony hearts of your
 excommunication: the expulsion of a Christian from the Catholic 
 Church
 proclaim: announce loudly
-
-
-==== PAGE 105 ====
-
+===Page Number105===
 100
 Frankenstein
 enemies by my tears and prayers. You shall not 
@@ -2900,10 +2582,7 @@ Elizabeth. “He is more convinced of your innocence
 scaffold: a raised platform for executions
 resigned: accepting of what may happen
 started: made a sudden motion, as if startled
-
-
-==== PAGE 106 ====
-
+===Page Number106===
 101
 Chapter 8
 than I was. Even when he heard that you had 
@@ -2931,10 +2610,7 @@ happy—and make others so!”
 bore a hell within me: echoing Satan’s comments in Milton’s 
 Paradise Lost; he finds hell is not just a place but a state of 
 mind one carries around.
-
-
-==== PAGE 107 ====
-
+===Page Number107===
 102
 Frankenstein
 The next day Justine was put to death on 
@@ -2962,10 +2638,7 @@ but something told me that this would not be the
 case. Something told me that these would not be 
 the last tears the members of my family would shed.
 heart-rending: emotional, touching, impassioned
-
-
-==== PAGE 108 ====
-
+===Page Number108===
 inaction: lack of physical activity
 deprives: takes away from
 CHAPTER 9
@@ -2989,10 +2662,7 @@ remorse and a sense of guilt.
 This state of mind preyed upon my health, 
 which had not entirely recovered from the first 
 shock it had sustained. I avoided the face of man. 
-
-
-==== PAGE 109 ====
-
+===Page Number109===
 104
 Frankenstein
 All sounds of joy were torture to me. Solitude 
@@ -3019,10 +2689,7 @@ But remorse had mingled its bitterness, and terror
 its alarm, with my other sensations. I could only 
 answer my father with a look of despair and try to 
 hide myself from his view. 
-
-
-==== PAGE 110 ====
-
+===Page Number110===
 105
 Chapter 9
 About this time we retired to our house at 
@@ -3048,10 +2715,7 @@ How could I leave them alone, exposed to the
 malice of the fiend whom I had let loose among 
 them? 
 malice: hatred, bad intentions
-
-
-==== PAGE 111 ====
-
+===Page Number111===
 106
 Frankenstein
 Often I wept bitterly. I wished that peace would 
@@ -3078,10 +2742,7 @@ wandered with me on the banks of the lake and
 talked with joy of our future prospects. 
 pilgrimage: a religious journey to a holy place, done to purify 
 oneself
-
-
-==== PAGE 112 ====
-
+===Page Number112===
 107
 Chapter 9
 “When I reflect, my dear cousin,” said she, 
@@ -3108,10 +2769,7 @@ on the edge of a cliff, towards which thousands
 are crowding and trying to plunge me into the 
 emptiness. William and Justine were assassinated, 
 and the murderer has escaped. He walks about 
-
-
-==== PAGE 113 ====
-
+===Page Number113===
 108
 Frankenstein
 the world free, and perhaps respected. If I were 
@@ -3138,10 +2796,7 @@ deeply, could not chase away the fiend that hid in
 my heart. I was encompassed by a cloud which no 
 beneficial influence could penetrate. I was like a 
 wounded deer, dragging its fainting limbs to some 
-
-
-==== PAGE 114 ====
-
+===Page Number114===
 109
 Chapter 9
 untrodden brake, there to gaze upon the arrow 
@@ -3169,10 +2824,7 @@ untrodden brake: area of shrubs (brake) that has not been
 stepped upon or trod on
 Alpine: adjective describing the Alps mountains
 ravine: valley carved out by a river
-
-
-==== PAGE 115 ====
-
+===Page Number115===
 110
 Frankenstein
 almighty than that which had created and ruled 
@@ -3199,10 +2851,7 @@ boyhood. The very winds seemed to whisper to
 me in soothing accents. Mother nature seemed 
 glaciers: fields of ice that move slowly and “carve” the earth
 avalanche: a mass of snow falling down the side of a mountain
-
-
-==== PAGE 116 ====
-
+===Page Number116===
 111
 Chapter 9
 to be urging me to weep no more. Unfortunately, 
@@ -3215,10 +2864,7 @@ minutes I stood at the window, watching the pale
 traces of lightning that played above Mont Blanc. 
 Then I placed my head upon my pillow and sleep 
 crept over me. I felt it as it came and welcomed it. 
-
-
-==== PAGE 117 ====
-
+===Page Number117===
 subdued: beaten down, beaten back
 CHAPTER 10
 I 
@@ -3243,10 +2889,7 @@ it before, when young. I remembered the effect
 that the view of the tremendous and ever-moving 
 glacier had produced upon my mind when I first 
 saw it. It had given wings to my soul and allowed 
-
-
-==== PAGE 118 ====
-
+===Page Number118===
 113
 Chapter 10
 it to soar from the obscure world to light and joy. 
@@ -3273,10 +2916,7 @@ mountains, whose summits were hidden in the
 uniform clouds. Rain poured from the dark sky 
 and added to the melancholy. Alas! Why do we 
 majestic: impressive, glorious
-
-
-==== PAGE 119 ====
-
+===Page Number119===
 114
 Frankenstein
 human beings boast of our ability to sense more 
@@ -3302,10 +2942,7 @@ the waves of a troubled sea. There are many cracks,
 nought: nothing
 mutability: change (These lines of poetry come from “Mutability,” 
 a poem by the author’s husband, Percy Bysshe Shelley.)
-
-
-==== PAGE 120 ====
-
+===Page Number120===
 115
 Chapter 10
 which make it hard to cross. I spent nearly two 
@@ -3333,10 +2970,7 @@ He came near. On his face I could see bitter
 suffering, combined with disdain and intense 
 disdain: a dislike for someone based on the feeling you are 
 better than the other person
-
-
-==== PAGE 121 ====
-
+===Page Number121===
 116
 Frankenstein
 hatred. The unearthly ugliness of that face rendered 
@@ -3363,10 +2997,7 @@ conditions, I will leave them and you at peace. But
 if you refuse, I will track down and kill all who are 
 dear to you! 
 diabolically: in the style of a devil
-
-
-==== PAGE 122 ====
-
+===Page Number122===
 117
 Chapter 10
 “Abhorred monster! Fiend! The tortures of 
@@ -3393,10 +3024,7 @@ your Adam! But I am rather the fallen angel, whom
 you drive from joy for no reason. Everywhere I see 
 joy. Everywhere I see happiness – but happiness 
 which I cannot have. I was benevolent and good 
-
-
-==== PAGE 123 ====
-
+===Page Number123===
 118
 Frankenstein
 at first. It is only the experience of misery that has 
@@ -3423,10 +3051,7 @@ only dwelling places men will leave me. These bleak
 skies I greet with pleasure for they are kinder to me 
 than your fellow beings. If the masses of mankind 
 knew of my existence, they would do as you do, and 
-
-
-==== PAGE 124 ====
-
+===Page Number124===
 119
 Chapter 10
 arm themselves for my destruction. Shall I not then 
@@ -3453,10 +3078,7 @@ circumstances that I shudder to recall? Why do you
 remind me that I created you? Cursed be the day, 
 disgusting devil, in which you first saw light! And 
 cursed be the hands that formed you! Cursed be 
-
-
-==== PAGE 125 ====
-
+===Page Number125===
 120
 Frankenstein
 those hands, even though they are my own hands! 
@@ -3483,10 +3105,7 @@ your own speedy ruin.”
 As he said this, he led the way across the ice. I 
 followed. My heart was full, and I did not answer 
 him. However, as I went on, I weighed the various 
-
-
-==== PAGE 126 ====
-
+===Page Number126===
 121
 Chapter 10
 arguments that he had used and determined at least 
@@ -3508,10 +3127,7 @@ my mind to listen, however. I sat down by the fire
 which my repulsive companion had lit and listened 
 as he began his tale. 
 denial: rejection
-
-
-==== PAGE 127 ====
-
+===Page Number127===
 CHAPTER 11
 “I
 t is hard for me to remember the first 
@@ -3536,10 +3152,7 @@ and thirst. This woke me from my nearly sleeping
 state, and I ate some berries which I found hanging 
 on the trees or lying on the ground. I drank some 
 water from the brook and then lay down to sleep. 
-
-
-==== PAGE 128 ====
-
+===Page Number128===
 123
 Chapter 11
 “It was dark when I awoke. I felt cold and 
@@ -3566,10 +3179,7 @@ distinguish was the bright moon, and I fixed my
 eyes on that with pleasure. 
 “Several changes of day and night passed, 
 innumerable: too many to be counted
-
-
-==== PAGE 129 ====
-
+===Page Number129===
 124
 Frankenstein
 and the moon had worn away to a sliver, when 
@@ -3596,19 +3206,13 @@ to the light and began to notice objects in their
 right forms. I was able to distinguish an insect from 
 a plant, and by degrees, one plant from another. 
 I found that the sparrow uttered none but harsh 
-
-
-==== PAGE 130 ====
-
+===Page Number130===
 125
 Chapter 11
 “I was delighted when I first discovered that a pleasant sound, 
 which I often heard, came from the throats of the little 
 winged animals who had often blocked the light from my eyes.”
-
-
-==== PAGE 131 ====
-
+===Page Number131===
 126
 Frankenstein
 notes, while the songs of the blackbird and thrush 
@@ -3635,10 +3239,7 @@ worried that my fire might burn out. I covered it
 carefully with dry wood and leaves and placed wet 
 branches upon it. Then, spreading my cloak, I lay 
 on the ground and sank into sleep. 
-
-
-==== PAGE 132 ====
-
+===Page Number132===
 127
 Chapter 11
 “It was morning when I woke up. My first care 
@@ -3656,10 +3257,7 @@ from the trees. I tried, therefore, to prepare my food
 in the same way, placing it on the burning coals. 
 “The wet wood which i had placed near the heat dried and 
 caught fire.”
-
-
-==== PAGE 133 ====
-
+===Page Number133===
 128
 Frankenstein
 I found that the berries were spoiled by the fire; 
@@ -3686,10 +3284,7 @@ find food and shelter. At length I spotted a small
 hut. It stood on a rising ground and had doubtless 
 been built for the convenience of some shepherd. 
 This was a new sight to me, and I examined the 
-
-
-==== PAGE 134 ====
-
+===Page Number134===
 129
 Chapter 11
 structure with great curiosity. Finding the door 
@@ -3716,10 +3311,7 @@ my admiration. The vegetables in the gardens, the
 milk and cheese that I saw placed at the windows 
 of some of the cottages, stirred up my appetite. I 
 entered one of the cottages, but this did not turn 
-
-
-==== PAGE 135 ====
-
+===Page Number135===
 130
 Frankenstein
 out well. I had hardly placed my foot within the 
@@ -3746,10 +3338,7 @@ the back of the cottage. It was surrounded on its
 open sides by a pig sty and a clear pool of water. 
 There were some openings in the walls through 
 hovel: a small hut
-
-
-==== PAGE 136 ====
-
+===Page Number136===
 131
 Chapter 11
 which I might be seen. I covered these up with 
@@ -3776,10 +3365,7 @@ pail on her head. The girl was young and of gentle
 demeanor, unlike what I have since found cottagers 
 and farmhouse servants to be. Yet she was poorly 
 dressed. She wore a rough blue petticoat and a 
-
-
-==== PAGE 137 ====
-
+===Page Number137===
 132
 Frankenstein
 linen jacket. Her fair hair was braided but not 
@@ -3806,18 +3392,12 @@ sat an old man, leaning his head on his hands in a
 discouraged manner. The young girl was occupied 
 in arranging the cottage; but presently she took 
 something out of a drawer, which employed her 
-
-
-==== PAGE 138 ====
-
+===Page Number138===
 133
 Chapter 11
 “In one of these was a small and almost imperceptible chink 
 through which the eye could just penetrate.”
-
-
-==== PAGE 139 ====
-
+===Page Number139===
 134
 Frankenstein
 hands. She sat down beside the old man. He then 
@@ -3844,10 +3424,7 @@ a load of wood. The girl met him at the door and
 helped to relieve him of his burden. She took some 
 of the wood into the cottage and placed it on the fire. 
 burden: load
-
-
-==== PAGE 140 ====
-
+===Page Number140===
 135
 Chapter 11
 Then she and the youth went apart into a corner of 
@@ -3873,10 +3450,7 @@ and love; the other was slight and graceful in his
 figure. His features were attractive, yet his eyes 
 expressed great sadness. The old man returned to 
 pensive: thoughtful
-
-
-==== PAGE 141 ====
-
+===Page Number141===
 136
 Frankenstein
 the cottage, and the youth, with tools different from 
@@ -3900,10 +3474,7 @@ later that he was reading aloud, but at that time I
 knew nothing of words or letters. 
 “The family, after having been thus occupied for 
 a short time, put out their candles and went to sleep.”
-
-
-==== PAGE 142 ====
-
+===Page Number142===
 CHAPTER 12
 “I 
 lay on my straw, but I could not sleep. 
@@ -3928,10 +3499,7 @@ thinking. Nothing could be greater than the
 love and respect which the younger cottagers 
 showed towards their older companion. They did 
 everything for him with affection and gentleness, 
-
-
-==== PAGE 143 ====
-
+===Page Number143===
 138
 Frankenstein
 and he rewarded them with kind smiles. 
@@ -3958,10 +3526,7 @@ They were poor, and they suffered a great deal
 from their poverty. Their food consisted entirely 
 of vegetables from their garden and the milk of 
 solitary: single, unaccompanied
-
-
-==== PAGE 144 ====
-
+===Page Number144===
 139
 Chapter 12
 one cow, which gave very little during the winter. 
@@ -3988,10 +3553,7 @@ young woman, when she opened the door in the
 morning, appeared greatly surprised on seeing a 
 great pile of wood on the outside. She spoke some 
 words in a loud voice. The young man joined her, 
-
-
-==== PAGE 145 ====
-
+===Page Number145===
 140
 Frankenstein
 and he also expressed surprise. I observed, with 
@@ -4018,10 +3580,7 @@ given to some of the most familiar objects. I
 learned and applied the words, fire, milk, bread, 
 and wood. I learned also the names of the cottagers 
 themselves. The young man and his companion 
-
-
-==== PAGE 146 ====
-
+===Page Number146===
 141
 Chapter 12
 had each of them several names, but the old man 
@@ -4048,10 +3607,7 @@ Agatha listened with respect, her eyes sometimes
 filled with tears, which she tried to wipe away 
 unnoticed. However, I generally found that she 
 was more cheerful after having listened to her 
-
-
-==== PAGE 147 ====
-
+===Page Number147===
 142
 Frankenstein
 father. It was not the same with Felix. He was 
@@ -4078,10 +3634,7 @@ In the frosty season, he worked less and spent
 more time reading to the old man and Agatha. 
 “This reading puzzled me at first. However, 
 replenished: filled up again
-
-
-==== PAGE 148 ====
-
+===Page Number148===
 143
 Chapter 12
 by degrees I discovered that he uttered many of 
@@ -4108,10 +3661,7 @@ was in reality the monster that I am, I was horrified
 and depressed. Alas! I did not yet entirely know 
 the fatal effects of my deformity. 
 deformity: the condition of being misshaped 
-
-
-==== PAGE 149 ====
-
+===Page Number149===
 144
 Frankenstein
 “As the sun became warmer and the days grew 
@@ -4138,10 +3688,7 @@ these tasks, performed by an invisible hand,
 greatly astonished them. Once or twice I heard 
 them say the words good spirit or wonderful. But I 
 did not then understand the meaning of the terms. 
-
-
-==== PAGE 150 ====
-
+===Page Number150===
 145
 Chapter 12
 “My thoughts now became more active. I 
@@ -4168,10 +3715,7 @@ fairly well.
 greatly altered the appearance of the earth. Men 
 who seemed to have been hidden in caves came 
 out and busied themselves planting and growing 
-
-
-==== PAGE 151 ====
-
+===Page Number151===
 146
 Frankenstein
 food. The birds sang in more cheerful notes, and 
@@ -4180,10 +3724,7 @@ were elevated by the delightful appearance of
 nature. The past was erased from my memory. 
 The present was peaceful and the future seemed 
 bright.” 
-
-
-==== PAGE 152 ====
-
+===Page Number152===
 CHAPTER 13
 “S
 pring advanced rapidly. The 
@@ -4208,10 +3749,7 @@ dark suit and a thick black veil covered her face.
 Agatha asked a question, to which the stranger 
 only replied by pronouncing the name of Felix, in a 
 sweet accent. Her voice was musical but unlike that 
-
-
-==== PAGE 153 ====
-
+===Page Number153===
 148
 Frankenstein
 of either of my friends. On hearing this word, Felix 
@@ -4238,10 +3776,7 @@ place between him and his father, and the young
 stranger knelt at the old man’s feet and would have 
 kissed his hand, but he raised her and embraced 
 her affectionately. 
-
-
-==== PAGE 154 ====
-
+===Page Number154===
 149
 Chapter 13
 “I soon realized that although the stranger 
@@ -4258,10 +3793,7 @@ their facial expressions, expressed joy, the cause of
 which I did not understand. Presently I found, by 
  “There was a lady on horseback. She was dressed in a dark 
 suit and a thick black veil covered her face.”  
-
-
-==== PAGE 155 ====
-
+===Page Number155===
 150
 Frankenstein
 the frequent repetition of some sound which the 
@@ -4288,10 +3820,7 @@ sang, and her voice flowed in a rich rhythm, swelling
 or dying away like a nightingale of the woods. 
 “When she had finished, she gave the guitar 
 to Agatha. She played a simple tune, and her 
-
-
-==== PAGE 156 ====
-
+===Page Number156===
 151
 Chapter 13
 voice accompanied it in sweet accents, but unlike 
@@ -4318,10 +3847,7 @@ setting and early rising of the sun. I never went out
 during daylight, for fear of meeting with the same 
 treatment I had experienced in the first village I 
 had entered. 
-
-
-==== PAGE 157 ====
-
+===Page Number157===
 152
 Frankenstein
 “My days were spent watching and listening. 
@@ -4347,10 +3873,7 @@ of the early Romans—and of the decline of that
 mighty empire—, of chivalry, Christianity, and 
 kings. I heard of the discovery of the Americas 
 Ruins of Empires: published in 1791
-
-
-==== PAGE 158 ====
-
+===Page Number158===
 153
 Chapter 13
 and wept with Safie over the sad fate of its original 
@@ -4377,10 +3900,7 @@ sad fate of its original inhabitants: the native American people
 were often pushed off their lands by settlers and died in large 
 numbers after exposure to European diseases
 loathing: hatred
-
-
-==== PAGE 159 ====
-
+===Page Number159===
 154
 Frankenstein
 and riches. A man may be respected with only 
@@ -4406,10 +3926,7 @@ these reflections inflicted upon me. I tried to ignore
 them, but sorrow only increased with knowledge. 
 vagabond: wanderer, homeless person
 disowned: refused to recognize as like them
-
-
-==== PAGE 160 ====
-
+===Page Number160===
 155
 Chapter 13
 Oh, that I had forever remained in my native 
@@ -4435,10 +3952,7 @@ I learned how all the life and cares of the mother
 were wrapped up in her child. I learned how the 
 mind of youth expanded and gained knowledge. 
 doted: showed a great liking for
-
-
-==== PAGE 161 ====
-
+===Page Number161===
 156
 Frankenstein
 I learned about brothers and sisters, and all the 
@@ -4455,10 +3969,7 @@ had never seen a being resembling me. What was
 I? That question rose up again and again, but I 
 could only answer with groans.” 
 caresses: loving touches
-
-
-==== PAGE 162 ====
-
+===Page Number162===
 distinction: high social rank among the nobles
 Constantinople: famous city in Turkey, now Istanbul
 CHAPTER 14
@@ -4483,10 +3994,7 @@ reason which I could not learn, he did something
 that angered the government. He was seized and 
 cast into prison the very day that Safie arrived 
 from Constantinople to join him. He was tried 
-
-
-==== PAGE 163 ====
-
+===Page Number163===
 158
 Frankenstein
 and condemned to death. The injustice of his 
@@ -4513,10 +4021,7 @@ to visit her father in jail, and she managed to
 show her gratitude through smiles and gestures. 
 outraged: very upset
 fruitless: unsuccessful
-
-
-==== PAGE 164 ====
-
+===Page Number164===
 159
 Chapter 14
 Although Felix had not set out to win a reward, 
@@ -4543,10 +4048,7 @@ same time she gently deplored her own fate.
 will give them to you. They will prove the truth of 
 too delicate: too sensitive to what is (and is not) proper
 deplored: complained about 
-
-
-==== PAGE 165 ====
-
+===Page Number165===
 160
 Frankenstein
 my tale. At present, however, as the sun is already 
@@ -4573,10 +4075,7 @@ very appealing to her.
 set, but the night before he escaped from his 
 Muhammad: the prophet of Islam, founder of the Muslim faith
 harem: a group of wives kept by a single man
-
-
-==== PAGE 166 ====
-
+===Page Number166===
 161
 Chapter 14
 prison and, before morning came, he was many 
@@ -4603,10 +4102,7 @@ means of an interpreter, and sometimes by smiles
 and looks. Safie sang to him the songs of her native 
 country. 
 deceit: trick
-
-
-==== PAGE 167 ====
-
+===Page Number167===
 162
 Frankenstein
 “The Turk allowed all of this to take place 
@@ -4634,10 +4130,7 @@ making these plans, Felix said goodbye to Safie
 pious: seriously religious
 convent: a Christian religious house for females, who are called 
 nuns
-
-
-==== PAGE 168 ====
-
+===Page Number168===
 163
 Chapter 14
 and hurried to Paris. There he turned himself in. 
@@ -4663,10 +4156,7 @@ more bitter and irreparable. It was only when
 the Arabian arrived a little later that his mood 
 improved. 
 exile: banishment, forced absence from one’s home country
-
-
-==== PAGE 169 ====
-
+===Page Number169===
 164
 Frankenstein
 “When the news reached Leghorn that Felix 
@@ -4693,10 +4183,7 @@ She wanted to follow her lover into exile. Taking
 with her some jewels that belonged to her and a 
 sum of money, she left Italy with a young female 
 friend. This friend was a native of Leghorn, but 
-
-
-==== PAGE 170 ====
-
+===Page Number170===
 165
 Chapter 14
 she understood the language of Turkey. Together 
@@ -4711,10 +4198,7 @@ ignorant of the customs of the world. She fell,
 however, into good hands. The woman of the 
 house where she was staying took care to see that 
 she arrived safely at the cottage of her lover.” 
-
-
-==== PAGE 171 ====
-
+===Page Number171===
 Paradise Lost: long poem about Adam and Eve, by the English 
 poet John Milton, 1667.
 Plutarch’s Lives: a collection of “parallel lives” of ancient Greeks 
@@ -4742,10 +4226,7 @@ Werther. These books gave me great delight. I
 began to study them whenever the cottagers were 
 busy with their work. They stirred up many new 
 ideas and feelings. 
-
-
-==== PAGE 172 ====
-
+===Page Number172===
 167
 Chapter 15
 “As I read the books, I applied many of the 
@@ -4772,10 +4253,7 @@ towns. The cottage of my protectors was the only
 school in which I had studied human nature. But 
 this book introduced me to new and mightier 
 scenes of action. I read of men involved in public 
-
-
-==== PAGE 173 ====
-
+===Page Number173===
 168
 Frankenstein
 affairs, governing or massacring their species. 
@@ -4802,10 +4280,7 @@ I felt envy rising up within me.
 confirmed these feelings. Soon after my arrival in 
 the hovel I discovered some papers in the pocket of 
 massacring: killing in large numbers
-
-
-==== PAGE 174 ====
-
+===Page Number174===
 169
 Chapter 15
 the clothes that I had taken from your laboratory. 
@@ -4832,10 +4307,7 @@ kind! I looked forward to a time when I could
 introduce myself to them, and I persuaded myself 
 that they would overlook my deformity and be 
 kind to me. If I came to their door to ask for their 
-
-
-==== PAGE 175 ====
-
+===Page Number175===
 170
 Frankenstein
 friendship, would they turn me away? I did not 
@@ -4862,10 +4334,7 @@ with my feelings and cheer my gloom. But it
 was all a dream. There was no Eve to soothe my 
 tumultuous: uneven, rough, stormy
 outcast: person left alone or driven out by others
-
-
-==== PAGE 176 ====
-
+===Page Number176===
 171
 Chapter 15
 sorrows and share my thoughts. I was alone. I 
@@ -4892,10 +4361,7 @@ food or rest. I would be asking for kindness and
 sympathy. But I did not believe myself utterly 
 unworthy of it. 
 “As the winter advanced, I thought more and 
-
-
-==== PAGE 177 ====
-
+===Page Number177===
 172
 Frankenstein
 more about my plan to introduce myself to the 
@@ -4922,10 +4388,7 @@ their cottage and knocked.
 allow me to stand for a few minutes before the fire?’ 
 “‘Enter,’ said De Lacey. ‘Unfortunately, my 
 advocate: spokesman, defender
-
-
-==== PAGE 178 ====
-
+===Page Number178===
 173
 Chapter 15
 children have gone out, and I am blind. I am afraid 
@@ -4952,10 +4415,7 @@ never seen me and know little of me. I am full of
 fears, for if I fail there, I may end up an outcast in 
 the world for ever.’ 
 “‘Do not worry. To be friendless is indeed to 
-
-
-==== PAGE 179 ====
-
+===Page Number179===
 174
 Frankenstein
 be unfortunate, but the hearts of men, when not 
@@ -4982,10 +4442,7 @@ them, and it is that prejudice I wish to overcome.’
 “‘Near this spot.’ 
 “The old man paused and then continued, ‘If 
 you will tell me all the details of your tale, perhaps 
-
-
-==== PAGE 180 ====
-
+===Page Number180===
 175
 Chapter 15
 I may be of use to you. I am blind and cannot 
@@ -5012,10 +4469,7 @@ you desert me!’
 “‘Great God!’ exclaimed the old man. ‘Who 
 are you?’ 
 “At that instant the cottage door opened, 
-
-
-==== PAGE 181 ====
-
+===Page Number181===
 176
 Frankenstein
 and Felix, Safie, and Agatha entered. Who can 
@@ -5031,10 +4485,7 @@ when, overcome by pain and anguish, I fled from
 the cottage. In the confusion I was able to escape 
 unnoticed and went back to my hovel.” 
 rends: tears into pieces
-
-
-==== PAGE 182 ====
-
+===Page Number182===
 CHAPTER 16
 “A
 fter they drove me away, I burned 
@@ -5058,10 +4509,7 @@ mankind—and, most of all, against the man
 who had created me and sent me forth to this 
 unbearable misery. 
 despair: hopelessness 
-
-
-==== PAGE 183 ====
-
+===Page Number183===
 178
 Frankenstein
 “The sun rose. I heard the voices of men and 
@@ -5088,10 +4536,7 @@ using violent gestures. They spoke a language I
 could not understand. Soon after, however, Felix 
 returned with another man.
 “‘You understand,’ the man said to him, ‘that 
-
-
-==== PAGE 184 ====
-
+===Page Number184===
 179
 Chapter 16
 you will have to pay three months’ rent—and lose 
@@ -5118,10 +4563,7 @@ allowed myself to be carried along by them. I bent
 my mind towards injury and death. 
 “That night I tore up every plant in the garden 
 and piled sticks and wood around the cottage. 
-
-
-==== PAGE 185 ====
-
+===Page Number185===
 180
 Frankenstein
 There was a kind of craziness in my spirits that 
@@ -5148,10 +4590,7 @@ I must travel in a southwesterly direction to reach
 Geneva, but the sun was my only guide. I did not 
 know the names of the towns that I was to pass, 
 nor could I ask information from a single human 
-
-
-==== PAGE 186 ====
-
+===Page Number186===
 181
 Chapter 16
 being. However, I did not despair. 
@@ -5178,10 +4617,7 @@ had recovered some of its warmth and the earth
 again began to look green. I generally rested during 
 the day and travelled only at night. One morning, 
 however, finding that my path lay through a deep 
-
-
-==== PAGE 187 ====
-
+===Page Number187===
 182
 Frankenstein
 wood, I decided to continue my journey after the 
@@ -5208,10 +4644,7 @@ river. The current was strong, but I was able to
 drag her back to the shore. She was senseless, and 
 I was trying to revive her, when I was interrupted 
 revive: bring back to life
-
-
-==== PAGE 188 ====
-
+===Page Number188===
 183
 Chapter 16
 by the approach of a man, who was probably the 
@@ -5238,10 +4671,7 @@ received. The ball had entered my shoulder, and I
 knew not whether it had remained there or passed 
 through. At any rate I had no way to remove it. 
 My sufferings were also increased by a sense of 
-
-
-==== PAGE 189 ====
-
+===Page Number189===
 184
 Frankenstein
 the injustice of the deed. I swore I would have 
@@ -5268,10 +4698,7 @@ that this little creature was unprejudiced: he had
 lived too short a time to have acquired a horror 
 of deformity. If, therefore, I could seize him and 
 compensate: make up for
-
-
-==== PAGE 190 ====
-
+===Page Number190===
 185
 Chapter 16
 educate him as my companion and friend, I would 
@@ -5298,10 +4725,7 @@ I exclaimed, ‘My enemy is not all-powerful. This
 death will make him unhappy, and a thousand 
 other miseries will torment and destroy him!’ 
 ogre: a kind of monster 
-
-
-==== PAGE 191 ====
-
+===Page Number191===
 186
 Frankenstein
 “As I fixed my eyes on the child, I saw 
@@ -5312,10 +4736,7 @@ lovely lips. Presently, however, my rage returned.
 I remembered that I was forever deprived of the 
 “Child,” I said, “what is the meaning of this? I do not intend 
 to hurt you.”
-
-
-==== PAGE 192 ====
-
+===Page Number192===
 187
 Chapter 16
 delights that such beautiful creatures could give. I 
@@ -5342,10 +4763,7 @@ me, and curses me, and denounces the murderer? The
 thought awakened the fiend within me. I swore 
 that I would not be the one to suffer. Thanks to the 
 lessons of Felix and the bloodthirsty laws of man, I 
-
-
-==== PAGE 193 ====
-
+===Page Number193===
 188
 Frankenstein
 had learned how to work mischief. I bent over her 
@@ -5365,10 +4783,7 @@ deformed and horrible as myself would not deny
 herself to me. My companion must be of the same 
 species and have the same defects. This being you 
 must create.” 
-
-
-==== PAGE 194 ====
-
+===Page Number194===
 CHAPTER 17
 H
 e finished speaking and looked 
@@ -5393,10 +4808,7 @@ have done these things because I am miserable.
 Am I not shunned and hated by all mankind? You, 
 my creator, would tear me to pieces and triumph. 
 Remember that! Remember that, and tell me why 
-
-
-==== PAGE 195 ====
-
+===Page Number195===
 190
 Frankenstein
 I should pity man more than he pities me? You 
@@ -5423,10 +4835,7 @@ of kindness towards me, I would return those
 feelings a hundred times. For that one creature’s 
 sake, I would make peace with all of mankind! But 
 I am indulging in dreams of happiness that can 
-
-
-==== PAGE 196 ====
-
+===Page Number196===
 191
 Chapter 17
 never be realized. What I ask of you is reasonable. 
@@ -5453,10 +4862,7 @@ South America and live on acorns and berries. My
 companion will be of the same nature as myself 
 and will be content with the same food. We shall 
 make our bed of dried leaves. The sun will shine 
-
-
-==== PAGE 197 ====
-
+===Page Number197===
 192
 Frankenstein
 on us and will ripen our food. We will live in 
@@ -5483,10 +4889,7 @@ you that made me, that, with the companion you
 provide, I will quit the world of man and dwell 
 in the most savage of places. My evil passions 
 compassion: sympathy, fellow feeling
-
-
-==== PAGE 198 ====
-
+===Page Number198===
 193
 Chapter 17
 will vanish away, for I shall meet with sympathy! 
@@ -5513,10 +4916,7 @@ others and no affections, I can only feel hatred and
 do evil. But the love of another will destroy the cause 
 of my crimes. I shall feel the affections of a sensitive 
 trifled: fooled, messed
-
-
-==== PAGE 199 ====
-
+===Page Number199===
 194
 Frankenstein
 being and become linked to the chain of existence 
@@ -5543,10 +4943,7 @@ shall ever see me again. Go home and begin your
 work. I will watch your progress—and when the 
 time is right, I shall return.” 
 excluded: kept out
-
-
-==== PAGE 200 ====
-
+===Page Number200===
 195
 Chapter 17
 Saying this, he suddenly left me, fearful, 
@@ -5568,10 +4965,7 @@ them. Yet, even in this miserable state, I loved
 them, and, to save them, I made up my mind to 
 dedicate myself to the task. 
 horizon: the spot in the distance where the sky meets the land
-
-
-==== PAGE 201 ====
-
+===Page Number201===
 repugnance: strong dislike
 CHAPTER 18
 W
@@ -5596,10 +4990,7 @@ marriage to her as a source of comfort in my old
 age. The two of you were attached to each other 
 from your earliest infancy. You studied together 
 and appeared, in personalities and tastes, entirely 
-
-
-==== PAGE 202 ====
-
+===Page Number202===
 197
 Chapter 18
 suited to one another. But you may, perhaps, 
@@ -5626,10 +5017,7 @@ not yet fulfilled and yet dared not break. If I were
 to break my promise, all sorts of miseries might 
 fall on me and those dear to me! Could I enter 
 into a marriage with this deadly weight hanging 
-
-
-==== PAGE 203 ====
-
+===Page Number203===
 198
 Frankenstein
 round my neck? I felt I could not. I felt that I must 
@@ -5656,10 +5044,7 @@ few months, or at most a year, was what I had in
 mind. My father thought I should have a traveling 
 companion and made plans for Henry Clerval to 
 join me at Strasbourg. 
-
-
-==== PAGE 204 ====
-
+===Page Number204===
 199
 Chapter 18
 It was understood that my marriage to 
@@ -5686,10 +5071,7 @@ punishing me for what I had done.
 At the end of September I set off with my 
 chemical instruments and equipment. After several 
 days, I arrived at Strasbourg, where I waited 
-
-
-==== PAGE 205 ====
-
+===Page Number205===
 200
 Frankenstein
 for Henry. He came. Alas, how great was the 
@@ -5716,10 +5098,7 @@ London. During this voyage we passed many
 willowy islands and saw several beautiful towns. 
 We stayed a day at Mannheim, and on the fifth day 
 Rhine: river that flows past Strasbourg. 
-
-
-==== PAGE 206 ====
-
+===Page Number206===
 201
 Chapter 18
 after our departure from Strasbourg, we arrived at 
@@ -5746,20 +5125,14 @@ After Cologne we came to the lowlands of
 Holland and arrived in a few days at Rotterdam. 
 From there we proceeded by sea to England. It 
 was on a clear morning, at the end of December, 
-
-
-==== PAGE 207 ====
-
+===Page Number207===
 202
 Frankenstein
 that I first saw the white cliffs of England. We 
 sailed up the river Thames and saw the Tower of 
 London and the steeple of St. Paul’s Cathedral.
 Thames: river that flows through London, pronounced TEMZ.
-
-
-==== PAGE 208 ====
-
+===Page Number208===
 CHAPTER 19
 W
 e decided to spend several 
@@ -5784,10 +5157,7 @@ He was curious and eager to learn. The difference
 of manners which he observed was to him a never-
 ending source of instruction and amusement. He 
 was also pursuing an object he had long had in 
-
-
-==== PAGE 209 ====
-
+===Page Number209===
 204
 Frankenstein
 view. His design was to someday visit India, for 
@@ -5814,10 +5184,7 @@ We had arrived in England at the beginning
 of October, and it was now February. We decided 
 to begin our journey to the north at the end of 
 check: restraint
-
-
-==== PAGE 210 ====
-
+===Page Number210===
 205
 Chapter 19
 the next month. We did not intend to follow the 
@@ -5845,10 +5212,7 @@ for peaceful happiness. During my youthful days
 Windsor: home of Windsor Castle
 Oxford: English town, home to Oxford University
 picturesque: pretty, worthy of a picture
-
-
-==== PAGE 211 ====
-
+===Page Number211===
 206
 Frankenstein
 unhappiness never visited my mind. But now I 
@@ -5875,10 +5239,7 @@ I had now neglected my promise for some
 time, and I began to worry what the monster 
 Matlock: English town further north
 expanded: grew larger
-
-
-==== PAGE 212 ====
-
+===Page Number212===
 207
 Chapter 19
 might do. It occurred to me that he might still be in 
@@ -5906,10 +5267,7 @@ socializing. I told Henry that I wished to make a
 Edinburgh: city in southern Scotland
 antiquity: great age, oldness
 Perth: city in northeastern Scotland
-
-
-==== PAGE 213 ====
-
+===Page Number213===
 208
 Frankenstein
 tour of Scotland alone. 
@@ -5936,10 +5294,7 @@ northern highlands and chose one of the remotest
 of the Orkney Islands as the place for my work. 
 There were only five persons living on the island, 
 Orkney Islands: set of islands off the northern coast of Scotland
-
-
-==== PAGE 214 ====
-
+===Page Number214===
 209
 Chapter 19
 and their thin, scraggy limbs were evidence of the 
@@ -5966,10 +5321,7 @@ work. Sometimes I could not persuade myself
 to enter my laboratory for several days. Then I 
 would force myself to toil day and night in order 
 to complete some part of the project. 
-
-
-==== PAGE 215 ====
-
+===Page Number215===
 210
 Frankenstein
 During my first experiment, a kind of 
@@ -5991,10 +5343,7 @@ that made my heart sicken in my bosom.
 frenzy: wildness of spirit, crazy energy
 persecutor: a person who torments or attacks another
 forebodings: hints of something to come
-
-
-==== PAGE 216 ====
-
+===Page Number216===
 unparalleled barbarity: badness of a sort never seen before
 CHAPTER 20
 I 
@@ -6019,10 +5368,7 @@ his own deformity. He might find the new being
 equally repulsive—or more repulsive. She also 
 might turn with disgust from him to the superior 
 beauty of man. She might leave him. Then he 
-
-
-==== PAGE 217 ====
-
+===Page Number217===
 212
 Frankenstein
 would be alone again, rejected this time by one of 
@@ -6050,10 +5396,7 @@ most horrible cruelty and dishonesty. I could
 not bear the thought of creating another like to 
 inflict: to cause something harmful
 ghastly: ghost-like, horrifying
-
-
-==== PAGE 218 ====
-
+===Page Number218===
 213
 Chapter 20
 him; so, trembling with passion, I tore to pieces 
@@ -6080,10 +5423,7 @@ rooted to the spot.
 Presently I heard footsteps along the passage. 
 The door opened, and the wretch whom I dreaded 
 appeared. Shutting the door, he approached me 
-
-
-==== PAGE 219 ====
-
+===Page Number219===
 214
 Frankenstein
 and said, “You have destroyed the work which 
@@ -6110,10 +5450,7 @@ he cried, “find a wife for his companion, and
 each beast have his mate, while only I am left 
 alone? Man! You may hate me, but beware! Your 
 hours will pass in dread and misery, and soon the 
-
-
-==== PAGE 220 ====
-
+===Page Number220===
 215
 Chapter 20
 lightning bolt will fall which must destroy your 
@@ -6141,10 +5478,7 @@ In a few moments I saw him in his boat, which shot
 across the waters and was soon lost amidst the waves.
 wiliness: cleverness, sneakiness
 venom: poison
-
-
-==== PAGE 221 ====
-
+===Page Number221===
 216
 Frankenstein
 All was again silent, but his words rang in 
@@ -6170,10 +5504,7 @@ I felt as if I were hiding the evidence from some
 dreadful crime, but I went ahead. I threw my 
 basket into the sea and listened to the gurgling 
 sound as it sank. 
-
-
-==== PAGE 222 ====
-
+===Page Number222===
 217
 Chapter 20
 I then sailed away from the spot. The sea was 
@@ -6190,10 +5521,7 @@ I found that the wind had driven me far from
 the coast from which I had embarked. I tried to 
 “I threw my basket into the sea and listened to the 
 gurgling sound as it sank.”
-
-
-==== PAGE 223 ====
-
+===Page Number223===
 218
 Frankenstein
 change my course but quickly found the boat 
@@ -6221,10 +5549,7 @@ strange is that clinging love we have of life even
 in the excess of misery! I constructed another sail 
 with some of my clothing and eagerly steered my
  
-
-
-==== PAGE 224 ====
-
+===Page Number224===
 219
 Chapter 20
 course towards the land. It had a wild and rocky 
@@ -6253,18 +5578,12 @@ you will not be asked for your opinion as to your
 quarters, I promise you.”
  
 cultivation: planting and raising of crops
-
-
-==== PAGE 225 ====
-
+===Page Number225===
 220
 Frankenstein
 “As I was occupied in tying up the boat, several people 
 crowded around.”
-
-
-==== PAGE 226 ====
-
+===Page Number226===
 221
 Chapter 20
 I was surprised to receive such a rude answer 
@@ -6291,20 +5610,14 @@ be proved. I therefore followed the man in silence
 and was led to one of the best houses in the town. I 
 was ready to pass out from fatigue and hunger, but 
 being surrounded by a crowd, I thought it wise to 
-
-
-==== PAGE 227 ====
-
+===Page Number227===
 222
 Frankenstein
 gather all my strength, so that my fatigue would 
 not be interpreted as nervousness or conscious 
 guilt. I did not anticipate the disaster that was 
 about to overwhelm me.
-
-
-==== PAGE 228 ====
-
+===Page Number228===
 CHAPTER 21
 I 
 was soon introduced to the judge, an 
@@ -6329,10 +5642,7 @@ he was proceeding along the sands, he struck his
 foot against something and fell on the ground. 
 His companions came up to assist him, and by the 
 light of their lantern they found that he had fallen 
-
-
-==== PAGE 229 ====
-
+===Page Number229===
 224
 Frankenstein
 on the body of a man, who seemed to be dead. 
@@ -6359,10 +5669,7 @@ The son confirmed his father’s account, but
 when Daniel Nugent was called he added an 
 important detail. He swore that, just before the 
 in vain: unsuccessful
-
-
-==== PAGE 230 ====
-
+===Page Number230===
 225
 Chapter 21
 fall of his companion, he saw a boat, with a single 
@@ -6389,10 +5696,7 @@ travel far and had been obliged to return to almost
 the same spot from which I had departed. Since 
 the dead man was a stranger, they concluded that 
 I had brought the body from some other place, 
-
-
-==== PAGE 231 ====
-
+===Page Number231===
 226
 Frankenstein
 deposited it, then sailed around in confusion in the 
@@ -6419,18 +5723,12 @@ was led up to the coffin. How can I describe my
 sensations on seeing it? I gasped with horror; 
 nor can I think about that terrible moment, even 
 today, without shuddering. The questioning, the 
-
-
-==== PAGE 232 ====
-
+===Page Number232===
 227
 Chapter 21
 “I entered the room where the corpse lay and was led up to 
 the coffin.”
-
-
-==== PAGE 233 ====
-
+===Page Number233===
 228
 Frankenstein
 presence of the judge and witnesses, all of it passed 
@@ -6457,10 +5755,7 @@ understood me, but my gestures and bitter cries
 were sufficient to frighten the other witnesses. 
 Why did I not die? More miserable than 
 convulsions: fits, uncontrollable muscle spasms
-
-
-==== PAGE 234 ====
-
+===Page Number234===
 229
 Chapter 21
 man ever was before, why did I not sink into 
@@ -6487,10 +5782,7 @@ addressed me in English, and the voice struck me
 as one that I had heard during my sufferings. 
 “Are you better now, sir?” she asked. 
 I replied in the same language, with a very 
-
-
-==== PAGE 235 ====
-
+===Page Number235===
 230
 Frankenstein
 weak voice: “I believe I am. But if it be all true, if 
@@ -6518,10 +5810,7 @@ Who could be interested in the fate of a murderer
 but the hangman who would gain his fee? 
 hangman: the executioner (who was paid a fee for killing 
 convicted persons) 
-
-
-==== PAGE 236 ====
-
+===Page Number236===
 231
 Chapter 21
 These were my first reflections, but I soon 
@@ -6548,10 +5837,7 @@ apartment was opened and Mr. Kirwin entered.
 His face expressed sympathy and kindness. He 
 unaccountable: impossible to understand or explain 
 incitement: encouragement, temptation
-
-
-==== PAGE 237 ====
-
+===Page Number237===
 232
 Frankenstein
 drew a chair close to mine and spoke to me in 
@@ -6578,10 +5864,7 @@ have lately occurred. You were thrown, by some
 surprising accident, on this shore, known for its 
 hospitality, seized immediately, and charged with 
 murder. The first sight that was presented to your 
-
-
-==== PAGE 238 ====
-
+===Page Number238===
 233
 Chapter 21
 eyes was the body of your friend, murdered in so 
@@ -6608,10 +5891,7 @@ Kirwin with gentleness, “and someone, a friend,
 has come to visit you.” 
 I know not by what chain of thought the idea 
 unaccountable: impossible to understand or explain 
-
-
-==== PAGE 239 ====
-
+===Page Number239===
 234
 Frankenstein
 presented itself, but it darted into my mind that the 
@@ -6638,10 +5918,7 @@ the judge. Perhaps he thought that my initial
 exclamation was a momentary return of delirium. 
 At any rate, he promptly resumed his former 
 kindness. He rose and left the room with my 
-
-
-==== PAGE 240 ====
-
+===Page Number240===
 235
 Chapter 21
 nurse. A moment later my father entered. 
@@ -6668,10 +5945,7 @@ But the appearance of my father was to me like
 that of my good angel, and I gradually recovered 
 my health. 
 As my sickness left me, I grew miserable. The 
-
-
-==== PAGE 241 ====
-
+===Page Number241===
 236
 Frankenstein
 image of Henry Clerval was constantly before 
@@ -6698,10 +5972,7 @@ these feelings, for to me the walls of a dungeon or
 a palace were equally hateful. The cup of life was 
 poisoned forever. Although the sun shone upon 
 me, I saw around me nothing but a thick and 
-
-
-==== PAGE 242 ====
-
+===Page Number242===
 237
 Chapter 21
 frightful darkness, with no light but the glimmer of 
@@ -6728,10 +5999,7 @@ If any chance led me to him, or if he dared again to
 confront me, I might be able to kill him. 
 My father wanted to delay our departure. He 
 worried that I was not healthy enough to make 
-
-
-==== PAGE 243 ====
-
+===Page Number243===
 238
 Frankenstein
 the journey. My strength was gone. I was a mere 
@@ -6758,10 +6026,7 @@ enemy, and I called to mind the night when he
 came to life. I was unable to pursue the train of 
 thought further. A thousand feelings pressed upon 
 me, and I wept bitterly. 
-
-
-==== PAGE 244 ====
-
+===Page Number244===
 239
 Chapter 21
 Towards morning I had a terrible nightmare. I 
@@ -6776,10 +6041,7 @@ I felt that a truce had been established between the
 present hour and the irresistible, disastrous future. 
 And so we voyaged on. 
 truce: an agreement in which two sides agree to stop fighting
-
-
-==== PAGE 245 ====
-
+===Page Number245===
 CHAPTER 22
 T
 he voyage came to an end. We landed at 
@@ -6804,10 +6066,7 @@ from wounded pride. He thought that I was still
 burning with pride and resentment over being 
 brought to trial for murder, and he tried to prove 
 to me the uselessness of pride. 
-
-
-==== PAGE 246 ====
-
+===Page Number246===
 241
 Chapter 22
 “Alas! My father,” I said, “that is not what 
@@ -6834,10 +6093,7 @@ burst uncontrollably from me. I could offer no
 explanation for them, but the truthfulness of these 
 confessions relieved some of my misery. 
 A few days before we left Paris for Switzerland, 
-
-
-==== PAGE 247 ====
-
+===Page Number247===
 242
 Frankenstein
 I received the following letter from Elizabeth: 
@@ -6864,10 +6120,7 @@ what you are thinking. I must tell you in this letter
 what, during your absence, I have often wished to 
 tell you but have never had the courage to begin. 
 fortnight: fourteen days and nights (two weeks)
-
-
-==== PAGE 248 ====
-
+===Page Number248===
 243
 Chapter 22
 “You know, Victor, that our marriage has been 
@@ -6894,10 +6147,7 @@ I confess to you, my friend, that I love you and that
 in my airy dreams about the future you have been 
 my constant friend and companion. But I desire 
 your happiness as well as my own. That is why I 
-
-
-==== PAGE 249 ====
-
+===Page Number249===
 244
 Frankenstein
 feel I must tell you that our marriage would make 
@@ -6923,10 +6173,7 @@ smile on your lips when we meet, I shall need no
 other happiness. 
 tenfold: by a factor of ten, ten times over
 supposition: possibility, idea, notion
-
-
-==== PAGE 250 ====
-
+===Page Number250===
 245
 Chapter 22
 “Elizabeth Lavenza.
@@ -6952,10 +6199,7 @@ pursue me until death.
 Sweet and beloved Elizabeth! I read and 
 reread her letter, and some softened feelings stole 
 into my heart and stirred up dreams of love and joy. 
-
-
-==== PAGE 251 ====
-
+===Page Number251===
 246
 Frankenstein
 But the apple was already eaten, and the angel’s 
@@ -6982,10 +6226,7 @@ beloved girl,” I said, “little happiness remains for
 us on earth. Yet all that I may one day enjoy is 
 apple: Frankenstein refers to the Biblical story: after Adam and Eve 
 eat the “forbidden” apple, they are expelled from Eden by an angel.
-
-
-==== PAGE 252 ====
-
+===Page Number252===
 247
 Chapter 22
 centered in you. Chase away your idle fears. To 
@@ -7012,10 +6253,7 @@ The calm which I briefly enjoyed did not
 last. Memory brought madness with it, and when 
 I thought of what had passed, a real insanity 
 possessed me. Sometimes I was furious and burned 
-
-
-==== PAGE 253 ====
-
+===Page Number253===
 248
 Frankenstein
 with rage. Sometimes I was low and depressed. 
@@ -7042,10 +6280,7 @@ in life or death, to the happiness of my cousin.”
 misfortunes have befallen us, but let us respond by 
 clinging closely to what remains. Let us transfer our 
 attachment: romantic connection, relationship
-
-
-==== PAGE 254 ====
-
+===Page Number254===
 249
 Chapter 22
 love for those we have lost to those who yet live. 
@@ -7072,10 +6307,7 @@ native country and wandered over the earth, a
 friendless outcast. But it was as if my enemy had 
 magic powers and blinded me to his real intentions. 
 I thought that I had set the stage for my own death 
-
-
-==== PAGE 255 ====
-
+===Page Number255===
 250
 Frankenstein
 and only that. In fact, however, I had hurried the 
@@ -7103,10 +6335,7 @@ prophetic: predicting the future, as prophets do
 tangible: real, able to be touched and felt
 inheritance: money or goods passed down to a person from 
 parents or relatives who have died
-
-
-==== PAGE 256 ====
-
+===Page Number256===
 251
 Chapter 22
 the shores of Lake Como belonged to her. It was 
@@ -7133,10 +6362,7 @@ and, in the bustle of preparation, only recognized in
 the sadness of his niece the shyness of a bride. 
 delusion: something not real, a fantasy
 presentiment: a feeling of concern before something happens
-
-
-==== PAGE 257 ====
-
+===Page Number257===
 252
 Frankenstein
 After the ceremony was performed, a large 
@@ -7163,19 +6389,13 @@ among the trees as our boat approached the shore.
 From the land wafted the most delightful scent of 
 flowers and hay. The sun sank beneath the horizon 
 wafted: drifted
-
-
-==== PAGE 258 ====
-
+===Page Number258===
 253
 Chapter 22
 as we landed, and as I set foot on the shore I felt 
 those cares and fears come back which soon were 
 to clasp me and cling to me forever. 
-
-
-==== PAGE 259 ====
-
+===Page Number259===
 shrink from: avoid, run away from something in a cowardly way
 CHAPTER 23
 I
@@ -7200,10 +6420,7 @@ terror to her.
 “What is it that worries you, my dear Victor? 
 What is it you fear?” 
 Suddenly I thought about how fearful the 
-
-
-==== PAGE 260 ====
-
+===Page Number260===
 255
 Chapter 23
 combat which I expected at any moment would be 
@@ -7230,10 +6447,7 @@ Why am I still here to describe the destruction of
 the best and purest creature on earth? Elizabeth 
 was there, lifeless and still, thrown across the bed. 
 Her head was hanging down and her pale and 
-
-
-==== PAGE 261 ====
-
+===Page Number261===
 256
 Frankenstein
 distorted features were half covered by her hair. 
@@ -7259,10 +6473,7 @@ and cherished. The murderous mark of the fiend’s
 grasp was visible on her neck, and the breath had 
 ceased to come from her lips. 
 distorted: twisted out of shape
-
-
-==== PAGE 262 ====
-
+===Page Number262===
 257
 Chapter 23
 While I still hung over her in an agony of 
@@ -7278,10 +6489,7 @@ from me. He leaped down and, running with the
 swiftness of lightning, plunged into the lake. 
 “She lay with her head upon her arm and a handkerchief 
 laid across her face and neck.”
-
-
-==== PAGE 263 ====
-
+===Page Number263===
 258
 Frankenstein
 The sound of the pistol shot brought a crowd 
@@ -7308,10 +6516,7 @@ from the fiend. My father might be writhing under
 his grasp, and Ernest might be lying dead at his 
 feet. These thoughts made me shudder and recalled 
 me to action. I decided to return to Geneva at once. 
-
-
-==== PAGE 264 ====
-
+===Page Number264===
 259
 Chapter 23
 There were no horses available. I would have 
@@ -7338,10 +6543,7 @@ alone in the world. My own strength is exhausted,
 and I must tell, in a few words, what remains of 
 my hideous story. 
 unique: one of a kind
-
-
-==== PAGE 265 ====
-
+===Page Number265===
 260
 Frankenstein
 I arrived at Geneva. My father and Ernest 
@@ -7367,10 +6569,7 @@ my miseries and situation and was then released
 from my prison. For they had called me mad, and 
 for many months, as I understood, a single cell had 
 been my home. 
-
-
-==== PAGE 266 ====
-
+===Page Number266===
 261
 Chapter 23
 Liberty, however, had been a useless gift to 
@@ -7397,10 +6596,7 @@ the statement I have to make. It is a very strange
 tale—so strange, indeed, that I would be afraid 
 you would not believe it were there not something 
 possessed: controlled, taken over by
-
-
-==== PAGE 267 ====
-
+===Page Number267===
 262
 Frankenstein
 in the truth that leads people to believe. The story 
@@ -7427,10 +6623,7 @@ ghosts and supernatural events. However, when
 he was called upon to take official action on the 
 matter, his disbelief returned. 
 incredulous: unwilling to believe in something
-
-
-==== PAGE 268 ====
-
+===Page Number268===
 263
 Chapter 23
 “I would willingly aid you in your pursuit,” 
@@ -7457,10 +6650,7 @@ prove impossible. Every proper measure will be
 pursued, I assure you. But you must be prepared 
 for disappointment.” 
 intimidated: feeling timid, or pressured 
-
-
-==== PAGE 269 ====
-
+===Page Number269===
 264
 Frankenstein
 “That is the one thing I cannot accept. And 
@@ -7487,10 +6677,7 @@ me as a nurse does a child. I stormed out of his
 office in furious anger.
 haughty: arrogant, disdainful 
 martyrs: people who suffer and/or die for a cause
-
-
-==== PAGE 270 ====
-
+===Page Number270===
 CHAPTER 24
 M
 y situation was one in which 
@@ -7517,10 +6704,7 @@ failing arms and legs upon the sandy plain and
 prayed for death. But revenge has kept me alive. 
 I dared not die and leave my enemy among the 
 living. 
-
-
-==== PAGE 271 ====
-
+===Page Number271===
 266
 Frankenstein
 The night I left Geneva, I passed the cemetery 
@@ -7546,10 +6730,7 @@ that now torments me!” I had begun speaking
 solemnly and calmly. However, as I went on I 
 grew more and more furious until I was almost 
 choking with rage. 
-
-
-==== PAGE 272 ====
-
+===Page Number272===
 267
 Chapter 24
 I was answered through the stillness of night 
@@ -7574,10 +6755,7 @@ I saw the fiend hide himself in a ship bound for the
 Black Sea. I took passage in the same ship, but he 
 escaped, I know not how. 
 the Rhone: a river that flows through France
-
-
-==== PAGE 273 ====
-
+===Page Number273===
 268
 Frankenstein
 Amidst the wilds of Tartary and Russia, 
@@ -7605,18 +6783,12 @@ set there by the spirits that I had called on to aid
 me. Often, when all was dry and I was parched by 
 Tartary: land of the Tatar people, roughly between India and 
 Russia
-
-
-==== PAGE 274 ====
-
+===Page Number274===
 269
 Chapter 24
 “Amidst the wilds of Tartary and Russia, although he still 
 evaded me, I have followed in his tracks.”
-
-
-==== PAGE 275 ====
-
+===Page Number275===
 270
 Frankenstein
 thirst, a slight cloud would darken the sky, shed a 
@@ -7642,10 +6814,7 @@ have sunk under my hardships. During the day I
 was sustained and inspired by the hope of night, 
 for in my dreams I saw my friends, my wife, and 
 want: the condition of lacking things that one desires or needs
-
-
-==== PAGE 276 ====
-
+===Page Number276===
 271
 Chapter 24
 my beloved country. I saw the kind face of my 
@@ -7671,10 +6840,7 @@ I give up my search until you or I die! Then with
 what joy shall I join my Elizabeth and my departed 
 friends, in the life to come! 
 scoffing: making fun of, taunting
-
-
-==== PAGE 277 ====
-
+===Page Number277===
 272
 Frankenstein
 As I made my way north, the snows thickened 
@@ -7700,10 +6866,7 @@ Eventually I arrived at a wretched little town
 on the seashore. I asked if the fiend had been there 
 and gained some information. A gigantic monster, 
 hardy: sturdy, healthy
-
-
-==== PAGE 278 ====
-
+===Page Number278===
 273
 Chapter 24
 they said, had arrived the night before, armed 
@@ -7729,10 +6892,7 @@ short pause, during which the spirits of the dead
 seemed to hover round and call on me to pursue 
 my revenge, I prepared for my journey. 
 hover: float above
-
-
-==== PAGE 279 ====
-
+===Page Number279===
 274
 Frankenstein
 I exchanged my land-sledge for one equipped 
@@ -7751,10 +6911,7 @@ of my enemy. I uttered a wild cry of joy. Warm
 tears filled my eyes, which I hastily wiped away, 
 that they might not block the view I had of the 
 demon. I drove the dogs onward. The creature’s 
-
-
-==== PAGE 280 ====
-
+===Page Number280===
 275
 Chapter 24
 sledge was still visible in the distance, and I began 
@@ -7781,10 +6938,7 @@ sailed so far north and was amazed at the sight. I
 destroyed part of my sledge and used the wood to 
 construct oars. I then used the oars to move my ice 
 raft in the direction of your ship. 
-
-
-==== PAGE 281 ====
-
+===Page Number281===
 276
 Frankenstein
 I had decided, if you were heading south, still 
@@ -7811,10 +6965,7 @@ crimes. He is eloquent and persuasive, and once
 his words even had power over my heart, but do 
 not trust him. His soul is as hellish as his form, full 
 of trickery and hatred. Hear him not! Call on the 
-
-
-==== PAGE 282 ====
-
+===Page Number282===
 277
 Chapter 24
 names of William, Justine, Henry, Elizabeth, my 
@@ -7840,10 +6991,7 @@ His tale seemed to me to be true when he told
 it, but I will admit that the letters of Felix and 
 Safie, which he showed me, and the sighting of the 
 monster by men on our ship, convinced me of the 
-
-
-==== PAGE 283 ====
-
+===Page Number283===
 278
 Frankenstein
 truth of his story more than his claims alone could 
@@ -7870,10 +7018,7 @@ A week had passed while I listened to
 Frankenstein’s tale—the strangest tale I have ever 
 heard. I am fascinated by Frankenstein himself. I 
 wish to soothe his troubled spirits, but I am not 
-
-
-==== PAGE 284 ====
-
+===Page Number284===
 279
 Chapter 24
 sure it will be possible to do this. Can I comfort a 
@@ -7900,10 +7045,7 @@ and godlike in ruin! He seems to feel his own
 worth—and the greatness of his fall. 
 “When I was younger,” he told me, “I believed 
 myself destined for some great achievement. My 
-
-
-==== PAGE 285 ====
-
+===Page Number285===
 280
 Frankenstein
 feelings are deep, but I possessed a coolness of 
@@ -7930,10 +7072,7 @@ But how I have sunk! Oh! My friend, if you had
 known me as I once was, you would not recognize 
 me in my current condition. In those days, I was 
 almost never discouraged or depressed. A high 
-
-
-==== PAGE 286 ====
-
+===Page Number286===
 281
 Chapter 24
 destiny seemed to drive me on—until I fell, never 
@@ -7960,10 +7099,7 @@ I am, the soothing voice of my Elizabeth and
 the conversation of Henry Clerval will be ever 
 whispered in my ear. They are dead, and I have 
 only remained among the living for one reason. I 
-
-
-==== PAGE 287 ====
-
+===Page Number287===
 282
 Frankenstein
 must pursue and destroy the being to whom I gave 
@@ -7989,10 +7125,7 @@ return. Years will pass, and you will experience
 periods of hopelessness. Oh! My beloved sister, 
 the thought of you suffering in this way is more 
 terrible to me than the possibility of my own death. 
-
-
-==== PAGE 288 ====
-
+===Page Number288===
 283
 Chapter 24
 But you have a husband and lovely children. You 
@@ -8023,10 +7156,7 @@ interest that I cannot keep from recording it here.
 I do so even though it is likely that these papers 
 will never reach you. 
 mutiny: a rebellion of sailors against their captain
-
-
-==== PAGE 289 ====
-
+===Page Number289===
 284
 Frankenstein
 We are still surrounded by mountains of ice, 
@@ -8053,10 +7183,7 @@ ship. They feared that if this occurred, I would be
 reckless enough to continue my voyage and lead 
 them into fresh dangers. They insisted, therefore, 
 listlessly: without energy
-
-
-==== PAGE 290 ====
-
+===Page Number290===
 285
 Chapter 24
 that I promise them that if the ship should be freed 
@@ -8083,10 +7210,7 @@ to brave and overcome. These are the reasons
 why it was a glorious undertaking. If successful, 
 you would be praised as brave men who risked 
 death for honor and for the benefit of mankind. 
-
-
-==== PAGE 291 ====
-
+===Page Number291===
 286
 Frankenstein
 And now, at the first hint of danger, in the first 
@@ -8113,10 +7237,7 @@ they were strongly opposed, but I hoped that they
 would once again show the bravery for which I 
 had chosen them. 
 They retired and I turned towards my friend, 
-
-
-==== PAGE 292 ====
-
+===Page Number292===
 287
 Chapter 24
 but he seemed exhausted. 
@@ -8142,10 +7263,7 @@ and roarings like thunder were heard at a distance
 as the ice split and cracked in every direction. 
 We were in great danger, but as we could only 
 wait and see what happened, my attention was 
-
-
-==== PAGE 293 ====
-
+===Page Number293===
 288
 Frankenstein
 occupied by my unfortunate guest. His illness had 
@@ -8172,10 +7290,7 @@ tried to get up from the bed, but the effort was too
 much for him. He fell back and fainted. 
 It was long before he recovered, and I briefly 
 thought that he had died. At length he opened his 
-
-
-==== PAGE 294 ====
-
+===Page Number294===
 289
 Chapter 24
 eyes. He breathed with difficulty and was unable 
@@ -8202,10 +7317,7 @@ being, but there was another duty even more
 important than that one. I mean my duty to beings 
 of my own species. Urged by this view, I refused 
 to create a companion for the first creature—and 
-
-
-==== PAGE 295 ====
-
+===Page Number295===
 290
 Frankenstein
 I feel I was right to refuse. He was cruel and 
@@ -8232,10 +7344,7 @@ this hour, when I live in the expectation of being
 released, is a happy one. It is, in fact, the only 
 happy moment I have enjoyed for several years. 
 The forms of the beloved dead hover before my 
-
-
-==== PAGE 296 ====
-
+===Page Number296===
 291
 Chapter 24
 eyes, and I hasten to their arms. Farewell, Walton! 
@@ -8262,10 +7371,7 @@ hear? It is midnight. The breeze blows fairly,
 and all is quiet on deck. Again there is a sound. 
 It sounds like a human voice, but hoarser. It 
 is coming from the cabin where the remains of 
-
-
-==== PAGE 297 ====
-
+===Page Number297===
 292
 Frankenstein
 Frankenstein still lie. I must go and see what is 
@@ -8292,10 +7398,7 @@ then I called to him to stay.
 He paused, looking on me with wonder. Then he 
 turned again towards the lifeless form of his creator 
 and seemed to forget my presence. He seemed to be 
-
-
-==== PAGE 298 ====
-
+===Page Number298===
 293
 Chapter 24
 consummated: brought to a state of perfection 
@@ -8321,10 +7424,7 @@ speak to him.
 “The sorrow you are expressing,” I said, “is 
 now pointless. If you had listened to the voice of 
 conscience earlier, Frankenstein would still be alive.” 
-
-
-==== PAGE 299 ====
-
+===Page Number299===
 294
 Frankenstein
 “And do you dream?” said the creature. “Do 
@@ -8351,10 +7451,7 @@ resolved to keep my promise. I knew that I would
 be torturing myself as well as my creator, but I 
 envy: longing for what someone else has, jealousy
 indignation: anger over something that seems unfair
-
-
-==== PAGE 300 ====
-
+===Page Number300===
 295
 Chapter 24
 was the slave, not the master, of a desire. It was a 
@@ -8381,10 +7478,7 @@ your cruelty is now placed beyond your reach!”
 my good: here the creature again echoes the words of the fallen 
 angel Satan from Paradise Lost. 
 rekindled: lit on fire once again
-
-
-==== PAGE 301 ====
-
+===Page Number301===
 296
 Frankenstein
 “Oh, you are wrong!” replied the being. “I 
@@ -8411,10 +7505,7 @@ same creature whose thoughts were once filled
 with visions of the beauty and the majesty of 
 goodness. But it is so. The fallen angel becomes 
 the fallen angel: Another reference to Satan in Paradise Lost 
-
-
-==== PAGE 302 ====
-
+===Page Number302===
 297
 Chapter 24
 a malignant devil. Yet even the great enemy of 
@@ -8441,10 +7532,7 @@ the lovely and the helpless. I have strangled the
 innocent as they slept and killed humans who never 
 injured me or any other living thing. I have tortured 
 my creator. I have pursued him and driven him to 
-
-
-==== PAGE 303 ====
-
+===Page Number303===
 298
 Frankenstein
 ruin. There he lies, white and cold in death. You hate 
@@ -8471,10 +7559,7 @@ I shall no longer see the sun or stars or feel the
 winds play on my cheeks. Light, feeling, and sense 
 sacrifice: a ritual killing in which a body of a person or animal is 
 offered to a god
-
-
-==== PAGE 304 ====
-
+===Page Number304===
 299
 Chapter 24
 will pass away, and in this condition must I find 
@@ -8499,17 +7584,11 @@ After saying this, he sprang out of the cabin
 window and onto an ice raft, which lay close to the 
 ship. He was soon carried away by the waves and 
 lost in darkness and distance. 
-
-
-==== PAGE 305 ====
-
+===Page Number305===
 300
 Frankenstein
 “He sprang out of the cabin window and onto an ice raft.”
-
-
-==== PAGE 306 ====
-
+===Page Number306===
 ABOUT THE AUTHOR
 Mary Shelley 
 Mary Wollstonecraft Shelley, née Mary 
@@ -8522,10 +7601,7 @@ Mary Wollstonecraft, she met the young poet Percy
 Bysshe Shelley in 1812 and eloped with him to 
 France in July 1814. The couple were married in 
 1816, after Shelley’s first wife had committed suicide. 
-
-
-==== PAGE 307 ====
-
+===Page Number307===
 302
 Frankenstein
 After her husband’s death in 1822, she returned to 
@@ -8552,10 +7628,7 @@ The Last Man (1826), an account of the future
 destruction of the human race by a plague, is often 
 ranked as her best work. Her travel book History of 
 a Six Weeks’ Tour (1817) recounts the continental 
-
-
-==== PAGE 308 ====
-
+===Page Number308===
 303
 About the Author 
 tour she and Shelley took in 1814 following their 
@@ -8568,24 +7641,15 @@ Scott-Kilvert, and Selected Letters of Mary Wollstonecraft
 Shelley (1995), edited by Betty T. Bennett.
 https://www.britannica.com/biography/Mary-
 Wollstonecraft-Shelley
-
-
-==== PAGE 309 ====
-
+===Page Number309===
 Cover and Title Page Illustration by 
 Ivan Pesic 
 Text Illustrations by
 Everett Collection Historical / Alamy Stock Photo / 301
 Ivan Pesic / 15, 18, 30, 46, 59, 81, 92, 125, 127,  
 133, 149, 186, 217, 220, 227, 257, 269, 274, 300
-
-
-==== PAGE 310 ====
-
-
-
-==== PAGE 311 ====
-
+===Page Number310===
+===Page Number311===
 What to do when it’s too rainy to go outside? That was the question Mary 
 Shelley and her friends faced during the very rainy Summer of 1816. The 
 poet Lord Byron suggested that they all write ghost stories and share them. 
