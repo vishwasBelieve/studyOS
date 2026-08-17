@@ -10,9 +10,6 @@ import "./DocumentPage.css"
 export default function DocumentPage(){
 
     const [aiOpen,setAiOpen] = useState(true)
-    function aiOpenORNot(){
-        setAiOpen(prev=>!prev)
-    }
 
     return (
     <div className="document-page">
