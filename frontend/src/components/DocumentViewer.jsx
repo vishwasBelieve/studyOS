@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom"
 import { useState, useContext, useEffect } from "react"
 import { DocumentContext } from "../context/DocumentContext"
+import "./DocumentViewer.css"
 
 export default function DocumentViewer(){
     const parms = useParams()
@@ -22,9 +23,9 @@ export default function DocumentViewer(){
     }
 
     return (
-    <div>
+    <div className="document-viewer">
         {fileUrl && (<iframe
-            src ={fileUrl} width = "100%" height ="700px" title={document.name}></iframe>)}
+            src ={fileUrl} title={document.name}></iframe>)}
             </div>
     )
 }
