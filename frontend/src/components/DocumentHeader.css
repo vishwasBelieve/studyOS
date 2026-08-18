@@ -2,5 +2,15 @@
     display:flex;
     justify-content: center;
     align-items: center;
+       align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  color: #41403e;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
 
 }

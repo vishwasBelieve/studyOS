@@ -47,10 +47,10 @@ useEffect(() => {
         
 
     
-    <div className="chat-input">
-         <form onSubmit={sendMessage}>
+    <div>
+         <form className='chat-input' onSubmit={sendMessage}>
        <input value={input} onChange={(e)=>setInput(e.target.value)} placeholder='Ask something...'></input>
-        <button type="submit" disabled={isLoading}>Send</button>
+        <button className="send_button" type="submit" disabled={isLoading}>Send</button>
         </form>
        
     </div>
