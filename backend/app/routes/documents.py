@@ -7,6 +7,7 @@ from sqlalchemy.orm import Session
 from app.models.document import Document
 from app.schemas.document import DocumentResponse
 from app.db.database import get_db
+from app.services.pdf_processor import text_extractor
 
 router = APIRouter(prefix="/documents",tags=["Documents"])
 
@@ -56,4 +57,6 @@ def upload_document(file:UploadFile,db:Session = Depends(get_db),user = Depends(
     db.add(document)
     db.commit()
     db.refresh(document)
+
+    text_extractor(file_path,document.id)
     return document
