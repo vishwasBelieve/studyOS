@@ -58,5 +58,5 @@ def upload_document(file:UploadFile,db:Session = Depends(get_db),user = Depends(
     db.commit()
     db.refresh(document)
 
-    text_extractor(file_path,document.id)
+    text_extractor(file_path,document.id,database=db)
     return document
