@@ -2,6 +2,7 @@ from sqlalchemy.orm import mapped_column,Mapped,relationship
 from uuid import uuid4
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy import String, Integer,ForeignKey,Text
+from sqlalchemy import UniqueConstraint
 
 from app.db.database import Base
 
@@ -11,6 +12,7 @@ class DocumentText(Base):
     document_id:Mapped[str] = mapped_column(ForeignKey("documents.id"),nullable=False)
     page_number:Mapped[int] = mapped_column(Integer,nullable=False)
     text:Mapped[str] = mapped_column(Text,nullable=False)
+    __table_args__ = (UniqueConstraint("document_id","page_number",name="uq_document_page"),)
 
     document = relationship("Document",back_populates="texts")
 

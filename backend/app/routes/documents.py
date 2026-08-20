@@ -8,6 +8,11 @@ from app.models.document import Document
 from app.schemas.document import DocumentResponse
 from app.db.database import get_db
 from app.services.pdf_processor import text_extractor
+from pathlib import Path
+
+UPLOAD_DIR = Path("uploads")
+UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+
 
 router = APIRouter(prefix="/documents",tags=["Documents"])
 
@@ -36,7 +41,6 @@ def get_document_metadata(document_id: UUID, db: Session = Depends(get_db)):
 
 @router.post("/",response_model=DocumentResponse)
 def upload_document(file:UploadFile,db:Session = Depends(get_db),user = Depends(get_current_user)):
-    print("this is even running")
     stored_name = f"{uuid4()}.pdf"
     file_path = f"uploads/{stored_name}"
     with open(file_path,"wb") as buffer:
@@ -55,8 +59,8 @@ def upload_document(file:UploadFile,db:Session = Depends(get_db),user = Depends(
         
     )
     db.add(document)
-    db.commit()
-    db.refresh(document)
+    db.flush()
 
-    text_extractor(file_path,document.id,database=db)
+    text_extractor(file_path,document.id,db)
+    db.commit()
     return document

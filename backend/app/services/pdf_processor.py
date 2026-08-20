@@ -1,6 +1,5 @@
 import pymupdf 
 from sqlalchemy.orm import Session
-from app.db.database import SessionLocal
 from app.models.document_text import DocumentText
 def text_extractor(file_path:str,document_id,database:Session):
     
@@ -14,7 +13,6 @@ def text_extractor(file_path:str,document_id,database:Session):
                     text = text
                 )
                 database.add(page_text)
-        database.commit()
 
 
             
