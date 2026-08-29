@@ -7,10 +7,10 @@ with pymupdf.open("/mnt/hdd/Projects/StudyOS/backend/uploads/book3.pdf") as file
         book.append(block)
 singlePage = book[123]
 
-def lineBlockOrParagraphBlock(result):
-    for i in range(len(result)-1):
-        currentBlock = result[i]
-        nextBlock = result[i+1]
+def lineBlockOrParagraphBlock(page):
+    for i in range(len(page)-1):
+        currentBlock = page[i]
+        nextBlock = page[i+1]
         dif = nextBlock[1] - currentBlock[1]
         line = 0
         paragaph = 0
@@ -22,5 +22,23 @@ def lineBlockOrParagraphBlock(result):
     typeOfDoc = "Line blocked" if line > paragaph else "Paragraph blocked"
     print(typeOfDoc)
 
-lineBlockOrParagraphBlock(singlePage)
 
+def paragraphFromLine(page):
+    pageStructure = [[]]
+    line = []
+    for i in range(len(page) - 1):
+        currentBlock = page[i]
+        nextBlock = page[i+1]
+        dif = nextBlock[1] - currentBlock[1]
+        if 18 <= dif <= 25:
+            print("if block ran")
+            line.append(currentBlock[4])
+        else:
+            print("else block ran")
+            line = []
+            line.append(currentBlock[4])
+    return pageStructure
+
+        
+print(paragraphFromLine(singlePage))
+        
