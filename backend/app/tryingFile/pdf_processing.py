@@ -34,9 +34,9 @@ def paragraphFromLine(page):
             print("if block ran")
             line.append(currentBlock[4])
         else:
-            print("else block ran")
             line = []
             line.append(currentBlock[4])
+            line = []
     return pageStructure
 
         
