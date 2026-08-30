@@ -1,11 +1,14 @@
 import pymupdf
+import re
 
-with pymupdf.open("/mnt/hdd/Projects/StudyOS/backend/uploads/book4.pdf") as file:
+with pymupdf.open("/mnt/hdd/Projects/StudyOS/backend/uploads/book2.pdf") as file:
     book = []
     for page in file:
         block = page.get_text("blocks")
         book.append(block)
-singlePage = book[125]
+singlePage = book[159]
+
+
 def lineBlockOrParagraphBlock(page):
     for i in range(len(page)-1):
         currentBlock = page[i]
@@ -30,18 +33,27 @@ def paragraphFromLine(page):
 
         # First line always starts a paragraph
         if i == 0:
-            pageStructure.append([currentBlock[4]])
+            pageStructure.append([currentBlock[4].strip('\n')])
             continue
 
         previousBlock = page[i - 1]
 
         dif = currentBlock[1] - previousBlock[1]
 
-        if 18 <= dif <= 25:
+        if dif <= 25:
             # Same paragraph
-            pageStructure[-1].append(currentBlock[4])
+            pageStructure[-1].append(currentBlock[4].strip("\n"))
         else:
             # New paragraph
-            pageStructure.append([currentBlock[4]])
+            pageStructure.append([currentBlock[4].strip('\n')])
 
     return pageStructure
+
+def paragraphBlockedToText(page):
+    pageStructure = []
+    for block in page:
+        pageStructure.append([re.sub("\n","",block[4])])
+    return pageStructure
+
+print(len(paragraphBlockedToText(singlePage)),paragraphBlockedToText(singlePage))
+    
