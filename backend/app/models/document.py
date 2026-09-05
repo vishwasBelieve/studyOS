@@ -20,7 +20,7 @@ class Document(Base):
     size:Mapped[int] = mapped_column(BigInteger,nullable=False)
     page_count:Mapped[int] = mapped_column(Integer,nullable=False)
     created_at:Mapped[DateTime] = mapped_column(DateTime(timezone=True),server_default=func.now())
-    updatedf_at:Mapped[DateTime] = mapped_column(DateTime(timezone=True),server_default=func.now(),onupdate=func.now())
+    updated_at:Mapped[DateTime] = mapped_column(DateTime(timezone=True),server_default=func.now(),onupdate=func.now())
 
     owner = relationship("User",back_populates="documents")
     texts = relationship("DocumentText",back_populates="document",cascade="all, delete-orphan")
