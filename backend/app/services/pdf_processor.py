@@ -14,11 +14,12 @@ def text_extractor(file_path:str,document_id,database:Session):
 
             for i in range(0, len(book_pages), 100):
                 batch = book_pages[i:i + 100]
-                singleString = ""
-                for pages in batch:
-                    singleString += f"\nPAGE {pages['page_number']}:\n{pages['text']}\n"
+                singleString = "\n".join(
+                f"PAGE {page['page_number']}:\n{page['text']}"
+                for page in batch
+                )
 
-                clean_list.append(clean_text(singleString))
+                clean_list.extend(clean_text(singleString))
                     
 
                     # text = page.get_text()
@@ -28,7 +29,15 @@ def text_extractor(file_path:str,document_id,database:Session):
                     #     text = text
                     # )
                 # database.add(page_text)
-        return clean_list
+        for clean in clean_list:
+                page_text = DocumentText(
+                        document_id =document_id,
+                        page_number = clean['page_number'],
+                        text = clean['text']
+                    )
+                database.add(page_text)
+             
+        database.commit()
 
 
 def delete_file(file_path):
