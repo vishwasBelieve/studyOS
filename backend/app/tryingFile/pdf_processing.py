@@ -1,21 +1,18 @@
 import pymupdf
 from collections import Counter
-import re
 from difflib import SequenceMatcher
-import difflib
 
-doc = pymupdf.open("/mnt/hdd/Projects/StudyOS/backend/uploads/system.pdf")
+doc = pymupdf.open("/mnt/hdd/Projects/StudyOS/backend/uploads/micro.pdf")
 book = []
 
 for page_number, page in enumerate(doc, start=1):
     blocks = page.get_text("blocks")
-
+    
     blocks.sort(key=lambda block : block[1])
     book.append(blocks) 
 
 """so the book is list of element each element is
  page that is list of tuples and tuple represent block"""
-
 def y0_difference(page):
     difference_list = []
     for i  in range(1,len(page)):
@@ -41,7 +38,7 @@ def isParaBlocked(book):
     else:
         return False
 
-
+print(isParaBlocked(book))
 top_blocks = [page[0] for page in book[50:150] if page]
 bottom_blocks = [page[-1] for page in book[50:150] if page]
 
@@ -53,7 +50,6 @@ def blockWidth(blocks):
     for tup in blocks: #this is for width
         print(tup[3]-tup[1])
     print(isParaBlocked(book))
-blockWidth(top_blocks)
 
 def blockLength(blocks):
     beyond100 = 0
@@ -81,7 +77,7 @@ def normalize_line(line: str) -> str:
     # If the last token is just digits, assume it's a page number and drop it
     if parts and parts[-1].isdigit():
         parts = parts[:-1]
-    
+
     # Also handle cases like "79\nHash tables" -> "79 Hash tables"
     # After split, "79" will be a separate token; if first token is digits, drop it too
     if parts and parts[0].isdigit():
@@ -97,9 +93,39 @@ def find_repeating_lines(texts,min_count):
     """
     normalized = [normalize_line(t) for t in texts]
     counter = Counter(normalized)
-    return counter.most_common() #list of tuples (text,frequency)
+    return counter.values() #list of tuples (text,frequency)
 
 repeating = find_repeating_lines(bottom_texts, min_count=0)
 
-# def header_detector(book):
+def header_detector(book,batch_size):
+    # if (not isParaBlocked(book)):
+    #     return
+    
+    headerPOint = 0
+    numberOfBatches = 0
+    for i in range(0,len(book),batch_size):
+        numberOfBatches += 1
+        batch = book[i:i+batch_size]
+        top_blocks = [page[0] for page in batch[:] if page]
+        bottom_blocks = [page[-1] for page in batch[:] if page]
+        top_texts = [top_block[4] for top_block in top_blocks]
+        bottom_texts = [bottom_block[4] for bottom_block in bottom_blocks]
+        repeats = find_repeating_lines(top_texts,0)
+        freqList = [freq for freq in repeats]
+        freqList.sort(reverse=True)
+        if(len(freqList) > 3):
+            first,second,third,*rest = freqList
+            if first + second + third > 15:
+                headerPOint += 1;
+            else:
+                headerPOint -= 1;
+        
+        print(headerPOint)
+            
+        print('\n')
+    print("number of batches", numberOfBatches)
+    
+header_detector(book,50)
+
+        
 
