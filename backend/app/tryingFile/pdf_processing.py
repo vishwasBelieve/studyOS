@@ -2,7 +2,8 @@ import pymupdf
 from collections import Counter
 from difflib import SequenceMatcher
 
-doc = pymupdf.open("/mnt/hdd/Projects/StudyOS/backend/uploads/micro.pdf")
+
+doc = pymupdf.open("/mnt/hdd/Projects/StudyOS/backend/uploads/great.pdf")
 book = []
 
 for page_number, page in enumerate(doc, start=1):
@@ -10,7 +11,6 @@ for page_number, page in enumerate(doc, start=1):
     
     blocks.sort(key=lambda block : block[1])
     book.append(blocks) 
-
 """so the book is list of element each element is
  page that is list of tuples and tuple represent block"""
 def y0_difference(page):
@@ -38,10 +38,8 @@ def isParaBlocked(book):
     else:
         return False
 
-print(isParaBlocked(book))
 top_blocks = [page[0] for page in book[50:150] if page]
 bottom_blocks = [page[-1] for page in book[50:150] if page]
-
 
 top_count = Counter(top_blocks)
 bottom_count = Counter(bottom_blocks)
@@ -51,13 +49,16 @@ def blockWidth(blocks):
         print(tup[3]-tup[1])
     print(isParaBlocked(book))
 
-def blockLength(blocks):
-    beyond100 = 0
-    for tup in blocks: #for find the len of the top block text
-        if (len(tup[4]) >100 ):
-            beyond100 += 1
-    print(beyond100)
 
+def blockLength(topblocks,batchSize):
+    beyond100 = 0
+    for tup in topblocks: #for find the len of the top block text
+        if (len(tup[4]) >100):
+            beyond100 += 1
+    if (beyond100 > batchSize/4):
+        return False #doesn't have header
+    else :
+        return True #has header
 
 
 
@@ -101,7 +102,8 @@ def header_detector(book,batch_size):
     # if (not isParaBlocked(book)):
     #     return
     
-    headerPOint = 0
+    headerPointReapt = 0
+    headerPointLen = 0
     numberOfBatches = 0
     for i in range(0,len(book),batch_size):
         numberOfBatches += 1
@@ -116,11 +118,16 @@ def header_detector(book,batch_size):
         if(len(freqList) > 3):
             first,second,third,*rest = freqList
             if first + second + third > 15:
-                headerPOint += 1;
+                headerPointReapt += 1;
             else:
-                headerPOint -= 1;
+                headerPointReapt -= 1;
+        if(blockLength(top_blocks,batch_size)):
+            headerPointLen += 1
+        else:
+            headerPointLen -= 1
         
-        print(headerPOint)
+        print(headerPointReapt)
+        print("Heder point for length", headerPointLen)
             
         print('\n')
     print("number of batches", numberOfBatches)
