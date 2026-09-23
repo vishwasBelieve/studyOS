@@ -3,7 +3,7 @@ from collections import Counter
 from difflib import SequenceMatcher
 
 
-doc = pymupdf.open("/mnt/hdd/Projects/StudyOS/backend/uploads/great.pdf")
+doc = pymupdf.open("/mnt/hdd/Projects/StudyOS/backend/uploads/data.pdf")
 book = []
 
 for page_number, page in enumerate(doc, start=1):
@@ -44,11 +44,16 @@ bottom_blocks = [page[-1] for page in book[50:150] if page]
 top_count = Counter(top_blocks)
 bottom_count = Counter(bottom_blocks)
 
-def blockWidth(blocks):
+def blockWidth(blocks,batch_size):
+    numLargeWidth = 0
     for tup in blocks: #this is for width
-        print(tup[3]-tup[1])
-    print(isParaBlocked(book))
-
+        width = tup[3]-tup[1]
+        if(width > 35):
+            numLargeWidth += 1
+    if (numLargeWidth > batch_size/2):
+        return True
+    return False
+print(blockWidth(top_blocks,3))
 
 def blockLength(topblocks,batchSize):
     beyond100 = 0
@@ -64,7 +69,7 @@ def blockLength(topblocks,batchSize):
 
 top_texts = [top_block[4] for top_block in top_blocks]
 bottom_texts = [bottom_block[4] for bottom_block in bottom_blocks]
-from collections import Counter
+
 
 def normalize_line(line: str) -> str:
     """
@@ -98,13 +103,88 @@ def find_repeating_lines(texts,min_count):
 
 repeating = find_repeating_lines(bottom_texts, min_count=0)
 
+def header_processor(top_blocks,top_texts,batch_size):
+    # headerPointLen = 0
+    # headerPointWidth = 0
+    # numberOfBatches = 0
+
+    # for i in range(0,len(book),batch_size):
+    #     numberOfBatches += 1
+    #     batch = book[i:i+batch_size]
+    #     top_blocks = [page[0] for page in batch[:] if page]
+    #     bottom_blocks = [page[-1] for page in batch[:] if page]
+    #     top_texts = [top_block[4] for top_block in top_blocks]
+    #     bottom_texts = [bottom_block[4] for bottom_block in bottom_blocks]
+        repeats = find_repeating_lines(top_texts,0)
+        freqList = [freq for freq in repeats]
+        freqList.sort(reverse=True)
+        if(len(freqList) > 3):
+            first,second,third,*rest = freqList
+            if first + second + third > 15:
+                headerPointReapt += 1;
+            else:
+                headerPointReapt -= 1;
+        if(blockLength(top_blocks,batch_size)):
+            headerPointLen += 1
+        else:
+            headerPointLen -= 1
+        if(blockWidth(top_blocks,batch_size)):
+            headerPointWidth += 1
+        else:
+            headerPointWidth -= 1
+        
+            
+    # print("Header point for length", headerPointLen)
+    # print("Header point for repeats", headerPointReapt)
+    # print("Header point for width", headerPointWidth)
+    # print("number of batches", numberOfBatches)
+
+def bottom_processor(bottom_blocks,bottom_texts,batch_size):
+        # headerPointLen = 0
+    # headerPointWidth = 0
+    # numberOfBatches = 0
+
+    # for i in range(0,len(book),batch_size):
+    #     numberOfBatches += 1
+    #     batch = book[i:i+batch_size]
+    #     top_blocks = [page[0] for page in batch[:] if page]
+    #     bottom_blocks = [page[-1] for page in batch[:] if page]
+    #     top_texts = [top_block[4] for top_block in top_blocks]
+    #     bottom_texts = [bottom_block[4] for bottom_block in bottom_blocks]
+        repeats = find_repeating_lines(bottom_texts,0)
+        freqList = [freq for freq in repeats]
+        freqList.sort(reverse=True)
+        if(len(freqList) > 3):
+            first,second,third,*rest = freqList
+            if first + second + third > 15:
+                footerPointReapt += 1;
+            else:
+                footerPointReapt -= 1;
+        if(blockLength(bottom_blocks,batch_size)):
+            footerPointLen += 1
+        else:
+            footerPointLen -= 1
+        if(blockWidth(bottom_blocks,batch_size)):
+            footerPointWidth += 1
+        else:
+            footerPointWidth -= 1
+        
+            
+    # print("Header point for length", headerPointLen)
+    # print("Header point for repeats", headerPointReapt)
+    # print("Header point for width", headerPointWidth)
+    # print("number of batches", numberOfBatches)
+
+
 def header_detector(book,batch_size):
     # if (not isParaBlocked(book)):
     #     return
     
     headerPointReapt = 0
     headerPointLen = 0
+    headerPointWidth = 0
     numberOfBatches = 0
+
     for i in range(0,len(book),batch_size):
         numberOfBatches += 1
         batch = book[i:i+batch_size]
@@ -125,12 +205,17 @@ def header_detector(book,batch_size):
             headerPointLen += 1
         else:
             headerPointLen -= 1
+        if(blockWidth(top_blocks,batch_size)):
+            headerPointWidth += 1
+        else:
+            headerPointWidth -= 1
         
-        print(headerPointReapt)
-        print("Heder point for length", headerPointLen)
             
-        print('\n')
+    print("Header point for length", headerPointLen)
+    print("Header point for repeats", headerPointReapt)
+    print("Header point for width", headerPointWidth)
     print("number of batches", numberOfBatches)
+
     
 header_detector(book,50)
 
