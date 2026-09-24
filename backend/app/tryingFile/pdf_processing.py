@@ -2,8 +2,7 @@ import pymupdf
 from collections import Counter
 from difflib import SequenceMatcher
 
-
-doc = pymupdf.open("/mnt/hdd/Projects/StudyOS/backend/uploads/frank.pdf")
+doc = pymupdf.open("/mnt/hdd/Projects/StudyOS/backend/uploads/system.pdf")
 book = []
 
 for page_number, page in enumerate(doc, start=1):
@@ -38,7 +37,7 @@ def isParaBlocked(book):
     else:
         return False
 
-top_blocks = [page[0] for page in book[50:150] if page]
+top_blocks = [page[0] for page in book[150:250] if page]
 bottom_blocks = [page[-1] for page in book[50:150] if page]
 
 top_count = Counter(top_blocks)
@@ -50,16 +49,18 @@ def blockWidth(blocks,numberOfPages):
         width = tup[3]-tup[1]
         if(width > 35):
             numLargeWidth += 1
-    if (numLargeWidth > numberOfPages/2):
-        return True
-    return False
+    if (numLargeWidth > numberOfPages/4):
+        return False #means the header is there
+    return True
 
 def blockLength(topblocks,numberOfPages):
     beyond100 = 0
-    for tup in topblocks: #for find the len of the top block text
-        if (len(tup[4]) >100):
+    for tup in topblocks:
+        #for find the len of the top block text
+        if (len(tup[4]) > 100):
             beyond100 += 1
-    if (beyond100 > numberOfPages/4):
+    # print("beyond 100",beyond100,"out of 100")
+    if (beyond100 > numberOfPages/3):
         return False #doesn't have header
     else :
         return True #has header
@@ -102,10 +103,10 @@ def find_repeating_lines(texts,min_count):
 
 repeating = find_repeating_lines(bottom_texts, min_count=0)
 
-def header_processor(top_blocks,top_texts,numberOfPages,headerPointRepeat,headerPointWidth,headerPointLen):
-    # headerPointLen = 0
-    # headerPointWidth = 0
-    # numberOfBatches = 0
+def header_processor(top_blocks,top_texts,numberOfPages):
+        headerPointLen = 0
+        headerPointWidth = 0
+        headerPointRepeat = 0
         
     # for i in range(0,len(book),batch_size):
     #     numberOfBatches += 1
@@ -127,7 +128,7 @@ def header_processor(top_blocks,top_texts,numberOfPages,headerPointRepeat,header
         if(blockLength(top_blocks,numberOfPages)):
             headerPointLen += 1
         else:
-            headerPointLen -= 1
+            headerPointLen -= 8
         if(blockWidth(top_blocks,numberOfPages)):
             headerPointWidth += 1
         else:
@@ -156,13 +157,13 @@ def footer_processor(bottom_blocks,bottom_texts,numberOfPages,footerPointRepeat,
         if(len(freqList) > 3):
             first,second,third,*rest = freqList
             if first + second + third > 15:
-                footerPointRepeat += 1;
+                footerPointRepeat += 1
             else:
-                footerPointRepeat -= 1;
+                footerPointRepeat -= 1
         if(blockLength(bottom_blocks,numberOfPages)):
             footerPointLen += 1
         else:
-            footerPointLen -= 1
+            footerPointLen -= 2
         if(blockWidth(bottom_blocks,numberOfPages)):
             footerPointWidth += 1
         else:
@@ -174,8 +175,7 @@ def footer_processor(bottom_blocks,bottom_texts,numberOfPages,footerPointRepeat,
     # print("Header point for width", headerPointWidth)
     # print("number of batches", numberOfBatches)
 
-
-def header_detector(book,batch_size):
+def detector(book,batch_size):
     # if (not isParaBlocked(book)):
     #     return
     numberOfBatches = 0
@@ -193,27 +193,45 @@ def header_detector(book,batch_size):
         bottom_blocks = [page[-1] for page in batch if page] #list of tupoles of bottom blocks
         top_texts = [top_block[4] for top_block in top_blocks] #list of top text
         bottom_texts = [bottom_block[4] for bottom_block in bottom_blocks] #list of bottom text
-        updateheaderPointLen,updateheaderPointRepeat,updateheaderPointWidth = header_processor(top_blocks,top_texts,batch_size,headerPointRepeat,headerPointWidth,headerPointLen)
+        updateheaderPointLen,updateheaderPointRepeat,updateheaderPointWidth = header_processor(top_blocks,top_texts,batch_size)
         updateheaderPointLen,updatefooterPointRepeat,updatefooterPointWidth = footer_processor(bottom_blocks,bottom_texts,batch_size,footerPointRepeat,footerPointWidth,footerPointLen)
+        print(updateheaderPointLen,updateheaderPointRepeat,updateheaderPointWidth)
+        headerPointLen += updateheaderPointLen
+        headerPointRepeat += updateheaderPointRepeat
+        headerPointWidth += updateheaderPointWidth
+       
 
-        headerPointLen = updateheaderPointLen
-        headerPointRepeat = updateheaderPointRepeat
-        headerPointWidth = updateheaderPointWidth
-
-        footerPointLen = updateheaderPointLen
+        footerPointLen = updatefooterPointRepeat
         footerPointRepeat =  updatefooterPointRepeat
         footerPointWidth = updatefooterPointWidth        
-            
+    
     print("Header point for length", headerPointLen)
     print("Header point for repeats", headerPointRepeat)
     print("Header point for width", headerPointWidth,'\n')
     # print("Footer point for length", footerPointLen)
     # print("Footer point for repeats", footerPointRepeat)
     # print("Footer point for width", footerPointWidth)
-    # print("number of batches", numberOfBatches)
+    print("number of batches", numberOfBatches)
 
+# detector(book,100)
+def temp_detector(book,batch_size):
+    # if (not isParaBlocked(book)):
+    #     return
+    numberOfBatches = 0
+    headerPointRepeat = 0
+    headerPointLen = 0
+    headerPointWidth = 0
+    footerPointRepeat = 0
+    footerPointLen = 0
+    footerPointWidth = 0   
+
+    for i in range(0,len(book),batch_size):
+        numberOfBatches += 1
+        batch = book[i:i+batch_size]
+        top_blocks = [page[0] for page in batch if page] #list of tuples of top blocks
+        bottom_blocks = [page[-1] for page in batch if page] #list of tupoles of bottom blocks
+        top_texts = [top_block[4] for top_block in top_blocks] #list of top text
+        bottom_texts = [bottom_block[4] for bottom_block in bottom_blocks]
+        print(blockLength(top_blocks,batch_size))
     
-header_detector(book,100)
-
-        
-
+temp_detector(book,100)
