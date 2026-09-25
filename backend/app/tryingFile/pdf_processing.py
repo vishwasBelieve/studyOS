@@ -1,8 +1,8 @@
 import pymupdf
 from collections import Counter
-from difflib import SequenceMatcher
+import re
 
-doc = pymupdf.open("/mnt/hdd/Projects/StudyOS/backend/uploads/system.pdf")
+doc = pymupdf.open("/mnt/hdd/Projects/StudyOS/backend/uploads/ai_header.pdf")
 book = []
 
 for page_number, page in enumerate(doc, start=1):
@@ -50,21 +50,19 @@ def blockWidth(blocks,numberOfPages):
         if(width > 35):
             numLargeWidth += 1
     if (numLargeWidth > numberOfPages/4):
-        return False #means the header is there
-    return True
+        return False #the block are bigger than footer and header should be
+    return True #mean the block smaller so they could be header and footer
 
-def blockLength(topblocks,numberOfPages):
+def blockLength(blocks,numberOfPages): #when it return true it means blocks are  header or footer
     beyond100 = 0
-    for tup in topblocks:
+    for tup in blocks:
         #for find the len of the top block text
         if (len(tup[4]) > 100):
             beyond100 += 1
-    # print("beyond 100",beyond100,"out of 100")
-    if (beyond100 > numberOfPages/3):
+    if (beyond100 > numberOfPages/2):
         return False #doesn't have header
     else :
         return True #has header
-
 
 
 top_texts = [top_block[4] for top_block in top_blocks]
@@ -78,6 +76,9 @@ def normalize_line(line: str) -> str:
     - remove trailing page-number-like tokens (pure digits)
     """
     s = line.strip()
+
+    result = re.sub(r'^\d+|\d+$', '', s)
+    s = result
     parts = s.split()
     
     # If the last token is just digits, assume it's a page number and drop it
@@ -88,7 +89,6 @@ def normalize_line(line: str) -> str:
     # After split, "79" will be a separate token; if first token is digits, drop it too
     if parts and parts[0].isdigit():
         parts = parts[1:]
-    
     return " ".join(parts)
 
 def find_repeating_lines(texts,min_count):
@@ -101,8 +101,7 @@ def find_repeating_lines(texts,min_count):
     counter = Counter(normalized)
     return counter.values() #list of tuples (text,frequency)
 
-repeating = find_repeating_lines(bottom_texts, min_count=0)
-
+repeating = find_repeating_lines(top_texts, min_count=0)
 def header_processor(top_blocks,top_texts,numberOfPages):
         headerPointLen = 0
         headerPointWidth = 0
@@ -118,9 +117,11 @@ def header_processor(top_blocks,top_texts,numberOfPages):
         repeats = find_repeating_lines(top_texts,0)
         freqList = [freq for freq in repeats]
         freqList.sort(reverse=True)
+        if(freqList[1] > numberOfPages/2):
+            headerPointRepeat += 1
         if(len(freqList) > 3):
             first,second,third,*rest = freqList
-            if first + second + third > 7:
+            if ((first+second+third) > numberOfPages/4):
                 headerPointRepeat += 1
             
             else:
@@ -128,16 +129,16 @@ def header_processor(top_blocks,top_texts,numberOfPages):
         if(blockLength(top_blocks,numberOfPages)):
             headerPointLen += 1
         else:
-            headerPointLen -= 8
+            headerPointLen -= 1
         if(blockWidth(top_blocks,numberOfPages)):
             headerPointWidth += 1
         else:
             headerPointWidth -= 1
         return (headerPointLen,headerPointRepeat,headerPointWidth)
-        print("Header point for length", headerPointLen)
-        print("Header point for repeats", headerPointRepeat)
-        print("Header point for width", headerPointWidth)
-        print("number of batches", numberOfPages)
+        # print("Header point for length", headerPointLen)
+        # print("Header point for repeats", headerPointRepeat)
+        # print("Header point for width", headerPointWidth)
+        # print("number of batches", numberOfPages)
 
 def footer_processor(bottom_blocks,bottom_texts,numberOfPages,footerPointRepeat,footerPointWidth,footerPointLen):
         # headerPointLen = 0
@@ -195,23 +196,12 @@ def detector(book,batch_size):
         bottom_texts = [bottom_block[4] for bottom_block in bottom_blocks] #list of bottom text
         updateheaderPointLen,updateheaderPointRepeat,updateheaderPointWidth = header_processor(top_blocks,top_texts,batch_size)
         updateheaderPointLen,updatefooterPointRepeat,updatefooterPointWidth = footer_processor(bottom_blocks,bottom_texts,batch_size,footerPointRepeat,footerPointWidth,footerPointLen)
-        print(updateheaderPointLen,updateheaderPointRepeat,updateheaderPointWidth)
         headerPointLen += updateheaderPointLen
         headerPointRepeat += updateheaderPointRepeat
         headerPointWidth += updateheaderPointWidth
        
 
-        footerPointLen = updatefooterPointRepeat
-        footerPointRepeat =  updatefooterPointRepeat
-        footerPointWidth = updatefooterPointWidth        
-    
-    print("Header point for length", headerPointLen)
-    print("Header point for repeats", headerPointRepeat)
-    print("Header point for width", headerPointWidth,'\n')
-    # print("Footer point for length", footerPointLen)
-    # print("Footer point for repeats", footerPointRepeat)
-    # print("Footer point for width", footerPointWidth)
-    print("number of batches", numberOfBatches)
+
 
 # detector(book,100)
 def temp_detector(book,batch_size):
@@ -232,6 +222,11 @@ def temp_detector(book,batch_size):
         bottom_blocks = [page[-1] for page in batch if page] #list of tupoles of bottom blocks
         top_texts = [top_block[4] for top_block in top_blocks] #list of top text
         bottom_texts = [bottom_block[4] for bottom_block in bottom_blocks]
-        print(blockLength(top_blocks,batch_size))
+        newLen,newRep,newWid = header_processor(top_blocks,top_texts,batch_size)
+        headerPointLen += newLen
+        headerPointRepeat += newRep
+        headerPointWidth += newWid
+    print(numberOfBatches)
+    print("The final points are ",headerPointLen,headerPointRepeat,headerPointWidth)
     
 temp_detector(book,100)
