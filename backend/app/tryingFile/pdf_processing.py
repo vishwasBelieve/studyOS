@@ -2,14 +2,14 @@ import pymupdf
 from collections import Counter
 import re
 
-doc = pymupdf.open("/mnt/hdd/Projects/StudyOS/backend/uploads/system.pdf")
-book = []
+# doc = pymupdf.open("/mnt/hdd/Projects/StudyOS/backend/uploads/system.pdf")
+# book = []
 
-for page_number, page in enumerate(doc, start=1):
-    blocks = page.get_text("blocks")
+# for page_number, page in enumerate(doc, start=1):
+#     blocks = page.get_text("blocks")
     
-    blocks.sort(key=lambda block : block[1])
-    book.append(blocks) 
+#     blocks.sort(key=lambda block : block[1])
+#     book.append(blocks) 
 """so the book is list of element each element is
  page that is list of tuples and tuple represent block"""
 def y0_difference(page):
@@ -19,7 +19,6 @@ def y0_difference(page):
         next_block = page[i][1]
         block_height = page[i-1][3] - page[i-1][1] 
         difference = next_block - prev_block
-        # print(f"block height = {block_height}")
         difference_list.append(difference)
     count_large = sum(x > 29 for x in difference_list)
     count_small = sum(x < 29 for x in difference_list)
@@ -37,11 +36,11 @@ def isParaBlocked(book):
     else:
         return False
 
-top_blocks = [page[0] for page in book[150:250] if page]
-bottom_blocks = [page[-1] for page in book[50:150] if page]
+# top_blocks = [page[0] for page in book[150:250] if page]
+# bottom_blocks = [page[-1] for page in book[50:150] if page]
 
-top_count = Counter(top_blocks)
-bottom_count = Counter(bottom_blocks)
+# top_count = Counter(top_blocks)
+# bottom_count = Counter(bottom_blocks)
 
 def blockWidth(blocks,numberOfPages):
     numLargeWidth = 0
@@ -65,8 +64,8 @@ def blockLength(blocks,numberOfPages): #when it return true it means blocks are 
         return True #has header
 
 
-top_texts = [top_block[4] for top_block in top_blocks]
-bottom_texts = [bottom_block[4] for bottom_block in bottom_blocks]
+# top_texts = [top_block[4] for top_block in top_blocks]
+# bottom_texts = [bottom_block[4] for bottom_block in bottom_blocks]
 
 
 def normalize_line(line: str) -> str:
@@ -101,7 +100,7 @@ def find_repeating_lines(texts,min_count):
     counter = Counter(normalized)
     return counter.values() #list of tuples (text,frequency)
 
-repeating = find_repeating_lines(top_texts, min_count=0)
+# repeating = find_repeating_lines(top_texts, min_count=0)
 def header_scorrer(top_blocks,top_texts,numberOfPages):
         headerPointLen = 0
         headerPointWidth = 0
@@ -140,10 +139,7 @@ def header_scorrer(top_blocks,top_texts,numberOfPages):
         else:
             headerPointWidth -= 1
         return (headerPointLen,headerPointRepeat,headerPointWidth)
-        # print("Header point for length", headerPointLen)
-        # print("Header point for repeats", headerPointRepeat)
-        # print("Header point for width", headerPointWidth)
-        # print("number of batches", numberOfPages)
+
 
 def footer_scorrer(bottom_blocks,bottom_texts,numberOfPages):
         footerPointLen = 0
@@ -186,40 +182,7 @@ def footer_scorrer(bottom_blocks,bottom_texts,numberOfPages):
 
 WEIGHTS = (0.2, 1.0, 0.6)
 
-def detector(headerScore, footerScore, numberOfBatches):
 
-    header_ratio = tuple(
-        x / numberOfBatches
-        for x in headerScore
-    )
-
-    footer_ratio = tuple(
-        x / numberOfBatches
-        for x in footerScore
-    )
-
-    header_score = sum(
-        value * weight
-        for value, weight in zip(header_ratio, WEIGHTS)
-    )
-
-    footer_score = sum(
-        value * weight
-        for value, weight in zip(footer_ratio, WEIGHTS)
-    )
-
-
-
-    return header_score > 0, footer_score > 0
-
-
-
-
-
-
-
-
-# detector(book,100)
 def score_maker(book,batch_size):
     if(not isParaBlocked(book)):
         print("Can't process this book")
@@ -254,11 +217,39 @@ def score_maker(book,batch_size):
     return (numberOfBatches,headerScores,footerScores)
     
     
-nBatch,headerTup,footerTup = score_maker(book,100)
+# nBatch,headerTup,footerTup = score_maker(book,100)
 
-def text_extractor(detect_tup,book):
-    header = detect_tup[0]
-    footer = detect_tup[1]
+def detector(headerScore, footerScore, numberOfBatches):
+
+    header_ratio = tuple(
+        x / numberOfBatches
+        for x in headerScore
+    )
+
+    footer_ratio = tuple(
+        x / numberOfBatches
+        for x in footerScore
+    )
+
+    header_score = sum(
+        value * weight
+        for value, weight in zip(header_ratio, WEIGHTS)
+    )
+
+    footer_score = sum(
+        value * weight
+        for value, weight in zip(footer_ratio, WEIGHTS)
+    )
+
+
+
+    return header_score > 0, footer_score > 0
+
+
+def text_extractor(book):
+    
+    nBatch,headerTup,footerTup = score_maker(book,100)
+    header,footer = detector(headerTup,footerTup,nBatch)
     bookTexts = []
     for page in book:
         pageTexts = []
@@ -274,10 +265,7 @@ def text_extractor(detect_tup,book):
         bookTexts.append(pageTexts)
     return bookTexts
 
-frankBook = text_extractor(score_maker(book,100),book)
-for i,page in enumerate(frankBook):
-    print(i,len(page))
-        
+
         
         
 
