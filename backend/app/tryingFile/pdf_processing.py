@@ -2,7 +2,7 @@ import pymupdf
 from collections import Counter
 import re
 
-doc = pymupdf.open("/mnt/hdd/Projects/StudyOS/backend/uploads/harry2.pdf")
+doc = pymupdf.open("/mnt/hdd/Projects/StudyOS/backend/uploads/system.pdf")
 book = []
 
 for page_number, page in enumerate(doc, start=1):
@@ -255,4 +255,31 @@ def score_maker(book,batch_size):
     
     
 nBatch,headerTup,footerTup = score_maker(book,100)
-print(detector(headerTup,footerTup,nBatch))
+
+def text_extractor(detect_tup,book):
+    header = detect_tup[0]
+    footer = detect_tup[1]
+    bookTexts = []
+    for page in book:
+        pageTexts = []
+        for i in range(len(page)):
+            if header and i == 0:
+                continue
+            if footer and i == (len(page) - 1):
+                continue
+            text = page[i][4].replace('\n','').strip()
+            if(not len(text)):
+                continue
+            pageTexts.append(text)
+        bookTexts.append(pageTexts)
+    return bookTexts
+
+frankBook = text_extractor(score_maker(book,100),book)
+for i,page in enumerate(frankBook):
+    print(i,len(page))
+        
+        
+        
+
+
+
