@@ -101,11 +101,13 @@ def delete_document(document_id:UUID,db:Session=Depends(get_db)):
         raise
     return {"reponse":"Deleted Successfully"}
     
-@router.get("/{document_id}/pages/{page_number}",response_model= PageResponse)
+@router.get("/{document_id}/pages/{page_number}",response_model=PageResponse)
 def get_single_page(document_id:UUID,page_number :int,db:Session=Depends(get_db)):
     stmt = select(DocumentText.page_number,DocumentText.text).where(DocumentText.document_id == document_id,DocumentText.page_number == page_number)
-    page = db.execute(stmt).mappings().one_or_none()
+    page = db.execute(stmt).all()
+    response = {'page_number' : page_number,'paragraphs' : [para[1] for para in page]}
     if page is None:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,detail="Page not found")
 
-    return page
+    return response
+

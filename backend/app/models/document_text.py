@@ -12,6 +12,7 @@ class DocumentText(Base):
     document_id:Mapped[str] = mapped_column(ForeignKey("documents.id"),nullable=False)
     page_number:Mapped[int] = mapped_column(Integer,nullable=False)
     text:Mapped[str] = mapped_column(Text,nullable=False)
+    paragraph_number:Mapped[int] = mapped_column(Integer)
 
     document = relationship("Document",back_populates="texts")
 

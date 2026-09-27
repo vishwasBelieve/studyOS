@@ -17,10 +17,11 @@ def pdf_extractor(file_path:str,document_id,database:Session):
 
         bookPages = text_extractor(book)
         for  pageNumber,block in enumerate(bookPages,start=1):
-                for text in block:
+                for textNum,text in enumerate(block):
                         page_text = DocumentText(
                                 document_id =document_id,
                                 page_number = pageNumber,
+                                paragraph_number = textNum,
                                 text = text
                         )
                         database.add(page_text)
