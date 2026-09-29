@@ -2,6 +2,7 @@ from sqlalchemy.orm import mapped_column,Mapped,relationship
 from uuid import uuid4
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy import String, Integer,ForeignKey,Text
+from pgvector.sqlalchemy import Vector,vector
 from sqlalchemy import UniqueConstraint
 
 from app.db.database import Base
@@ -13,6 +14,7 @@ class DocumentText(Base):
     page_number:Mapped[int] = mapped_column(Integer,nullable=False)
     text:Mapped[str] = mapped_column(Text,nullable=False)
     paragraph_number:Mapped[int] = mapped_column(Integer)
+    embedding: Mapped[Vector |None] = mapped_column(Vector(384),nullable=True)
 
     document = relationship("Document",back_populates="texts")
 
