@@ -111,3 +111,6 @@ def get_single_page(document_id:UUID,page_number :int,db:Session=Depends(get_db)
 
     return response
 
+@router.get("/{document_id}")
+def add_embedding(document_id:UUID,db:Session=Depends(get_db)):
+    stml = select()
