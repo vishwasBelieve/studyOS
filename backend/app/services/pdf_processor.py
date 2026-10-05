@@ -21,7 +21,7 @@ def pdf_extractor(file_path:str,document_id,database:Session):
                         page_text = DocumentText(
                                 document_id =document_id,
                                 page_number = pageNumber,
-                                pargraph_number = textNum,
+                                paragraph_number = textNum,
                                 text = text
                         )
                         database.add(page_text)

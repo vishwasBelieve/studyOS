@@ -13,6 +13,7 @@ from app.models.document_text import DocumentText
 from app.schemas.document import DocumentResponse
 from app.db.database import get_db
 from app.services.pdf_processor import pdf_extractor,delete_file
+from app.services.embedding import embeddingTexts
 from pathlib import Path
 
 UPLOAD_DIR = Path("uploads")
@@ -68,6 +69,7 @@ def upload_document(file:UploadFile,db:Session = Depends(get_db),user = Depends(
         db.flush()
 
         pdf_extractor(file_path,document.id,db)
+        embeddingTexts(document.id,db)
         db.commit()
     except Exception as e:
         db.rollback()
