@@ -31,14 +31,18 @@ router = APIRouter(prefix="/ai",tags=["Documents"])
 @router.post("/chat")
 def chat_with_ai(query:Question,db:Session=Depends(get_db)):
     question  = query.question
-    print(query)
     query_embedding = model.encode(question)
     stmt = select(DocumentText.id,
         DocumentText.page_number,
         DocumentText.text,
-        DocumentText.embedding.cosine_distance(query_embedding).label("distance"),).where(DocumentText.document_id == query.document_id,DocumentText.embedding.is_not(None),DocumentText.searchable.is_(True)).order_by(DocumentText.embedding.cosine_distance(query_embedding)).limit(10)
+        DocumentText.embedding.cosine_distance(query_embedding).label("distance"),).where(DocumentText.document_id == query.document_id,DocumentText.embedding.is_not(None),DocumentText.searchable.is_(True)).order_by(DocumentText.embedding.cosine_distance(query_embedding)).limit(5)
     result = db.execute(stmt).mappings().all()
     result.sort(key=lambda x:x['page_number'])
+    for row in result:
+        print(
+            f"Page: {row['page_number']} | "
+            f"Distance: {row['distance']}\n"
+            f"{row['text']}\n")
     prompt = promptMaker(query.question,result)
     response = requests.post("http://127.0.0.1:11434/api/chat",json={'model':'phi4-mini:latest',
                                                                      "messages":[{"role":"user",

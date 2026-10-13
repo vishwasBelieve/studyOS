@@ -4,6 +4,11 @@ import pymupdf
 from app.tryingFile.pdf_processing import text_extractor
 from sqlalchemy.orm import Session
 from app.models.document_text import DocumentText
+
+def is_searchable(text: str) -> bool:
+    cleaned_text = text.strip()
+    return len(cleaned_text) >= 30 and len(cleaned_text.split()) >= 10
+
 def pdf_extractor(file_path:str,document_id,database:Session):
         
         doc = pymupdf.open(file_path)
@@ -22,7 +27,8 @@ def pdf_extractor(file_path:str,document_id,database:Session):
                                 document_id =document_id,
                                 page_number = pageNumber,
                                 paragraph_number = textNum,
-                                text = text
+                                text = text,
+                                searchable = is_searchable(text)
                         )
                         database.add(page_text)
                         

@@ -15,7 +15,7 @@ class DocumentText(Base):
     text:Mapped[str] = mapped_column(Text,nullable=False)
     paragraph_number:Mapped[int] = mapped_column(Integer)
     embedding: Mapped[Vector |None] = mapped_column(Vector(384),nullable=True)
-    searchable:Mapped[bool] = mapped_column(Boolean, default=True, nullable=False)
+    searchable:Mapped[bool] = mapped_column(Boolean, default=True, nullable=True)
 
     document = relationship("Document",back_populates="texts")
 
