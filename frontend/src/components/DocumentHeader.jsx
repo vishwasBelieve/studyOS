@@ -9,10 +9,12 @@ function DocumentHeader() {
     const {documents} = useContext(DocumentContext)
     console.log(documents)
     const document = documents.find(doc => doc.id === parms.id)
-
-  return (
-    <div className="header">{document.name}</div>
+      return (
+    <div className="header">
+      {document ? document.name : "Loading document..."}
+    </div>
   )
-}
+  }
+
 
 export default DocumentHeader

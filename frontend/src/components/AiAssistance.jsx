@@ -1,22 +1,100 @@
 import React, { useEffect, useRef } from 'react'
 import { useState } from 'react'
 import "./AiAssistance.css"
+import { useParams } from 'react-router-dom';
 function AiAssistance() {
     const chatRef = useRef(null);
+    const params = useParams()
+    const {id} = params;
 
     const [messages,setMessages] = useState([]);
     const [input,setInput] = useState("");
     const [isLoading,setLoading] = useState(false);
 
-    function addMessage(message){
-        setMessages(prevMessages => [...prevMessages,{role:"User",content:message},]);
-        setLoading(true)
-        setTimeout(()=>{
-            setMessages(prevMessages =>[...prevMessages,{role:"AI",content:"This is temporary AI response"}]);
-            setLoading(false);
+    async function addMessage(message){
+        const question = message.trim()
 
-        },2000)
+        if(!question || isLoading) return;
+
+        setMessages(prevMessages => [...prevMessages,{role:"User",content:question},{role:"AI",content : ""}]);
         setInput("");
+  try {
+        const response = await fetch("http://127.0.0.1:8000/ai/chat", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                question: question,
+                document_id: id,
+                page_number : 0,
+
+
+
+
+            })
+        });
+
+        if (!response.ok) {
+                const errorDetails = await response.text();
+                console.error("Backend error:", errorDetails);
+            throw new Error(`HTTP error: ${response.status}`);
+        }
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+
+        while(true){
+            const {value,done} = await reader.read();
+            
+            if (done) break;
+
+            const chunk = decoder.decode(value,{stream:true});
+
+        
+
+  
+        setMessages(prevMessages => {
+            const updated = [...prevMessages];
+            const lastIndex = updated.length - 1;
+
+            updated[lastIndex] = {...updated[lastIndex],content : updated[lastIndex].content + chunk};
+            return updated;
+        });
+    }
+    
+    const remaining  = decoder.decode();
+
+    if(remaining) {
+        setMessages(prevMessages => {
+            const updated = [...prevMessages];
+            const lastIndex = updated.length - 1;
+
+            updated[lastIndex] = {...updated[lastIndex],content : updated[lastIndex].content + chunk};
+            return updated;
+        });
+    }
+}
+    catch(error){
+        console.error("AI request failed",error);
+           setMessages(prev => {
+            const updated = [...prev];
+            const lastIndex = updated.length - 1;
+
+            updated[lastIndex] = {
+                ...updated[lastIndex],
+                content: "Failed to get an AI response. Check the backend and try again."
+            };
+
+            return updated;
+        });
+
+    }
+    finally{
+        setLoading(false);
+    }
+    
+
+   
     }
 
     function sendMessage(e){
@@ -26,6 +104,7 @@ function AiAssistance() {
     }
     function handleAction(action){
         addMessage(action)
+        console.log("handle running");
         
     }
 useEffect(() => {

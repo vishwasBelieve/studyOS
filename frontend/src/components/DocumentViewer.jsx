@@ -1,31 +1,55 @@
-import { useParams } from "react-router-dom"
-import { useState, useContext, useEffect } from "react"
-import { DocumentContext } from "../context/DocumentContext"
-import "./DocumentViewer.css"
 
-export default function DocumentViewer(){
-    const parms = useParams()
-    const {documents} = useContext(DocumentContext)
-    const document = documents.find(doc => doc.id === parms.id)
-    const [fileUrl,setFileUrl] = useState(null);
+import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { fetchPdf } from "../api";
+import "./DocumentViewer.css";
 
-    useEffect(()=>{
-        if(!document) return;
-        const url = URL.createObjectURL(document.file);
-        setFileUrl(url);
-        return () =>{
-            URL.revokeObjectURL(url);
+export default function DocumentViewer() {
+  const { id } = useParams();
+
+  const [fileUrl, setFileUrl] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    let objectUrl;
+
+    async function loadPdf() {
+      try {
+        setLoading(true);
+        setError("");
+
+        const token = prompt("Paste your JWT access token:");
+
+        if (!token) {
+          throw new Error("JWT token is required.");
         }
-    },[document])
 
-    if(!document){
-        return (<h1>Document not found</h1>)
+        objectUrl = await fetchPdf(id, token);
+        setFileUrl(objectUrl);
+      } catch (err) {
+        console.error(err);
+        setError(err.message || "Failed to load PDF.");
+      } finally {
+        setLoading(false);
+      }
     }
 
-    return (
+    loadPdf();
+
+    return () => {
+      if (objectUrl) {
+        URL.revokeObjectURL(objectUrl);
+      }
+    };
+  }, [id]);
+
+  if (loading) return <p>Loading PDF...</p>;
+  if (error) return <p>{error}</p>;
+
+  return (
     <div className="document-viewer">
-        {fileUrl && (<iframe
-            src ={fileUrl} title={document.name}></iframe>)}
-            </div>
-    )
+      {fileUrl && <iframe src={fileUrl} title="PDF viewer" />}
+    </div>
+  );
 }
