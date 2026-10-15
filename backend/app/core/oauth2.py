@@ -1,5 +1,5 @@
 from fastapi.security import  OAuth2PasswordBearer
-from fastapi import Depends,status,HTTPException
+from fastapi import Depends,status,HTTPException,Cookie
 from jose import jwt, JWTError
 from app.core.config import settings
 from sqlalchemy.orm import Session
@@ -16,8 +16,12 @@ def verify_access_token(token:str):
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Count not validate credentials")
 
 
-def get_current_user(token:str = Depends(oauth2_scheme),db:Session= Depends(get_db)):
-    payload = verify_access_token(token)
+def get_current_user(access_token:str | None = Cookie(default=None),db:Session= Depends(get_db)):
+
+    if access_token is None:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,detail="Not authenticated")
+    
+    payload = verify_access_token(access_token)
     user_id = int(payload.get("sub"))
     stmt = select(User).where(User.id == user_id)
     current_user = db.execute(stmt).scalar_one_or_none()

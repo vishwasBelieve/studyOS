@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter,Navigate} from "react-router-dom";
 import Mainlayout from "./layouts/MainLayout.jsx"
 import DocumentPage from "./pages/DocumentPage"
 import Dashboard  from "./pages/Dashboard.jsx";
@@ -9,7 +9,8 @@ const router = createBrowserRouter([
     {path : "/",
         element: <Mainlayout/>,
         children : [
-            {index : true, element : <Dashboard/>},
+            {index:true,element:<Navigate to="/login" replace/>},
+            {path: "/dashboard", element : <Dashboard/>},
             {
                 path: "document/:id",element : <DocumentPage/>
             }
