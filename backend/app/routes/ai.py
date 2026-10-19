@@ -8,7 +8,10 @@ from pgvector.sqlalchemy import VECTOR
 from sqlalchemy import select
 from app.models.document_text import DocumentText
 from app.services.ai_services import promptMaker
+from app.core.oauth2 import get_current_user
+from litellm import acompletion
 import requests
+
 import json
 
 router = APIRouter(prefix="/ai",tags=["Documents"])
@@ -29,7 +32,7 @@ router = APIRouter(prefix="/ai",tags=["Documents"])
 
     # return StreamingResponse(genrator(),media_type="text/plain")
 @router.post("/chat")
-def chat_with_ai(query:Question,db:Session=Depends(get_db)):
+async def chat_with_ai(query:Question,db:Session=Depends(get_db),user=Depends(get_current_user)):
     question  = query.question
     query_embedding = model.encode(question)
     stmt = select(DocumentText.id,
@@ -44,17 +47,31 @@ def chat_with_ai(query:Question,db:Session=Depends(get_db)):
             f"Distance: {row['distance']}\n"
             f"{row['text']}\n")
     prompt = promptMaker(query.question,result)
-    response = requests.post("http://localhost:11434/api/chat",json={'model':'phi4-mini:latest',
-                                                                     "messages":[{"role":"user",
-                                                                                  "content":prompt}],'stream':True},stream=True)
-    def genrator():
-        for line in response.iter_lines():
-            if line:
-                data = json.loads(line.decode("utf-8"))
+    api_key = (user.ai_keys or {}).get("google")
+    if not api_key:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,detail="Please configure your Gemini API key in settings")
+    # response = requests.post("http://localhost:11434/api/chat",json={'model':'phi4-mini:latest',
+    #                                                                  "messages":[{"role":"user", "content":prompt}],'stream':True},stream=True)
+    #         
+    response = await acompletion(
+    model="gemini/gemini-3.8-flash",
+    api_key=api_key,
+    messages=[{"role": "user", "content": prompt}],
+    stream=True,
+)                                                                     
+    # def genrator():
+    #     for line in response.iter_lines():
+    #         if line:
+    #             data = json.loads(line.decode("utf-8"))
 
-                if data.get('done'):
-                    break
-                yield data['message']['content']
+    #             if data.get('done'):
+    #                 break
+    #             yield data['message']['content']
+    async def generator():
+        async for chunk in response:
+            content = chunk.choices[0].delta.content
+            if content:
+                yield content
 
-    return StreamingResponse(genrator(),media_type="text/plain")
+    return StreamingResponse(generator(),media_type="text/plain")
     

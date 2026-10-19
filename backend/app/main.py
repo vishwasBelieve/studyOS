@@ -9,12 +9,13 @@ from app.routes.auth import router as auth_router
 from app.routes.documents import router as doc_router
 from .models.document_text import DocumentText
 from app.routes.ai import router as ai_router
-
+from app.routes.settings import router as setting_router
 app = FastAPI()
 app.include_router(user_router)
 app.include_router(auth_router)
 app.include_router(doc_router)
 app.include_router(ai_router)
+app.include_router(setting_router)
 Base.metadata.create_all(bind=engine)
 
 app.add_middleware(CORSMiddleware,allow_origins=[ "http://localhost:5173"],    allow_credentials=True,
