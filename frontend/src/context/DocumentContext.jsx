@@ -1,11 +1,27 @@
-import { createContext, useState } from "react";
+import { createContext, useState ,useEffect} from "react";
 import { uploadPdf } from "../api";
+import { fetchDocuments } from "../api";
 export const DocumentContext = createContext()
+
 
 
 export function DocumentProvider(props){
     const [documents , setDocuments] = useState([])
-    
+    useEffect(() => {
+        async function loadDocuments() {
+            console.log("loading the document")
+            try {
+                const data = await fetchDocuments();
+                setDocuments(data);
+            } catch (error) {
+                console.error("Failed to load documents:", error);
+            }
+        }
+
+        loadDocuments();
+    }, []);
+
+
     async function uploadDocument(file){
         try{
              const uploadedDocument = await uploadPdf(file);

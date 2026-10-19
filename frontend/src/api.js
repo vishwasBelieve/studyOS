@@ -38,3 +38,14 @@ export async function fetchPdf(docId,option={}){
         return URL.createObjectURL(blob);
 }
 
+export async function fetchDocuments() {
+    const response = await fetch("http://localhost:8000/documents/documents", {
+        credentials: "include",
+    });
+
+    if (!response.ok) {
+        throw new Error("Failed to fetch documents");
+    }
+
+    return response.json();
+}
