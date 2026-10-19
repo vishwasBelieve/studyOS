@@ -44,7 +44,7 @@ def chat_with_ai(query:Question,db:Session=Depends(get_db)):
             f"Distance: {row['distance']}\n"
             f"{row['text']}\n")
     prompt = promptMaker(query.question,result)
-    response = requests.post("http://127.0.0.1:11434/api/chat",json={'model':'phi4-mini:latest',
+    response = requests.post("http://localhost:11434/api/chat",json={'model':'phi4-mini:latest',
                                                                      "messages":[{"role":"user",
                                                                                   "content":prompt}],'stream':True},stream=True)
     def genrator():

@@ -7,10 +7,8 @@ export function DocumentProvider(props){
     const [documents , setDocuments] = useState([])
     
     async function uploadDocument(file){
-        const token = prompt("Paste your JWT access token:");
-        if(!token) return;
         try{
-             const uploadedDocument = await uploadPdf(file, token);
+             const uploadedDocument = await uploadPdf(file);
 
              setDocuments((prevDocuments)=>[...prevDocuments,{
                 ...uploadedDocument,id:uploadedDocument.id,name:uploadedDocument.name,

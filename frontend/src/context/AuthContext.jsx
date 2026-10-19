@@ -9,14 +9,19 @@ export default function AuthProvider({children}){
 
     async function fetchCurrentUser() {
         try{
-            const response = await fetch("http://127.0.0.1:8000/login/me",
+            const response = await fetch("http://localhost:8000/login/me",
                 {credentials :"include"}
             );
 
-            if(!response.ok){
-                setUser(null);
-                return;
-            }
+                if (!response.ok) {
+            console.error(
+                "Authentication failed:",
+                response.status,
+                await response.text()
+            );
+            setUser(null);
+            return;
+        }
             const data = await response.json()
             setUser(data);
 

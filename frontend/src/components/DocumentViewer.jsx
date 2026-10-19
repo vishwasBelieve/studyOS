@@ -19,13 +19,9 @@ export default function DocumentViewer() {
         setLoading(true);
         setError("");
 
-        const token = prompt("Paste your JWT access token:");
 
-        if (!token) {
-          throw new Error("JWT token is required.");
-        }
 
-        objectUrl = await fetchPdf(id, token);
+        objectUrl = await fetchPdf(id);
         setFileUrl(objectUrl);
       } catch (err) {
         console.error(err);

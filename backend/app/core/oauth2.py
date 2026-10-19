@@ -19,6 +19,7 @@ def verify_access_token(token:str):
 def get_current_user(access_token:str | None = Cookie(default=None),db:Session= Depends(get_db)):
 
     if access_token is None:
+        print("access_token is null")
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,detail="Not authenticated")
     
     payload = verify_access_token(access_token)
