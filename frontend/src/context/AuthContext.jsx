@@ -34,15 +34,45 @@ export default function AuthProvider({children}){
         }
     }
     
-    useEffect(()=>{fetchCurrentUser();},[]);
 
 
 
     
-    function logout(){
+ async   function logout(){
+        try{
+            await fetch("http://localhost:8000/login/logout",{
+                method:"POST",
+                credentials:"include",
+            });
+        }catch(error){
+            console.error("Backend logout failed:",error)
+        }finally{
    
         setUser(null);
+        window.location.replace("/login");
     }
+}
+    useEffect(() => {
+        fetchCurrentUser();
+
+        function handleSessionExpired() {
+        setUser(null);
+        window.location.replace("/login");
+        }
+
+        window.addEventListener(
+        "auth:session-expired",
+        handleSessionExpired
+        );
+
+        return () => {
+        window.removeEventListener(
+            "auth:session-expired",
+            handleSessionExpired
+        );
+        };
+    }, []);
+
 
     const isAuthenticated = Boolean(user);
 

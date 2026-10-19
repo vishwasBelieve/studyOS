@@ -15,6 +15,7 @@ function AiAssistance() {
         const question = message.trim()
 
         if(!question || isLoading) return;
+        setLoading(true);
 
         setMessages(prevMessages => [...prevMessages,{role:"User",content:question},{role:"AI",content : ""}]);
         setInput("");
@@ -24,6 +25,7 @@ function AiAssistance() {
             headers: {
                 "Content-Type": "application/json"
             },
+            credentials:"include",
             body: JSON.stringify({
                 question: question,
                 document_id: id,
@@ -64,12 +66,17 @@ function AiAssistance() {
     
     const remaining  = decoder.decode();
 
-    if(remaining) {
+
+    if (remaining) {
         setMessages(prevMessages => {
             const updated = [...prevMessages];
             const lastIndex = updated.length - 1;
 
-            updated[lastIndex] = {...updated[lastIndex],content : updated[lastIndex].content + chunk};
+            updated[lastIndex] = {
+                ...updated[lastIndex],
+                content: updated[lastIndex].content + remaining
+            };
+
             return updated;
         });
     }

@@ -15,7 +15,7 @@
   margin-bottom: 0.5rem;
 }
 
-.sidebar-list a {
+.sidebar-list a,button {
   display: block;
   color: #b8b8b8;
   text-decoration: none;

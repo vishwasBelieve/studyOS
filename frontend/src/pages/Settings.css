@@ -1,0 +1,72 @@
+.settings-page {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 24px;
+  color: #1e293b;
+}
+
+.settings-page h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.settings-page p {
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+.settings-card {
+  padding: 24px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.settings-form,
+.settings-field {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.settings-form {
+  gap: 20px;
+}
+
+.settings-field label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.settings-field input,
+.settings-field select {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.settings-field input:focus,
+.settings-field select:focus {
+  outline: 2px solid #6366f1;
+  border-color: transparent;
+}
+
+.settings-save-button {
+  padding: 12px 20px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.settings-save-button:hover {
+  background: #4338ca;
+}
+
+@media (max-width: 600px) {
+  .settings-page {
+    padding: 16px;
+  }
+}

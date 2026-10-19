@@ -71,3 +71,16 @@
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
 
+
+.ai-panel {
+    min-width: 0;
+    height: 100%;
+}
+
+.ai-hidden {
+    display: none;
+}
+
+.ai-visible {
+    display: block;
+}

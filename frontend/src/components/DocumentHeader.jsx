@@ -11,7 +11,7 @@ function DocumentHeader() {
     const document = documents.find(doc => doc.id === parms.id)
       return (
     <div className="header">
-      {document ? document.name : "Loading document..."}
+      {document ? document.name : ""}
     </div>
   )
   }
