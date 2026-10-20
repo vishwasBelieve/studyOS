@@ -11,6 +11,19 @@ function AiAssistance() {
     const [input,setInput] = useState("");
     const [isLoading,setLoading] = useState(false);
 
+    useEffect(()=>{
+        function handleExplainSelection(event){
+            const selectedText = event.detail.text;
+            console.log(event)
+
+            addMessage(`Explain this selected text from my PDF:\n\n"${selectedText}"`);
+        }
+        window.addEventListener("studyos:explain-selection",handleExplainSelection);
+        return ()=>{
+            window.removeEventListener("studyos:explain-selection",handleExplainSelection);
+        }
+    },[]);
+
     async function addMessage(message){
         const question = message.trim()
 

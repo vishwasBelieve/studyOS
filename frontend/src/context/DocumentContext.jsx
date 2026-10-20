@@ -1,13 +1,20 @@
 import { createContext, useState ,useEffect} from "react";
 import { uploadPdf } from "../api";
 import { fetchDocuments } from "../api";
+import { useAuth } from "./AuthContext";
 export const DocumentContext = createContext()
 
 
-
 export function DocumentProvider(props){
+    const { user, loading: authLoading } = useAuth();
     const [documents , setDocuments] = useState([])
     useEffect(() => {
+        if (authLoading) return;
+
+        if (!user) {
+        setDocuments([]);
+        return;
+        }
         async function loadDocuments() {
             console.log("loading the document")
             try {
@@ -19,7 +26,7 @@ export function DocumentProvider(props){
         }
 
         loadDocuments();
-    }, []);
+    }, [user,authLoading]);
 
 
     async function uploadDocument(file){

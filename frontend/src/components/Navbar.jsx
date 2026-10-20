@@ -1,4 +1,5 @@
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 export default function Navbar(props) {
   
   return (
@@ -8,7 +9,7 @@ export default function Navbar(props) {
           <span className="hamburger">☰</span>
         </button>
         
-        <a href="/" className="navbar-brand">StudyOS</a>
+        <Link to="/dashboard" className="navbar-brand">StudyOS</Link>
         
         <form className="navbar-search" role="search">
           <input 

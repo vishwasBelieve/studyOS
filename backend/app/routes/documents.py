@@ -42,6 +42,14 @@ def get_document(document_id:UUID,db:Session =Depends(get_db),user = Depends(get
     if not document:
         raise HTTPException(status_code=404,detail="Document not found")
     
+    file_path = Path(document.file_path)
+
+    if not file_path.is_file():
+        raise HTTPException(
+            status_code=404,
+            detail="PDF file not found on the server"
+        )
+    
     return FileResponse(document.file_path,media_type=document.mime_type,filename=document.name)
 
 

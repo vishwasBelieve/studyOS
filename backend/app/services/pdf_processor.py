@@ -42,19 +42,21 @@ def delete_file(file_path):
      if file_path and file_path.exists():
           file_path.unlink()
           
-def pdf_extractor_non_paraphraph(file_path: str, document_id, database: Session):
+def pdf_extractor_non_paraphraph(
+    file_path: str,
+    document_id,
+    database: Session
+):
+    chunks = extract_page_chunks(file_path)
 
-    book = extract_page_chunks(file_path)
-
-    for page in book:
-        for textNum, block in enumerate(page):
-            page_text = DocumentText(
-                document_id=document_id,
-                page_number=block["page_number"],
-                paragraph_number=textNum,
-                text=block["text"],
-                searchable=is_searchable(block["text"])
-            )
-            database.add(page_text)
+    for textNum, block in enumerate(chunks):
+        page_text = DocumentText(
+            document_id=document_id,
+            page_number=block["page_number"],
+            paragraph_number=textNum,
+            text=block["text"],
+            searchable=is_searchable(block["text"])
+        )
+        database.add(page_text)
 
     database.commit()

@@ -13,7 +13,7 @@ router = APIRouter(prefix="/users",tags=["Users"])
 
 @router.post("/")
 def create_user(user_data:UserCreate,db:Session = Depends(get_db)):
-    user = User(username = user_data.username,email=user_data.email,hashed_password=hash_password(user_data.password))
+    user = User(email=user_data.email,hashed_password=hash_password(user_data.password))
     db.add(user)
     db.commit()
     db.refresh(user)
