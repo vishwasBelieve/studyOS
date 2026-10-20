@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./Settings.css"
+import AISettings from "../components/AISettings";
+
 export default function Settings(){
      const [provider,setProvider] = useState("openai");
      const[apiKey,setApiKey] = useState("");
@@ -83,6 +85,7 @@ export default function Settings(){
       </div>
     </form>
   </section>
+  <AISettings/>
 </main>
     )
 }

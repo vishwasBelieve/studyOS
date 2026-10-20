@@ -1,11 +1,25 @@
 import React, { useEffect, useRef } from 'react'
 import { useState } from 'react'
-import "./AiAssistance.css"
+import "./AIAssistance.css"
 import { useParams } from 'react-router-dom';
-function AiAssistance() {
+import { useAIProvider } from '../context/AIProviderContext';
+
+function AIAssistance() {
     const chatRef = useRef(null);
     const params = useParams()
     const {id} = params;
+    const provider = localStorage.getItem("ai_provider");
+    if (!provider) {
+  setMessages((prev) => [
+    ...prev,
+    {
+      role: "AI",
+      content: "Please select an AI provider in Settings first.",
+    },
+  ]);
+  return;
+}
+
 
     const [messages,setMessages] = useState([]);
     const [input,setInput] = useState("");
@@ -33,7 +47,9 @@ function AiAssistance() {
         setMessages(prevMessages => [...prevMessages,{role:"User",content:question},{role:"AI",content : ""}]);
         setInput("");
   try {
-        const response = await fetch("http://localhost:8000/ai/chat", {
+        const response = await fetch(
+  `http://localhost:8000/ai/chat?api=${encodeURIComponent(provider)}`,
+  {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -157,4 +173,4 @@ useEffect(() => {
   )
 }
 
-export default AiAssistance
+export default AIAssistance

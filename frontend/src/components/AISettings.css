@@ -1,0 +1,47 @@
+
+.ai-settings {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 24px;
+  color: #1e293b;
+}
+
+.ai-settings h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.ai-settings label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ai-settings select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: white;
+  color: #1e293b;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.ai-settings select:focus {
+  outline: 2px solid #6366f1;
+  border-color: transparent;
+}
+
+.ai-settings p {
+  margin-top: 16px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .ai-settings {
+    padding: 16px;
+  }
+}

@@ -2,7 +2,7 @@
 import { useState } from "react";
 import DocumentViewer from "../components/DocumentViewer";
 import DocumentHeader from "../components/DocumentHeader";
-import AiAssistance from "../components/AiAssistance";
+import AIAssistance from "../components/AIAssistance";
 import "./DocumentPage.css";
 
 export default function DocumentPage() {
@@ -16,7 +16,7 @@ export default function DocumentPage() {
                 <DocumentViewer />
 
                 <div className={`ai-panel ${aiOpen ? "ai-visible" : "ai-hidden"}`}>
-                    <AiAssistance />
+                    <AIAssistance />
                 </div>
             </div>
 
