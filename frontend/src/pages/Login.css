@@ -292,3 +292,17 @@
     padding: 40px 24px;
   }
 }
+.signup-link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.signup-link:hover {
+  opacity: 0.75,
+}

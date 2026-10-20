@@ -8,7 +8,8 @@ def create_embeddings(texts: list[str]) -> list[list[float]]:
     response = httpx.post(
         EMBEDDING_SERVICE_URL,
         json={"texts": texts},
-        timeout=120.0,
+        timeout=None
+      
     )
 
     response.raise_for_status()

@@ -46,12 +46,13 @@ def extract_page_chunks(pdf_path):
                 })
 
     return chunks
-for chunk in extract_page_chunks("/mnt/hdd/Projects/StudyOS/backend/uploads/network.pdf"):
-    print(chunk)
 
 
 
-
+book = extract_page_chunks("/mnt/hdd/Projects/StudyOS/backend/uploads/network.pdf")
+print(type(book))
+print(type(book[0]))
+print(repr(book[0])[:300])
 
 # for page_number, page in enumerate(doc, start=1):
 #     blocks = page.get_text("blocks")

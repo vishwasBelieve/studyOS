@@ -82,7 +82,7 @@ def upload_document(file:UploadFile,db:Session = Depends(get_db),user = Depends(
 
         try:
             pdf_extractor(file_path,document.id,db)
-        except ValueError():
+        except ValueError:
             pdf_extractor_non_paraphraph(file_path,document.id,db)
         except Exception:
             raise HTTPException(status_code=status.HTTP_406_NOT_ACCEPTABLE,detail="can't process this pdf")

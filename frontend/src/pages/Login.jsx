@@ -110,9 +110,16 @@ export default function Login() {
               </button>
             </form>
 
-            <p className="form-footer">
-              Your documents are waiting for you.
-            </p>
+                    <p className="form-footer">
+          Don't have an account?{" "}
+          <button
+            type="button"
+            className="signup-link"
+            onClick={() => navigate("/signup")}
+          >
+            Sign up
+          </button>
+        </p>
           </div>
         </section>
       </main>

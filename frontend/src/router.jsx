@@ -5,8 +5,10 @@ import Dashboard  from "./pages/Dashboard.jsx";
 import Login from "./pages/Login.jsx";
 import ProtectedRoute from "./components/ProtectedRouter.jsx";
 import Settings from "./pages/Settings.jsx";
+import Signup from "./pages/Singup.jsx";
 const router = createBrowserRouter([
     {path:"/login",element:<Login/>},
+    {path:"/signup",element:<Signup/>},
     {element:<ProtectedRoute/>,
         children:[ 
             {path : "/",
