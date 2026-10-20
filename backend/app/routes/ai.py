@@ -3,7 +3,6 @@ from fastapi.responses import StreamingResponse
 from app.schemas.ai import Question
 from app.db.database import get_db
 from sqlalchemy.orm import Session
-from app.services.embedding import model
 from pgvector.sqlalchemy import VECTOR
 from sqlalchemy import select
 from app.models.document_text import DocumentText
@@ -11,6 +10,7 @@ from app.services.ai_services import promptMaker
 from app.core.oauth2 import get_current_user
 from litellm import acompletion
 import requests
+from app.services.embed import create_embeddings
 
 import json
 
@@ -34,7 +34,7 @@ router = APIRouter(prefix="/ai",tags=["Documents"])
 @router.post("/chat")
 async def chat_with_ai(query:Question,db:Session=Depends(get_db),user=Depends(get_current_user)):
     question  = query.question
-    query_embedding = model.encode(question)
+    query_embedding = create_embeddings([question])[0]
     stmt = select(DocumentText.id,
         DocumentText.page_number,
         DocumentText.text,

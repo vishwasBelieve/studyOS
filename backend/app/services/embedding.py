@@ -1,12 +1,10 @@
-from sentence_transformers import SentenceTransformer
 from app.db.database import SessionLocal
 from uuid import UUID
 from sqlalchemy import select
 from app.models.document_text import DocumentText
 from sqlalchemy.orm import Session 
-db = SessionLocal()
+from app.services.embed import create_embeddings
 
-model = SentenceTransformer('BAAI/bge-small-en-v1.5',local_files_only=True)
 
 def embeddingTexts(documentId:UUID,db:Session):
     print("called")
@@ -16,11 +14,7 @@ def embeddingTexts(documentId:UUID,db:Session):
     texts = [row.text for row in rows]
     print(f"Embedding {len(texts)} texts...")
 
-    embeddings = model.encode(
-        texts,
-        batch_size=32,
-        show_progress_bar=True
-    ).tolist()
+    embeddings = create_embeddings(texts)
 
     print("Embedding finished")
 

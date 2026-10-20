@@ -10,9 +10,10 @@ from sqlalchemy.orm import Session
 from sqlalchemy import select
 from app.models.document import Document
 from app.models.document_text import DocumentText
+from app.models.document import Document
 from app.schemas.document import DocumentResponse
 from app.db.database import get_db
-from app.services.pdf_processor import pdf_extractor,delete_file
+from app.services.pdf_processor import pdf_extractor,delete_file,pdf_extractor_non_paraphraph
 from app.services.embedding import embeddingTexts
 from pathlib import Path
 
@@ -21,6 +22,17 @@ UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 
 
 router = APIRouter(prefix="/documents",tags=["Documents"])
+
+
+@router.get("/documents")
+def get_all_docs(db:Session=Depends(get_db),user = Depends(get_current_user)):
+    print("running")
+    if not user:
+        raise HTTPException(status_code=404,detail="User not found")
+    documents = db.scalars(select(Document).where(Document.owner_id == user.id).order_by(Document.created_at.desc())).all()
+
+    return documents
+
 
 @router.get("/{document_id}/file")
 def get_document(document_id:UUID,db:Session =Depends(get_db),user = Depends(get_current_user)):
@@ -68,7 +80,14 @@ def upload_document(file:UploadFile,db:Session = Depends(get_db),user = Depends(
         db.add(document)
         db.flush()
 
-        pdf_extractor(file_path,document.id,db)
+        try:
+            pdf_extractor(file_path,document.id,db)
+        except ValueError():
+            pdf_extractor_non_paraphraph(file_path,document.id,db)
+        except Exception:
+            raise HTTPException(status_code=status.HTTP_406_NOT_ACCEPTABLE,detail="can't process this pdf")
+
+
         embeddingTexts(document.id,db)
         db.commit()
     except Exception as e:
@@ -113,6 +132,3 @@ def get_single_page(document_id:UUID,page_number :int,db:Session=Depends(get_db)
 
     return response
 
-@router.get("/{document_id}")
-def add_embedding(document_id:UUID,db:Session=Depends(get_db)):
-    stml = select()
