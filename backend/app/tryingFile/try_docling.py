@@ -15,3 +15,8 @@
 #     print(f"Page number : {pageNumber},Blocks: {len(block)}")
 #     for textNum,text in enumerate(block):
 #         break
+
+
+# response = await acompletion(
+#     model="openai"
+# )

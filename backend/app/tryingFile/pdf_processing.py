@@ -1,9 +1,57 @@
-import pymupdf
 from collections import Counter
 import re
+import pdfplumber
+import pdfplumber
 
-# doc = pymupdf.open("/mnt/hdd/Projects/StudyOS/backend/uploads/system.pdf")
-# book = []
+
+import pdfplumber
+import re
+
+
+def chunk_text(text, chunk_size=250, overlap=40):
+    words = text.split()
+    chunks = []
+
+    start = 0
+    while start < len(words):
+        end = min(start + chunk_size, len(words))
+        chunks.append(" ".join(words[start:end]))
+
+        if end == len(words):
+            break
+
+        start = end - overlap
+
+    return chunks
+
+
+def extract_page_chunks(pdf_path):
+    chunks = []
+
+    with pdfplumber.open(pdf_path) as pdf:
+        for page_num, page in enumerate(pdf.pages, start=1):
+            text = page.extract_text(layout=False)
+
+            if not text or not text.strip():
+                continue
+
+            text = re.sub(r"\s+", " ", text).strip()
+
+            page_chunks = chunk_text(text)
+
+            for chunk in page_chunks:
+                chunks.append({
+                    "page_number": page_num,
+                    "text": chunk
+                })
+
+    return chunks
+for chunk in extract_page_chunks("/mnt/hdd/Projects/StudyOS/backend/uploads/network.pdf"):
+    print(chunk)
+
+
+
+
 
 # for page_number, page in enumerate(doc, start=1):
 #     blocks = page.get_text("blocks")
@@ -185,8 +233,7 @@ WEIGHTS = (0.2, 1.0, 0.6)
 
 def score_maker(book,batch_size):
     if(not isParaBlocked(book)):
-        print("Can't process this book")
-        return None
+        raise ValueError("Can't process this pdf")
     # if (not isParaBlocked(book)):
     #     return
     numberOfBatches = 0
