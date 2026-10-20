@@ -1,4 +1,4 @@
-from fastapi import APIRouter,HTTPException,status,Depends,File,UploadFile
+from fastapi import APIRouter,HTTPException,status,Depends,File,UploadFile,Query
 from fastapi.responses import StreamingResponse
 from app.schemas.ai import Question
 from app.db.database import get_db
@@ -31,9 +31,22 @@ router = APIRouter(prefix="/ai",tags=["Documents"])
     #             yield data['message']['content']
 
     # return StreamingResponse(genrator(),media_type="text/plain")
-@router.post("/chat")
-async def chat_with_ai(query:Question,db:Session=Depends(get_db),user=Depends(get_current_user)):
+@router.post("/chat/")
+async def chat_with_ai(query:Question,api:str = Query(...),db:Session=Depends(get_db),user=Depends(get_current_user)):
+    print(api)
     question  = query.question
+    provider_models = {
+    "google": "gemini/gemini-3.5-flash",
+    "openai": "openai/gpt-4o-mini",
+    "anthropic": "anthropic/claude-3-5-haiku-latest",}
+
+    model = provider_models.get(api)
+
+    if not model:
+        raise  HTTPException(
+        status_code=400,
+        detail="Unsupported AI provider"
+    )
     query_embedding = create_embeddings([question])[0]
     stmt = select(DocumentText.id,
         DocumentText.page_number,
@@ -47,18 +60,22 @@ async def chat_with_ai(query:Question,db:Session=Depends(get_db),user=Depends(ge
             f"Distance: {row['distance']}\n"
             f"{row['text']}\n")
     prompt = promptMaker(query.question,result)
-    api_key = (user.ai_keys or {}).get("google")
+    api_key = (user.ai_keys or {}).get(api)
     if not api_key:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,detail="Please configure your Gemini API key in settings")
     # response = requests.post("http://localhost:11434/api/chat",json={'model':'phi4-mini:latest',
     #                                                                  "messages":[{"role":"user", "content":prompt}],'stream':True},stream=True)
     #         
-    response = await acompletion(
-    model="gemini/gemini-3.8-flash",
-    api_key=api_key,
-    messages=[{"role": "user", "content": prompt}],
-    stream=True,
-)                                                                     
+    try:
+        response = await acompletion(
+        model=model,
+        api_key=api_key,
+        messages=[{"role": "user", "content": prompt}],
+        stream=True,
+        )                                                                     
+    except Exception:
+        print("this is running")
+        raise HTTPException(status_code=status.HTTP_406_NOT_ACCEPTABLE,detail="The LLM is not working")
     # def genrator():
     #     for line in response.iter_lines():
     #         if line:
