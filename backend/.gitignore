@@ -6,3 +6,5 @@ __pycache__/
 .idea/
 .uploads/
 uploads
+.thumbnails
+/backend/app/tryingFile
