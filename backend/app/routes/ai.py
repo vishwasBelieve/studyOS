@@ -38,7 +38,8 @@ async def chat_with_ai(query:Question,api:str = Query(...),db:Session=Depends(ge
     provider_models = {
     "google": "gemini/gemini-3.5-flash",
     "openai": "openai/gpt-4o-mini",
-    "anthropic": "anthropic/claude-3-5-haiku-latest",}
+    "anthropic": "anthropic/claude-3-5-haiku-latest",
+    "openrouter": "openrouter/openai/gpt-3.5-turbo",}
 
     model = provider_models.get(api)
 
@@ -68,14 +69,18 @@ async def chat_with_ai(query:Question,api:str = Query(...),db:Session=Depends(ge
     #         
     try:
         response = await acompletion(
-        model=model,
-        api_key=api_key,
-        messages=[{"role": "user", "content": prompt}],
-        stream=True,
-        )                                                                     
-    except Exception:
-        print("this is running")
-        raise HTTPException(status_code=status.HTTP_406_NOT_ACCEPTABLE,detail="The LLM is not working")
+                model=model,
+                api_key=api_key,
+                messages=[{"role": "user", "content": prompt}],
+                stream=True,
+            )
+
+    except Exception as e:
+            print(f"LLM error: {e}")
+            raise HTTPException(
+                status_code=502,
+                detail="The LLM request failed"
+            )
     # def genrator():
     #     for line in response.iter_lines():
     #         if line:

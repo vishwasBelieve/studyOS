@@ -15,12 +15,26 @@
   margin-bottom: 0.5rem;
 }
 
-.sidebar-list a,button {
+.sidebar-list a,
+.sidebar-list button {
   display: block;
+  width: 100%;
+  box-sizing: border-box;
   color: #b8b8b8;
+  background: transparent;
+  border: none;
+  text-align: left;
+  font: inherit;
   text-decoration: none;
   padding: 0.6rem 0.75rem;
   border-radius: 6px;
+  cursor: pointer;
+}
+
+.sidebar-list a:hover,
+.sidebar-list button:hover {
+  background: #252542;
+  color: #ffffff;
 }
 
 .sidebar-list a:hover {

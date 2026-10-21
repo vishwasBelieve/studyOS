@@ -1,15 +1,68 @@
 from pathlib import Path
-
+from uuid import UUID
+import logging
 import pymupdf
 from app.tryingFile.pdf_processing import text_extractor
 from sqlalchemy.orm import Session
 from app.models.document_text import DocumentText
 from app.tryingFile.pdf_processing import extract_page_chunks
+from app.models.document import Document  
+
+THUMBNAIL_DIR = Path(
+    "/mnt/hdd/Projects/StudyOS/backend/thumbnails"
+)
+
+
+logger = logging.getLogger(__name__)
 
 def is_searchable(text: str) -> bool:
     cleaned_text = text.strip()
     return len(cleaned_text) >= 30 and len(cleaned_text.split()) >= 10
 
+def thumbnail_extractor(
+    file_path: str,
+    document_id: UUID,
+    database: Session,) -> str | None:
+    thumbnail_file = None
+
+    try:
+        THUMBNAIL_DIR.mkdir(parents=True, exist_ok=True)
+
+        thumbnail_file = THUMBNAIL_DIR / f"{document_id}.png"
+
+        with pymupdf.open(file_path) as doc:
+            if doc.page_count == 0:
+                return None
+
+            pixmap = doc[0].get_pixmap(
+                matrix=pymupdf.Matrix(0.6, 0.6),
+                alpha=False,
+            )
+            pixmap.save(str(thumbnail_file))
+
+        document = database.get(Document, document_id)
+
+        if document is None:
+            thumbnail_file.unlink(missing_ok=True)
+            return None
+
+        document.thumbnail_path = str(thumbnail_file)
+        database.flush()
+
+        return str(thumbnail_file)
+
+    except Exception:
+        logger.exception(
+            "Thumbnail generation failed for document %s",
+            document_id,
+        )
+
+        if thumbnail_file is not None:
+            thumbnail_file.unlink(missing_ok=True)
+
+        return None
+      
+      
 def pdf_extractor(file_path:str,document_id,database:Session):
         
         doc = pymupdf.open(file_path)

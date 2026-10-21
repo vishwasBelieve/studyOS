@@ -14,7 +14,7 @@ from app.models.user import User
 router = APIRouter(prefix="/settings",tags=["Settings"])  
 
 class AIKeyRequest(BaseModel):
-    provider : Literal["openai","anthropic","google"]
+    provider : Literal["openai","anthropic","google","openrouter"]
     api_key : str   
 
 @router.put("/ai_keys")

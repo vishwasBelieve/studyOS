@@ -30,6 +30,7 @@ export default function AISettings() {
         <option value="google">Google Gemini</option>
         <option value="openai">OpenAI</option>
         <option value="anthropic">Anthropic</option>
+        <option value="openrouter">OpenRouter</option>
       </select>
 
       <p>Selected provider: {provider || "None selected"}</p>

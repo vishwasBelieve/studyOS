@@ -10,6 +10,7 @@ class DocumentResponse(BaseModel):
     mime_type :str
     size : int
     page_count : int 
+    thumbnail_path : str
 
     model_config = {
         "from_attributes": True

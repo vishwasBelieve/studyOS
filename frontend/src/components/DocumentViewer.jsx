@@ -93,11 +93,12 @@ export default function DocumentViewer() {
       setSelection(null);}}>
         Explain </button>}
       {fileUrl && (<Document
-          file={fileUrl}
-          onLoadSuccess={({ numPages }) => setNumPages(numPages)}
-          onLoadError={(err) => setError(err.message)}
-          loading={<p>Rendering PDF...</p>}
-        >{Array.from({ length: numPages }, (_, index) => (
+  file={fileUrl}
+  suspense={false}
+  onLoadSuccess={({ numPages }) => setNumPages(numPages)}
+  onLoadError={(err) => setError(err.message)}
+  loading={<p>Rendering PDF...</p>}
+>{Array.from({ length: numPages }, (_, index) => (
             <Page
               key={index + 1}
               pageNumber={index + 1}

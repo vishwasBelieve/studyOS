@@ -16,6 +16,7 @@ class Document(Base):
     name:Mapped[str] = mapped_column(String(255),nullable=False)
     stored_name: Mapped[str] = mapped_column(String(255),unique=True,nullable=False)
     file_path:Mapped[str] = mapped_column(String(500),nullable=False)
+    thumbnail_path:Mapped[str] = mapped_column(String(500),nullable=True)
     mime_type:Mapped[str] = mapped_column(String(100),nullable=False)
     size:Mapped[int] = mapped_column(BigInteger,nullable=False)
     page_count:Mapped[int] = mapped_column(Integer,nullable=False)

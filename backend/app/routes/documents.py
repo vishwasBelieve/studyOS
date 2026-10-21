@@ -13,7 +13,7 @@ from app.models.document_text import DocumentText
 from app.models.document import Document
 from app.schemas.document import DocumentResponse
 from app.db.database import get_db
-from app.services.pdf_processor import pdf_extractor,delete_file,pdf_extractor_non_paraphraph
+from app.services.pdf_processor import pdf_extractor,delete_file,pdf_extractor_non_paraphraph,thumbnail_extractor
 from app.services.embedding import embeddingTexts
 from pathlib import Path
 
@@ -30,7 +30,7 @@ def get_all_docs(db:Session=Depends(get_db),user = Depends(get_current_user)):
     if not user:
         raise HTTPException(status_code=404,detail="User not found")
     documents = db.scalars(select(Document).where(Document.owner_id == user.id).order_by(Document.created_at.desc())).all()
-
+    
     return documents
 
 
@@ -69,6 +69,7 @@ def get_document_metadata(document_id: UUID, db: Session = Depends(get_db)):
 def upload_document(file:UploadFile,db:Session = Depends(get_db),user = Depends(get_current_user)):
     stored_name = f"{uuid4()}.pdf"
     file_path = f"uploads/{stored_name}"
+    
     try:
         with open(file_path,"wb") as buffer:
             buffer.write(file.file.read())
@@ -82,7 +83,8 @@ def upload_document(file:UploadFile,db:Session = Depends(get_db),user = Depends(
         size = file.size,
         page_count = page_count,
         stored_name = stored_name,
-        file_path = file_path
+        file_path = file_path,
+        thumbnail_path = None
         
     )
         db.add(document)
@@ -94,6 +96,8 @@ def upload_document(file:UploadFile,db:Session = Depends(get_db),user = Depends(
             pdf_extractor_non_paraphraph(file_path,document.id,db)
         except Exception:
             raise HTTPException(status_code=status.HTTP_406_NOT_ACCEPTABLE,detail="can't process this pdf")
+        finally:
+            thumbnail_extractor(file_path,document.id,db)
 
 
         embeddingTexts(document.id,db)
@@ -116,7 +120,7 @@ def get_pages(document_id:UUID,db:Session=Depends(get_db)):
     return pages
 
 @router.delete("/{document_id}")
-def delete_document(document_id:UUID,db:Session=Depends(get_db)):
+def delete_document(document_id:UUID,db:Session=Depends(get_db),user=Depends(get_current_user)):
     stmt = select(Document).where(Document.id == document_id)
     document = db.execute(stmt).scalar_one_or_none()
     if document is None:
@@ -140,3 +144,28 @@ def get_single_page(document_id:UUID,page_number :int,db:Session=Depends(get_db)
 
     return response
 
+@router.get("/{document_id}/thumbnail")
+def get_thumbnail(
+    document_id: UUID,
+    db: Session = Depends(get_db),
+    user=Depends(get_current_user),
+):
+    print(document_id)
+    document = (
+        db.query(Document)
+        .filter(
+            Document.id == document_id,
+            Document.owner_id == user.id,
+        )
+        .first()
+    )
+
+    if not document or not document.thumbnail_path:
+        raise HTTPException(status_code=404, detail="Thumbnail not found")
+
+    path = Path(document.thumbnail_path)
+
+    if not path.is_file():
+        raise HTTPException(status_code=404, detail="Thumbnail file not found")
+
+    return FileResponse(path, media_type="image/png")
