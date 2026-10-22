@@ -4,11 +4,11 @@ StudyOS is a web application that helps students study PDF documents using AI. U
 
 Built with React, FastAPI, PostgreSQL, vector search, and LiteLLM, StudyOS explores how retrieval-augmented generation (RAG) can make learning from documents more interactive.
 
-![StudyOS Complete Architecture](docs/studyos-architecture.png)
+![StudyOS Complete Architecture](files/StudyOS AI PDF Study Workflow.png)
 
 ## Demo
 
-**Demo video:** [Watch StudyOS in action](ADD_YOUR_DEMO_VIDEO_LINK_HERE)
+**Demo video:** [Watch StudyOS in action](https://www.youtube.com/watch?v=w26d7C3KgVw)
 
 *Replace the placeholder with your demo video link when you upload it.*
 
