@@ -127,9 +127,10 @@ The server uses `BAAI/bge-small-en-v1.5` through Sentence Transformers. The mode
 Open a separate terminal from the project root:
 
 ```bash
-cd backend
+cd backend/app/embedding_service.py
 source studyenv/bin/activate
-python embeddingserver.py
+uvicorn embedding_serverice:app --host 127.0.0.1 --port 8001
+
 ```
 
 Wait until you see:
