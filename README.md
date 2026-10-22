@@ -129,7 +129,7 @@ Open a separate terminal from the project root:
 ```bash
 cd backend/app/embedding_service.py
 source studyenv/bin/activate
-uvicorn embedding_serverice:app --host 127.0.0.1 --port 8001
+uvicorn embedding_service:app --host 127.0.0.1 --port 8001
 
 ```
 
