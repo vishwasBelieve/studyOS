@@ -24,6 +24,5 @@ app.add_middleware(CORSMiddleware,allow_origins=[ "http://localhost:5173"],    a
 
 @app.get("/")
 def home():
-    return {"DATABASEURL" : settings.DATABASE_URL,
-            "DEBUG": settings.DEBUG}
+    return {"status": "ok"}
 

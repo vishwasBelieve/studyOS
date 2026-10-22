@@ -1,0 +1,12 @@
+.git
+**/__pycache__
+**/*.pyc
+**/.venv
+**/venv
+**/studyenv
+**/node_modules
+**/dist
+**/.env
+backend/uploads/
+backend/thumbnails/
+*.pdf
