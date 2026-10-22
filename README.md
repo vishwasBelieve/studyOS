@@ -118,23 +118,32 @@ The API should be available at:
 - API: http://127.0.0.1:8000
 - Interactive API documentation: http://127.0.0.1:8000/docs
 
-### 5. Start the Embedding Service
+### 5. Start the Embedding Server
 
-StudyOS uses a separate embedding service to generate vector embeddings for document passages.
+StudyOS requires a locally running embedding server to convert document text into vector embeddings for semantic search.
 
-Source: [embedding_service.py](https://github.com/vishwasBelieve/studyOS/blob/main/backend/embedding_service.py)
+The server uses `BAAI/bge-small-en-v1.5` through Sentence Transformers. The model is loaded from the local cache (`local_files_only=True`), so **you must have the model downloaded locally before starting the server**.
 
-Open another terminal:
+Open a separate terminal from the project root:
 
 ```bash
-cd studyOS/backend
+cd backend
 source studyenv/bin/activate
-python embedding_service.py
+python embeddingserver.py
 ```
 
-Keep the embedding service running while using features that depend on embedding generation.
+Wait until you see:
 
-Ensure the required embedding model and Python dependencies are available. If the script expects a particular working directory, model path, or environment configuration, follow those requirements.
+```text
+Loading embedding model...
+Embedding model ready
+```
+
+Keep this terminal running while using StudyOS. The backend needs this service to generate embeddings.
+
+**Important:** The embedding model must already exist in your local Hugging Face/Sentence Transformers cache. If it hasn't been downloaded, download it once before running the server.
+
+
 
 ### 6. Set Up the Frontend
 
