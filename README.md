@@ -151,6 +151,7 @@ Keep API keys and other secrets in environment variables. Never commit credentia
 - Page based query and summery
 - Automated tests for authentication, uploads, and AI endpoints
 - Production deployment with persistent storage and monitoring
+- Creating a personalized AI agent to help you
 
 ## License
 
